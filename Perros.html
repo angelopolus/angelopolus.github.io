@@ -1,0 +1,1429 @@
+<!DOCTYPE html>
+  <html>
+      
+    <head>
+      <title>Acuario Familia-Perros</title>
+      <meta charset="utf-8" />
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.min.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>    
+      <!--Import CodePen--> 
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>    
+    </head>
+    
+    <body>
+        <!-- -------------------------------PRELOADER 
+        <div id="page-loader">
+            <div class="progress">
+                <div class="indeterminate"></div>
+            </div>
+        </div>-->
+        <!--------------------------------------------------------NAV BAR-->    
+        <nav class="navbar-material">
+            <div class="nav-wrapper red">
+                <a href="index.html" class="brand-logo">
+                    <img src="img/Acuario%20Familia%20Logo%20Blanco-01.png">
+                </a>
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li><a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Family Aquarium</a></li>
+                </ul>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <!------------------------------------------- MENU DESPLEGABLE Dropdown Trigger -->
+                    <li><a class='dropdown-button btn-flat white-text' href='#' data-activates='dropdown1'>Tienda</a></li>
+                        <!-------------------------------------- Dropdown Structure -->
+                          <ul id='dropdown1' class='dropdown-content'>
+                            <li><a href="Perros.html">Perros</a></li>
+                            <li><a href="Gatos.html">Gatos</a></li>
+                            <li><a href="Aves.html">Aves</a></li>
+                            <li><a href="Peces.html">Peces</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#!">TODOS</a></li>
+                          </ul>
+                    <li><a href="#modal0" class="modal-trigger">CONTACTO</a></li>              
+                </ul>
+                <ul class="side-nav red white-text" id="mobile-demo">
+                   <li><a href="#modal0" class="modal-trigger">Contacto</a></li>               
+                   <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Dropdown<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+                        <!-------------------------------------- Dropdown Structure -->
+                          <ul id='dropdown2' class='dropdown-content'>
+                            <li><a href="Perros.html">Perros</a></li>
+                            <li><a href="Gatos.html">Gatos</a></li>
+                            <li><a href="Aves.html">Aves</a></li>
+                            <li><a href="Peces.html">Peces</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#!">TODOS</a></li>
+                          </ul>
+                </ul>
+            </div>
+        </nav>
+        
+        <!--------------------------------------------------- MODAL CONTACTO -->
+        <div id="modal0" class="modal">
+            <div class="modal-content">
+                <h3 class="caption center-align" >Estamos a tus órdenes</h3>
+                <p style="text-align: justify;">En Acuario Familia sabemos que no sólo se trata de una mascota, sino de un integrante más de la familia. Por ello te ofrecemos artículos que cumplan con sus necesidades y que esten al alcance de todos los bolsillos.</p><p style="text-align: justify;">Si tienes dudas con algun producto, forma de pago o envío, contactanos</p>
+            </div>
+            <div class="row">
+                <div class="col s12 m6">
+                <p class="fa fa-envelope-o">&nbsp;acuariofamilia@gmail.com</p> 
+                </div>  
+                <div class="col s12 m6">
+                <p class="right-align fa fa-whatsapp">&nbsp;55-1374-7612</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+            </div>
+        </div>
+        
+        <!---------------------------------------------------BOTON PRINCIPAL-->  
+        <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+            <a class="btn-floating btn-large red">
+                <i class="material-icons">cloud</i>
+            </a>
+            <ul>
+                <li><a href="Perros.html" class="btn-floating btn-large red"><i class="animal">d</i></a></li>
+                <li><a href="Gatos.html"class="btn-floating btn-large yellow darken-1"><i class="animal">c</i></a></li>
+                <li><a href="Aves.html"class="btn-floating btn-large green"><i class="animal">z</i></a></li>
+                <li><a href="Peces.html" class="btn-floating btn-large blue"><i class="animal">s</i></a></li>
+            </ul>
+        </div>
+        <!---------------------------------------------------Fonts para el boton principal-->
+        <style type="text/css">
+            @font-face {
+                font-family: "Garanimals";
+                src: url("font/animals/GARANIMA.eot") /* EOT file for IE */
+            }
+            @font-face {
+                font-family: "Garanimals";
+                src: url("font/animals/GARANIMA.TTF");
+            }
+            @font-face {
+                font-family: "Garanimals";
+                src: url("font/animals/GARANIMA.otf");
+            }
+        </style>
+        
+        <!--------------------------------------------------PARALLAX IMAGE-->
+        <div class="parallax-container">
+            <div class="parallax white-text center-align"><img src="img/perros%20parallax11.jpg"><h5>texto de prueba</h5></div>
+        </div>
+        
+        <!----------------------------------------------------------------------------TARJETAS-->  
+        <h1 class="caption center-align red-text"><b>¡</b>Nuevos Productos<b>!</b></h1>
+        <div class="row">
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/CroquetaXDogAdulto.html"><img src="img/xdog.jpg"></a>              
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo">X-Dog Adulto</div>
+                        <p>Alimento extruido en forma de crujiente Croqueta  que cubre  al 100 % las necesidades energéticas y proteicas de perros  adultos con actividad media o en fase de mantenimiento.</p>
+                        <div class="card-precio right-align">$15.00 Kg</div>
+                    </div>
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="#modal30" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!-- Modal Structure -->
+                                <div id="modal30" class="modal">
+                                    <div class="modal-content">
+                                        <h5>X-Dog Adulto</h5>
+                                        <p style="text-align: justify;">Alimento extruido en forma de crujiente Croqueta  que cubre  al 100 % las necesidades energéticas y proteicas de perros  adultos con actividad media o en fase de mantenimiento.</br></br><b>Descripción:</b></br>Es elaborado con  materias primas rigurosamente seleccionadas bajo el mas estricto control veterinario, lo que garantiza una alimentación correcta y equilibrada. La EXTRUCION  es un proceso comparable a la cocción tradicional de los alimentos,  que permite la esterilización del producto y hace que X-DOG ADULTO sea un alimento  de fácil digestión y asimilación,  logrando con ello un correcto funcionamiento del aparato digestivo, lo que ayuda a disminuir  diarreas o estreñimientos.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="produc/CroquetaXDogAdulto.html" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-shopping-cart"></i></a>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/CroquetaNupecCachorro.html"><img src="img/croqueta%20nupec%20cachorro.png"></a>              
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo">Croqueta Nupec Cachorro</div>
+                        <p>Alimento balanceado que permite satisfacer la demanda de energía, desarrollo muscular y huesos saludables para que el cachorro pueda vivir una vida sana, además de tener un delicioso sabor.</p>
+                        <div class="card-precio right-align">$55.00 Kg</div>
+                    </div>
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="#modal31" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!-- Modal Structure -->
+                                <div id="modal31" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Croqueta Nupec Cachorro</h5>
+                                        <p style="text-align: justify;">Del destete hasta 12 de meses de edad. Para disfrutar su “niñez” y preparar su madurez. No hay duda, tu “chiquito” es un inquieto e incansable perrito juguetón que crece muy rápido en los primeros 6 meses, pero:NUPEC toma en cuenta que el cachorro necesita muchos cuidados</br></br><b>Descripción:</b></br></br>Es un alimento premium de máxima calidad y alta digestibilidad, elaborado con materias primas nacionales e internacionales de excelente calidad y frescura, proporciona a tu perro una nutrición completa y balanceada, cubriendo las necesidades de las diferentes etapas de vida, así como los diferentes niveles de actividad.</br></br><b>Recomendaciones:</b></br></br>Todo cambio de alimentación debe ser gradual. Mezcle el alimento en una relación de 3 porciones del alimento anterior y 1 del nuevo alimento y aumente la cantidad paulatinamente. Tenga siempre disponible agua fresca. No le sirva si se enlama o cambia de apariencia. Mantenga el envase cerrado y conserve en un lugar seco y fresco. Considere que las necesidades de cada perro varían dependiendo de la talla, sexo, raza, nivel de actividad, etapa fisiológica y temperatura ambiente.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="produc/CroquetaNupecCachorro.html" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-shopping-cart"></i></a>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/CroquetaNupecAdulto.html"><img src="img/croqueta%20nupec%20adulto.jpg"></a>              
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo">Croqueta Nupec Adulto</div>
+                        <p>A partir de un año de edad. Esta adicionado con las cantidades justas de vitaminas, minerales y proteínas que tu perro necesita para su óptimo desarrollo.
+Los perros de esta edad necesitan un balance nutricional diferente a los más jovenes por ello esta adicionado con Omega 6 y Omega 3 para el mejor aprovechamiento de los nutrientes.</p>
+                        <div class="card-precio right-align">$49.00 Kg</div>
+                    </div>
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="#modal32" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!-- Modal Structure -->
+                                <div id="modal32" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Croqueta Nupec Adulto</h5>
+                                        <p style="text-align: justify;">A partir de un año de edad. La nutrición óptima promueve la salud y la calidad de vida longeva, dale la oportunidad a tu entrañable amigo de disfrutar de tu cariño durante muchos años, NUPEC ADULTO esta adicionado con las cantidades justas de vitaminas, minerales y proteínas que tu perro necesita para su óptimo desarrollo. Los perros de esta edad necesitan un balance nutricional diferente a los más jovenes por ello esta adicionado con Omega 6 y Omega 3 para el mejor aprovechamiento de los nutrientes.      Además cuenta con un delicioso sabor y es muy fácil de digerir. Esta hecho para cuidar a tu perro y mantenerlo en forma.</br></br><b>Recomendaciones:</b></br></br>Todo cambio de alimentación debe ser gradual. Mezcle el alimento en una relación de 3 porciones del alimento anterior y 1 del nuevo alimento y aumente la cantidad paulatinamente. Tenga siempre disponible agua fresca. No le sirva si se enlama o cambia de apariencia. Mantenga el envase cerrado y conserve en un lugar seco y fresco. Considere que las necesidades de cada perro varían dependiendo de la talla, sexo, raza, nivel de actividad, etapa fisiológica y temperatura ambiente.</br></br><b>Ingredientes:</b></br></br>Harina de carne. Harina de pescado. Subproductos de leche. Harina de subproductos de ave. Grasas de origen animal. Grano de cereales: trigo, maíz, arroz. Pastas de oleaginosas. Concentrado de proteína vegetal. Pulpa de remolacha. Aminoácidos. Minerales (calcio, fósforo, sodio, zinc, hierro, manganeso, cobre, yodo, selenio, cobalto). Vitaminas (A, D, E, K y complejo B: Tiamina, Riboflavina, ácido pantoténico, piridoxina, ácido fólico, cianocobalamina, niacina, biotina). Antioxidantes (BHA y BHT, para proteger el alimento). </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="produc/CroquetaNupecAdulto.html" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-shopping-cart"></i></a>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/CroquetaDogChowCachorroRazasPequenas.html"><img src="img/Croqueta%20Dog%20chow%20Cachorro%20RP.png"></a>              
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo">Croqueta Dog Chow Cachorro Razas Pequeñas</div>
+                        <p>Desde el destete hasta 12 meses de edad. Contiene DHA, que ayuda al desarrollo del cerebro y la visión y 23 Vitaminas y Minerales: una nutrición 100% completa y balanceada. Así, le ayudarán a que disfruten de todos los momentos en familia.</p>
+                        <div class="card-precio right-align">$34.50 Kg</div>
+                    </div>
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="#modal33" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!-- Modal Structure -->
+                                <div id="modal33" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Croqueta Dog Chow Cachorro Razas Pequeñas</h5>
+                                        <p style="text-align: justify;">Desde el destete hasta 12 meses de edad. Tu cachorro de raza pequeña tiene necesidades únicas para su edad y tamaño. Por eso, PURINA® DOG CHOW® Cachorros Razas Pequeñas está específicamente formulado con los nutrientes e ingredientes de calidad que su cuerpo necesita para crecer sano y fuerte. Asegúrate que tu cachorro crezca sano con la alimentación que ofrece PURINA® DOG CHOW® Cachorros, con DHA, que ayuda al desarrollo del cerebro y la visión y 23 Vitaminas y Minerales: una nutrición 100% completa y balanceada. Así, le ayudarán a que disfruten de todos los momentos en familia.</br></br><b>Recomendaciones:</b></br></br>Todo cambio de alimentación debe ser gradual. Mezcle el alimento en una relación de 3 porciones del alimento anterior y 1 del nuevo alimento y aumente la cantidad paulatinamente. Tenga siempre disponible agua fresca. No le sirva si se enlama o cambia de apariencia. Mantenga el envase cerrado y conserve en un lugar seco y fresco. Considere que las necesidades de cada perro varían dependiendo de la talla, sexo, raza, nivel de actividad, etapa fisiológica y temperatura ambiente.</br></br><b>Ingredientes:</b></br></br>Proteína Cruda (Min.)27,0%. Grasa Cruda (Mín.)11,0%. Fibra Cruda (Máx.)3,0%. Humedad (Máx.)12,0%. Ceniza (Máx.)8,0%. Calcio (Mín.)1,1%. Fósforo (Mín.)0,9%</br></br><b>Beneficios:</b></br></br>DHA ayuda al desarrollo del cerebro y la visión. Calcio para un óptimo crecimiento huesos y dientes fuertes. Proteínas a base de pollo para músculos fuertes. Vitaminas y antioxidantes ayudan a fortalecer las defensas naturales. Inulina para una sana digestión. Con croquetas pequeñas especiales para su tamaño.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="produc/CroquetaDogChowCachorroRazasPequenas.html" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-shopping-cart"></i></a>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>            
+        <div class="row">
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/SHAMPOO%20FANCY%20PETS%20CITRICOS%20250%20Ml%208.5%20Oz.jpg">              
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo center-align" >Shampoo Aroma Cítrico, Fancy, 250 Ml</div>
+                        <p>Es ideal para cachorros con pelaje corto o largos</p>
+                        <div class="card-precio right-align">$34.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal1" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal1" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Shampoo Para Perro Aroma Cítrico, Fancy, 250 Ml</h5>
+                                        <p style="text-align: justify;">Shampoo para Perro con Aroma a Cítrico, ayuda a mantener el pelaje lustroso y limpio es ideal para cachorros con pelaje corto o largo, usese una vez al mes de preferencia.</br><b>Ingredientes:</b>Lauril sulfato de sodio, cocoamida, surfactantes,acondicionadores, esencias, conservadores, fenólicos, colorante artificial.</br><b>Ventaja:</b> Mantiene limpio y con rico aroma el pelaje de nuestras mascotas.</br>Ideal para todo tipo de pelaje.</br><b>Instrucciones: </b>Moje a su perro con agua tibia. Aplique Shampoo directamente sobre el pelo y frote hasta obtener espuma abundante. Enjuague, seque con una toalla y cepille hasta obtener un pelaje lustroso.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+
+                                <a href="produc/ShampooFancyPetsCitiricos250Ml.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/SHAMPOO%20PELO%20BLANCO%20250%20ML.jpg">              
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo center-align" >Shampoo Para Pelo Blanco, Fancy, 250 Ml</div>
+                        <p>Con blanqueadores naturales</p>
+                        <div class="card-precio right-align">$34.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal2" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal2" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Shampoo Para Perro Pelo Blanco, Fancy, 250 Ml</h5>
+                                        <p style="text-align: justify;">Shampoo para perro con pelo blanco, con blanqueadores naturales, ayuda a mantener el pelaje lustroso y limpio es ideal para cachorros con pelaje corto o largo, úsese una vez al mes de preferencia.</br><b>Ingredientes:</b>Lauril sulfato de sodio, cocoamida, surfactantes,acondicionadores, esencias, conservadores, fenólicos, colorante artificial.</br><b>Ventaja:</b> Mantiene limpio y con rico aroma el pelaje de nuestras mascotas.</br>Ideal para todo tipo de pelaje blanco.</br><b>Instrucciones: </b>Moje a su perro con agua tibia. Aplique Shampoo directamente sobre el pelo y frote hasta obtener espuma abundante. Enjuague, seque con una toalla y cepille hasta obtener un pelaje lustroso.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+
+                                <a href="produc/ShampooPeloBlanco250Ml.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/SHAMPOO%20FANCY%20PETS%20CACHORRO%20250%20Ml%208.5%20Oz.jpg">              
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo center-align" >Shampoo Aroma Manzana, Fancy, 250 Ml</div>
+                        <p>Shampoo para Cachorro con aroma a manzana</p>
+                        <div class="card-precio right-align">$34.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal3" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal3" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Shampoo Para Perro Aroma Manzana, Fancy, 250 Ml</h5>
+                                        <p style="text-align: justify;">Shampoo para Cachorro con aroma a manzana, ayuda a mantener el pelaje lustroso y limpio es ideal para cachorros con pelaje corto o largo, úsese una vez al mes de preferencia.</br><b>Ingredientes:</b>Lauril sulfato de sodio, cocoamida, surfactantes,acondicionadores, esencias, conservadores, fenólicos, colorante artificial.</br><b>Ventaja:</b> Mantiene limpio y con rico aroma el pelaje de nuestras mascotas.</br>Ideal para todo tipo de pelaje.</br><b>Instrucciones: </b>Moje a su perro con agua tibia. Aplique Shampoo directamente sobre el pelo y frote hasta obtener espuma abundante. Enjuague, seque con una toalla y cepille hasta obtener un pelaje lustroso.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/ShampooFancyPetsPeloBlancoCachorro250Ml.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/ShampooFancyPetsPeloDorado250Ml.html"><img src="img/SHAMPOO%20PELO%20DORADO%20250%20ML.png"></a>              
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo center-align" >Shampoo Pelo Dorado, Fancy, 250 Ml</div>
+                        <p>Pelo Dorado, limpio y lustroso</p>
+                        <div class="card-precio right-align">$34.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal4" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal4" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Shampoo Para Perro Pelo Dorado, Fancy, 250 Ml</h5>
+                                        <p style="text-align: justify;">Shampoo para Perro con pelo dorado, ayuda a mantener el pelaje lustroso y limpio es ideal para cachorros con pelaje corto o largo, usese una vez al mes de preferencia.</br><b>Ingredientes:</b>Lauril sulfato de sodio, cocoamida, surfactantes,acondicionadores, esencias, conservadores, fenólicos, colorante artificial.</br><b>Ventaja:</b> Mantiene limpio y con rico aroma el pelaje de nuestras mascotas.</br>Ideal para todo tipo de pelaje dorado.</br><b>Instrucciones: </b>Moje a su perro con agua tibia. Aplique Shampoo directamente sobre el pelo y frote hasta obtener espuma abundante. Enjuague, seque con una toalla y cepille hasta obtener un pelaje lustroso.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+
+                                <a href="produc/ShampooFancyPetsPeloDorado250Ml.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/ShampooFancyPetsPeloNegro250Ml.html"><img src="img/SHAMPOO%20PELO%20NEGRO%20250%20ML.jpg"></a>           
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo center-align" >Shampoo Pelo Negro, Fancy, 250 Ml</div>
+                        <p>Con extracto de Nogal</p>
+                        <div class="card-precio right-align">$34.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal5" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal5" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Shampoo Para Perro Pelo Negro, Fancy, 250 Ml</h5>
+                                        <p style="text-align: justify;">Para perro con pelo negro, contiene extracto de Nogal, ayuda a mantener el pelaje lustroso y limpio es ideal para cachorros con pelaje corto o largo, úsese una vez al mes de preferencia.</br><b>Ingredientes:</b>Lauril sulfato de sodio, cocoamida, surfactantes,acondicionadores, esencias, conservadores, fenólicos, colorante artificial.</br><b>Ventaja:</b> Mantiene limpio y con rico aroma el pelaje de nuestras mascotas.</br>Ideal para todo tipo de pelaje negro.</br><b>Instrucciones: </b>Moje a su perro con agua tibia. Aplique Shampoo directamente sobre el pelo y frote hasta obtener espuma abundante. Enjuague, seque con una toalla y cepille hasta obtener un pelaje lustroso.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/ShampooFancyPetsPeloNegro250Ml.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/ShampooFancyPetsUva250Ml.html"><img src="img/SHAMPOO%20ULTRA%20CLEAN%20UVA%20250%20ML.jpg"></a>           
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo center-align" >Shampoo Con Aroma Uva, Fancy, 250 Ml</div>
+                        <p>Con aroma Uva</p>
+                        <div class="card-precio right-align">$34.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal6" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal6" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Shampoo Para Perro Con Aroma Uva, Fancy, 250 Ml</h5>
+                                        <p style="text-align: justify;">Para perro con aroma a uva, ayuda a mantener el pelaje lustroso y limpio es ideal para cachorros con pelaje corto o largo, úsese una vez al mes de preferencia.</br><b>Ingredientes:</b>Lauril sulfato de sodio, cocoamida, surfactantes,acondicionadores, esencias, conservadores, fenólicos, colorante artificial.</br><b>Ventaja:</b> Mantiene limpio y con rico aroma el pelaje de nuestras mascotas.</br>Ideal para todo tipo de pelaje.</br><b>Instrucciones: </b>Moje a su perro con agua tibia. Aplique Shampoo directamente sobre el pelo y frote hasta obtener espuma abundante. Enjuague, seque con una toalla y cepille hasta obtener un pelaje lustroso.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/ShampooFancyPetsUva250Ml.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/ShampooFancyPetsCoco250Ml.html"><img src="img/SHAMPOO%20FANCY%20PETS%20COCO%20250%20Ml%208.5%20Oz.jpg"></a>           
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo center-align" >Shampoo Aroma a Coco, Fancy, 250 Ml</div>
+                        <p>Con aroma a Coco</p>
+                        <div class="card-precio right-align">$34.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal7" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal7" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Shampoo Para Perro Aroma a Coco, Fancy, 250 Ml</h5>
+                                        <p style="text-align: justify;">Shampoo para perro con aroma a coco, ayuda a mantener el pelaje lustroso y limpio es ideal para cachorros con pelaje corto o largo, úsese una vez al mes de preferencia.</br><b>Ingredientes:</b>Lauril sulfato de sodio, cocoamida, surfactantes,acondicionadores, esencias, conservadores, fenólicos, colorante artificial.</br><b>Ventaja:</b> Mantiene limpio y con rico aroma el pelaje de nuestras mascotas.</br>Ideal para todo tipo de pelaje</br><b>Instrucciones: </b>Moje a su perro con agua tibia. Aplique Shampoo directamente sobre el pelo y frote hasta obtener espuma abundante. Enjuague, seque con una toalla y cepille hasta obtener un pelaje lustroso.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/ShampooFancyPetsCoco250Ml.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/AtrayenteCachorrosFancyPets.html"><img src="img/ATRAYENTE%20PARA%20CACHORROS.jpg"></a>           
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo center-align" >Atrayente Para Cachorro, Hagen, 500 Ml</div>
+                        <p>Atrayente para cachorros en presentación liquida.</p>
+                        <div class="card-precio right-align">$99.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal8" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal8" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Atrayente Para Cachorro, Hagen, 500 Ml</h5>
+                                        <p style="text-align: justify;">Atrayente para cachorros en presentación liquida.</br><b>Ingredientes:</b>Carbonato de amonio, agua amoniacal.</br><b>Ventaja:</b> Fácil de aplicar, efectivo y práctico.</br><b>Instrucciones: </b>Agitar y rociar el Atrayente para Cachorros en un diámetro de 4 a 8 cm sobre un tapete entrenador y exponer al cachorro en los momentos críticos, tales como al despertar o después de comer, para que elimine. Reemplace el tapete sucio por uno nuevo. Mover los nuevos tapetes poco a poco hacia áreas al aire libre, para entrenar al cachorro a realizar sus necesidades fuera de la casa.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/AtrayenteCachorrosFancyPets.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/RepelentePerroFancyPets300Ml.html"><img src="img/REPELENTE%20P%20PERROS%20300%20ML.jpg"></a>           
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo center-align" >Repelente Para Perro, Fancy, 300 Ml</div>
+                        <p>Ayuda a mantener a los perros alejados de sillones y sillas así como de rincones o lugares donde no se desea que permanezca la mascota.</p>
+                        <div class="card-precio right-align">$99.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal9" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal9" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Repelente Para Perro, Fancy, 300 Ml</h5>
+                                        <p style="text-align: justify;">Repelente canino para interiores. Ayuda a mantener a los perros alejados de sillones y sillas así como de rincones o lugares donde no se desea que permanezca la mascota. Debe usarse en conjunto con entrenamiento. Dado el comportamiento impredecible de las mascotas, será necesario aplicar el repelente diariamente sobre los objetos o lugares de los que se desea mantener alejados, hasta romper con el hábito.</br><b>Instrucciones: </b>Para acabar con hábitos indeseables en su mascota (tales como dormir en un mueble, tapete o cualquier otra área prohibida en el hogar). Rocié el mueble, tapete o área con este producto hasta dejarlo húmedo. Antes de utilizar este producto es una gran extensión de tapete o telas, haga la prueba en una pequeña parte de estos. Este producto podría dañar telas o plásticos. Una alternativa para prevenir daños en estos materiales es rociar en un paño o trapo el producto y posteriormente aplicarlo con este sobre los objetos que usted quiera proteger. Repita diariamente o tanto como sea necesario hasta lograr erradicar el habito indeseable.</br><b>Ingredientes:</b>Metil Nonil Cetona 1.9%, Componentes inertes 12%</br><b>Advertencia:</b> No se deje alcance de los niños. No se aplique sobre alimentos o utensilios de cocina. Lávese las manos con agua y jabona después de usar el producto. Evite el contacto con la piel. Manténgase en un lugar fresco 48°C, aléjese de aparatos que irradien calor como estufas y motores.</br><b>Precaución: </b>Inflamable, nunca rocíe el producto cerca del calor o presencia del fuego.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/RepelentePerroFancyPets300Ml.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/CalzonParaToallaSanitariaFancyCh.html"><img src="img/CALZON%20P%20TOALLA%20SANITARIA%20CH.jpg"></a>           
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo center-align" >Calzón Para Toalla Sanitaria, Fancy, Ch.</div>
+                        <p>Prenda de sujeción de toalla sanitaria para perritas en temporada de celo.</p>
+                        <div class="card-precio right-align">$88.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal10" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal10" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Calzón Para Toalla Sanitaria, Fancy,Ch.</h5>
+                                        <p style="text-align: justify;">Prenda de sujeción de toalla sanitaria para perritas en temporada de celo,ideal para evitar que dicha toalla se mueva y tenga accidentes provocados por el desplazamiento o se caiga. Contenido: 1 pieza.</br><b>Características: </b>Completamente impermeable y lavable (ajustable y elaborado en material sintético), cuenta con un orificio para la cola.</br><b>Recomendaciones:</b>Ideal para perras de tamaño chico. Disponible en tres tamaños. Colocar en el espacio central una toalla sanitaria Fancy Pets, ajustar las bandas elásticas para que el calzón quede en su lugar y cambiar cuando sea necesario. Quitar la prenda cuando saque a su perra a pasear o cuando necesite orinar o defecar.</br><b>Beneficios:</b> Accesorio necesario para la higiene de las perritas. Su uso evita goteos por toda la casa y protege los muebles y alfombras de manchas de sangre, con un snap ajustable para mantener la prenda en su lugar.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/CalzonParaToallaSanitariaFancyCh.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/CalzonParaToallaSanitariaFancyMd.html"><img src="img/CALZON%20P%20TOALLA%20SANITARIA%20MED.png"></a>           
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo center-align" >Calzón Para Toalla Sanitaria, Fancy, Md.</div>
+                        <p>Prenda de sujeción de toalla sanitaria para perritas en temporada de celo.</p>
+                        <div class="card-precio right-align">$98.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal11" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal11" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Calzón Para Toalla Sanitaria, Fancy, Md.</h5>
+                                        <p style="text-align: justify;">Prenda de sujeción de toalla sanitaria para perritas en temporada de celo,ideal para evitar que dicha toalla se mueva y tenga accidentes provocados por el desplazamiento o se caiga. Contenido: 1 pieza.</br><b>Características: </b>Completamente impermeable y lavable (ajustable y elaborado en material sintético), cuenta con un orificio para la cola.</br><b>Recomendaciones:</b>Ideal para perras de tamaño chico. Disponible en tres tamaños. Colocar en el espacio central una toalla sanitaria Fancy Pets, ajustar las bandas elásticas para que el calzón quede en su lugar y cambiar cuando sea necesario. Quitar la prenda cuando saque a su perra a pasear o cuando necesite orinar o defecar.</br><b>Beneficios:</b> Accesorio necesario para la higiene de las perritas. Su uso evita goteos por toda la casa y protege los muebles y alfombras de manchas de sangre, con un snap ajustable para mantener la prenda en su lugar.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/CalzonParaToallaSanitariaFancyMd.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/CalzonParaToallaSanitariaFancyGr.html"><img src="img/CALZON%20P%20TOALLA%20SANITARIA%20GDE.png"></a>           
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo center-align" >Calzón Para Toalla Sanitaria, Fancy, Gr.</div>
+                        <p>Prenda de sujeción de toalla sanitaria para perritas en temporada de celo.</p>
+                        <div class="card-precio right-align">$108.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal12" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal12" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Calzón Para Toalla Sanitaria, Fancy, Gr.</h5>
+                                        <p style="text-align: justify;">Prenda de sujeción de toalla sanitaria para perritas en temporada de celo,ideal para evitar que dicha toalla se mueva y tenga accidentes provocados por el desplazamiento o se caiga. Contenido: 1 pieza.</br><b>Características: </b>Completamente impermeable y lavable (ajustable y elaborado en material sintético), cuenta con un orificio para la cola.</br><b>Recomendaciones:</b>Ideal para perras de tamaño chico. Disponible en tres tamaños. Colocar en el espacio central una toalla sanitaria Fancy Pets, ajustar las bandas elásticas para que el calzón quede en su lugar y cambiar cuando sea necesario. Quitar la prenda cuando saque a su perra a pasear o cuando necesite orinar o defecar.</br><b>Beneficios:</b> Accesorio necesario para la higiene de las perritas. Su uso evita goteos por toda la casa y protege los muebles y alfombras de manchas de sangre, con un snap ajustable para mantener la prenda en su lugar.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/CalzonParaToallaSanitariaFancyGr.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/ToallaSanitariasFancyPets20PzCh.html"><img src="img/TOALLAS%20SANITARIAS%20CH%2020%20PZAS.jpg"></a>           
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo center-align" >Toallas Sanitarias, Fancy, 20 Pz, Ch</div>
+                        <p>Toallas sanitarias desechables para perritas de tamaño pequeño.</p>
+                        <div class="card-precio right-align">$19.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal13" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal13" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Toallas Sanitarias, Fancy, 20 Pz, Ch</h5>
+                                        <p style="text-align: justify;">Toallas sanitarias desechables para perritas de tamaño pequeño</br><b>Características: </b>Suaves y ultra absorbentes. Pueden usarse con calzones sanitarios de cualquier marca.</br><b>Beneficios:</b> La toallita absorbe el sangrado del celo evitando que manche el piso, tapices y muebles</br><b>Recomendaciones:</b> Recomendamos su uso con los calzones Fancy Pets. Remueva la película protectora para exponer el pegamento y pegue sobre el compartimiento del calzón sanitario Fancy Pets en el espacio para la toalla sanitaria. Cambie cuando sea necesario para evitar malos olores (por lo menos dos veces al día), y retire el calzón cuando la perrita quiera orinar y/o Si su perrita está en celo y no desea que se cruce evite el contacto con perros machos, ya que el calzón sanitario no es una barrera.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/ToallaSanitariasFancyPets20PzCh.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/ToallaSanitariasFancyPets20PzGR.html"><img src="img/TOALLAS%20SANITARIAS%20GR%2020%20PZAS.jpg"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Toallas Sanitarias, Fancy, 20 Pz, Gr</div>
+                        <p>Toallas sanitarias desechables para perritas de tamaño Grande.</p>
+                        <div class="card-precio right-align">$29.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal14" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal14" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Toallas Sanitarias, Fancy, 20 Pz, Gr</h5>
+                                        <p style="text-align: justify;">Toallas sanitarias desechables para perritas de tamaño grande</br><b>Características: </b>Suaves y ultra absorbentes. Pueden usarse con calzones sanitarios de cualquier marca.</br><b>Beneficios:</b> La toallita absorbe el sangrado del celo evitando que manche el piso, tapices y muebles</br><b>Recomendaciones:</b> Recomendamos su uso con los calzones Fancy Pets. Remueva la película protectora para exponer el pegamento y pegue sobre el compartimiento del calzón sanitario Fancy Pets en el espacio para la toalla sanitaria. Cambie cuando sea necesario para evitar malos olores (por lo menos dos veces al día), y retire el calzón cuando la perrita quiera orinar y/o Si su perrita está en celo y no desea que se cruce evite el contacto con perros machos, ya que el calzón sanitario no es una barrera.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/ToallaSanitariasFancyPets20PzGR.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/PalitosCarnazaSaboresFancy20Pz.html"><img src="img/PalitosCarnazaSaboresFancy20Pz.jpg"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Palitos De Carnaza, Varios Sabores 20 Pz</div>
+                        <p>Premios para perro, elaborados con carnaza 100% de res en forma de palitos. Sabores: carne, pollo, natural, café y cacahuate.</p>
+                        <div class="card-precio right-align">$48.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal15" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal15" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Palitos De Carnaza, Varios Sabores 20 Pz</h5>
+                                        <p style="text-align: justify;">Premios para perro, elaborados con carnaza 100% de res en forma de palitos. Surtido en cinco sabores: carne, pollo, natural, café y cacahuate.</br><b>Características: </b>Mantienen limpios los dientes previniendo la formación de sarro, evitando al mismo tiempo el mal aliento, además entretienen a su perro.</br><b>Ventajas:</b> Permiten que interactúe con su perro, y pueden proporcionarse como premio en los entrenamientos o como juguete.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/PalitosCarnazaSaboresFancy20Pz.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/PalitosCarnazaSaboresFancy40Pz.html"><img src="img/PalitosCarnazaSaboresFancy40Pz.jpg"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Palitos De Carnaza, Varios Sabores 40 Pz</div>
+                        <p>Premios para perro, elaborados con carnaza 100% de res en forma de palitos. Sabores: carne, pollo, natural, café y cacahuate.</p>
+                        <div class="card-precio right-align">$86.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal16" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal16" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Palitos De Carnaza, Varios Sabores 40 Pz</h5>
+                                        <p style="text-align: justify;">Premios para perro, elaborados con carnaza 100% de res en forma de palitos. Surtido en cinco sabores: carne, pollo, natural, café y cacahuate.</br><b>Características: </b>Mantienen limpios los dientes previniendo la formación de sarro, evitando al mismo tiempo el mal aliento, además entretienen a su perro.</br><b>Ventajas:</b> Permiten que interactúe con su perro, y pueden proporcionarse como premio en los entrenamientos o como juguete.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/PalitosCarnazaSaboresFancy40Pz.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/PalitosCarnazaSaboresFancy100Pz.html"><img src="img/BOLSAPALITOSSABORES100PIEZAS.png"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Palitos De Carnaza, Varios Sabores 100 Pz</div>
+                        <p>Premios para perro, elaborados con carnaza 100% de res en forma de palitos. Sabores: carne, pollo, natural, café y cacahuate.</p>
+                        <div class="card-precio right-align">$196.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal17" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal17" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Palitos De Carnaza, Varios Sabores 100 Pz</h5>
+                                        <p style="text-align: justify;">Premios para perro, elaborados con carnaza 100% de res en forma de palitos. Surtido en cinco sabores: carne, pollo, natural, café y cacahuate.</br><b>Características: </b>Mantienen limpios los dientes previniendo la formación de sarro, evitando al mismo tiempo el mal aliento, además entretienen a su perro.</br><b>Ventajas:</b> Permiten que interactúe con su perro, y pueden proporcionarse como premio en los entrenamientos o como juguete.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/PalitosCarnazaSaboresFancy100Pz.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/SticksHuecoCarnazaColoresFancy5Pz.html"><img src="img/SticksHuecosColores5Pz.jpg"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Sticks Hueco De Colores, Fancy, 5 Pz</div>
+                        <p>Sticks hueco de carnaza de colores.</p>
+                        <div class="card-precio right-align">$32.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal18" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal18" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Sticks Hueco De Colores, Fancy, 5 Pz</h5>
+                                        <p style="text-align: justify;">Sticks hueco de carnaza de colores.</br><b>Características: </b>Mantienen limpios los dientes previniendo la formación de sarro, evitando al mismo tiempo el mal aliento, además entretienen a su perro.</br><b>Ventajas:</b> Permiten que interactúe con su perro, y pueden proporcionarse como premio en los entrenamientos o como juguete.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/SticksHuecoCarnazaColoresFancy5Pz.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/TapeteEntrenadorFancy7Pz.html"><img src="img/TAPETE%20ENTRENADOR%20(PADS)%20FANCY%20PET%207%20PZAS.jpg"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Tapete Entrenador (Pads), Fancy, 7 Pz</div>
+                        <p>Con tecnología avanzada de polímeros que controlan los olores y absorben rápidamente los líquidos previniendo el derrame.</p>
+                        <div class="card-precio right-align">$58.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal20" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal20" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Tapete Entrenador (Pads), Fancy, 7 Pz</h5>
+                                        <p style="text-align: justify;">Tapetes entrenadores para cachorros SoftPad con tecnología avanzada de polímeros que controlan los olores y absorben rápidamente los líquidos previniendo el derrame.</br><b>Ideal para utilizarse en interiores: </b>Fórmula con atrayentes que ayudan a entrenar a su cachorro para que evacue en el lugar designado.</br><b>Características:</b> Tapete con tecnología avanzada de polímeros que controlan olores y absorben rápidamente los líquidos previniendo el derrame.</br><b>Ventajas:</b> Atrayente incorporado. Sistema antiderrames. Neutraliza olores.</br><b>Modo de uso:</b> Coloque el tapete sobre la superficie para que el perro empiece a identificar la zona donde posteriormente ira a hacer sus necesidades , el atrayente facilitara el aprendizaje de su cachorro.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/TapeteEntrenadorFancy7Pz.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/TapeteEntrenadorFancy14Pz.html"><img src="img/TAPETE%20ENTRENADOR%20(PADS)%20FANCY%20PET%2014%20PZAS.jpg"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Tapete Entrenador (Pads), Fancy, 14 Pz</div>
+                        <p>Con tecnología avanzada de polímeros que controlan los olores y absorben rápidamente los líquidos previniendo el derrame.</p>
+                        <div class="card-precio right-align">$106.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal19" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal19" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Tapete Entrenador (Pads), Fancy, 14 Pz</h5>
+                                        <p style="text-align: justify;">Tapetes entrenadores para cachorros SoftPad con tecnología avanzada de polímeros que controlan los olores y absorben rápidamente los líquidos previniendo el derrame.</br><b>Ideal para utilizarse en interiores: </b>Fórmula con atrayentes que ayudan a entrenar a su cachorro para que evacue en el lugar designado.</br><b>Características:</b> Tapete con tecnología avanzada de polímeros que controlan olores y absorben rápidamente los líquidos previniendo el derrame.</br><b>Ventajas:</b> Atrayente incorporado. Sistema antiderrames. Neutraliza olores.</br><b>Modo de uso:</b> Coloque el tapete sobre la superficie para que el perro empiece a identificar la zona donde posteriormente ira a hacer sus necesidades , el atrayente facilitara el aprendizaje de su cachorro.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/TapeteEntrenadorFancy14Pz.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/TapeteEntrenadorFancy30Pz.html"><img src="img/TAPETE%20ENTRENADOR%20(PADS)%20FANCY%20PET%2030%20PZAS.jpg"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Tapete Entrenador (Pads), Fancy, 30 Pz</div>
+                        <p>Con tecnología avanzada de polímeros que controlan los olores y absorben rápidamente los líquidos previniendo el derrame.</p>
+                        <div class="card-precio right-align">$220.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal21" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal21" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Tapete Entrenador (Pads), Fancy, 30 Pz</h5>
+                                        <p style="text-align: justify;">Tapetes entrenadores para cachorros SoftPad con tecnología avanzada de polímeros que controlan los olores y absorben rápidamente los líquidos previniendo el derrame.</br><b>Ideal para utilizarse en interiores: </b>Fórmula con atrayentes que ayudan a entrenar a su cachorro para que evacue en el lugar designado.</br><b>Características:</b> Tapete con tecnología avanzada de polímeros que controlan olores y absorben rápidamente los líquidos previniendo el derrame.</br><b>Ventajas:</b> Atrayente incorporado. Sistema antiderrames. Neutraliza olores.</br><b>Modo de uso:</b> Coloque el tapete sobre la superficie para que el perro empiece a identificar la zona donde posteriormente ira a hacer sus necesidades , el atrayente facilitara el aprendizaje de su cachorro.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/TapeteEntrenadorFancy30Pz.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/CollarAntipulgas2En1HartzCh.html"><img src="img/COLLAR%20ANTIPULGAS%202%20EN%201%20CACHORROS%20%205%20MESES.png"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Collar Antipulgas 2 En 1, Hartz, Ch</div>
+                        <p>Mata y repele las pulgas y garrapatas hasta 7 meses.</p>
+                        <div class="card-precio right-align">$62.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal22" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal22" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Collar Antipulgas 2 En 1, HARTZ, Ch</h5>
+                                        <p style="text-align: justify;">Collar Antipulgas y garrapatas con duración de 7 meses. Mata y repele las pulgas y garrapatas.</br><b>Características: </b>Es resistente al agua, aunque el perro se moje, llueva o nade, el collar continua con efecto. Para perros con cuellos de hasta 15".</br><b>Ventajas:</b> Al repeler los estados adultos, se previene la reinfestación hasta por 7 meses.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/CollarAntipulgas2En1HartzCh.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/CollarAntipulgas2En1HartzMd.html"><img src="img/COLLAR%20ANTIPULGAS%202%20EN%201%20PERROS%205%20MESES.png"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Collar Antipulgas 2 En 1, Hartz, Md</div>
+                        <p>Mata y repele las pulgas y garrapatas hasta 7 meses.</p>
+                        <div class="card-precio right-align">$62.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal23" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal23" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Collar Antipulgas 2 En 1, HARTZ, Md</h5>
+                                        <p style="text-align: justify;">Collar Antipulgas y garrapatas con duración de 7 meses. Mata y repele las pulgas y garrapatas.</br><b>Características: </b>Es resistente al agua, aunque el perro se moje, llueva o nade, el collar continua con efecto. Para perros con cuellos de hasta 20".</br><b>Ventajas:</b> Al repeler los estados adultos, se previene la reinfestación hasta por 7 meses.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/CollarAntipulgas2En1HartzMd.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/CollarAntipulgas2En1HartzMdRojo.html"><img src="img/COLLAR%20ANTIPULGAS%202%20EN%201%20PERROS%205%20MESES%20(ROJO).png"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Collar Antipulgas 2 En 1, Hartz, Md, Rojo</div>
+                        <p>Mata y repele las pulgas y garrapatas hasta 7 meses.</p>
+                        <div class="card-precio right-align">$62.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal24" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal24" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Collar Antipulgas 2 En 1, HARTZ, Md, Rojo</h5>
+                                        <p style="text-align: justify;">Collar Antipulgas y garrapatas con duración de 7 meses. Mata y repele las pulgas y garrapatas.</br><b>Características: </b>Es resistente al agua, aunque el perro se moje, llueva o nade, el collar continua con efecto. Para perros con cuellos de hasta 20".</br><b>Ventajas:</b> Al repeler los estados adultos, se previene la reinfestación hasta por 7 meses.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/CollarAntipulgas2En1HartzMdRojo.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/CollarAntipulgas2En1HartzGr.html"><img src="img/COLLAR%20ANTIPULGAS%202%20EN%201%20PERROS%20GRANDES%205%20MESES.png"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Collar Antipulgas 2 En 1, Hartz, Gr</div>
+                        <p>Mata y repele las pulgas y garrapatas hasta 7 meses.</p>
+                        <div class="card-precio right-align">$62.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal25" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal25" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Collar Antipulgas 2 En 1, Hartz, Gr</h5>
+                                        <p style="text-align: justify;">Collar Antipulgas y garrapatas con duración de 7 meses. Mata y repele las pulgas y garrapatas.</br><b>Características: </b>Es resistente al agua, aunque el perro se moje, llueva o nade, el collar continua con efecto. Para perros con cuellos de hasta 26".</br><b>Ventajas:</b> Al repeler los estados adultos, se previene la reinfestación hasta por 7 meses.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/CollarAntipulgas2En1HartzGr.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/CollarAntipulgas3En1HartzGr.html"><img src="img/COLLAR%20ANTIPULGAS%203%20EN%201%20PERROS%207%20MESES.png"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Collar Antipulgas 3 En 1, Hartz, Gr</div>
+                        <p>Mata y repele las pulgas y garrapatas hasta 7 meses, <B>además de los huevos de pulga cortando así con su ciclo de vida.</B></p>
+                        <div class="card-precio right-align">$129.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal25" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal25" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Collar Antipulgas 3 En 1, Hartz, Gr</h5>
+                                        <p style="text-align: justify;">Collar Antipulgas y garrapatas con duración de 7 meses. Mata y repele las pulgas y garrapatas, además de los huevos de pulga cortando así con su ciclo de vida.</br><b>Características: </b>Es resistente al agua, aunque el perro se moje, llueva o nade, el collar continua con efecto. Para perros con cuellos de hasta 26".</br><b>Ventajas:</b> Al repeler los estados adultos, se previene la reinfestación hasta por 7 meses.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/CollarAntipulgas3En1HartzGr.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/PipetaAntipulgasHartz2a7Kg.html"><img src="img/Pipeta Antipulgas Hartz 2 a 7 Kg.png"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Pipeta Antipulgas, Hartz, de 2 a 7 Kg</div>
+                        <p>Antiparasitario externo para perros, previene y elimina pulgas y garrapatas durante 30 días, además repele a mosquitos adultos.</B></p>
+                        <div class="card-precio right-align">$139.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal26" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal26" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Pipeta Antipulgas, Hartz, de 2 a 7 Kg</h5>
+                                        <p style="text-align: justify;">Antiparasitario externo para perros, previene y elimina pulgas y garrapatas durante 30 días, además repele a mosquitos adultos.</br><b>Características: </b>Para uso exclusivo de perros y cachorros de 2 a 7 kg de peso y más de 12 semanas de edad. Efectivo en perros con pelo corto y largo. Práctico envase aplicador con bordes redondeados.</br><b>Recomendaciones:</b> Lea modo de empleo y precauciones antes de cada uso. Aplicación tópica (en piel). No se use en perros ni cachorros que pesen menos de 2 kg, ni en cachorros con menos de 12 semanas de edad. No se utilice en gatos.Después de 24 horas de haber aplicado el producto puede bañar o mojar al perro sin que pierda efectividad el repelente.</br><b>Beneficios:</b> Es parte del cuidado sanitario básico del perro, ya que siempre estará expuesto a las pulgas. Acaba con infestaciones y previene re-infestaciones por 30 días. Fácil de aplicar y sin bordes que lastimen la piel del perro. </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/PipetaAntipulgasHartz2a7Kg.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/PipetaAntipulgasHartz8a13Kg.html"><img src="img/Pipeta%20Antipulgas%20Hartz%208%20a%2013%20Kg.PNG"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Pipeta Antipulgas, Hartz, de 8 a 13 Kg</div>
+                        <p>Antiparasitario externo para perros, previene y elimina pulgas y garrapatas durante 30 días, además repele a mosquitos adultos.</B></p>
+                        <div class="card-precio right-align">$139.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal27" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal27" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Pipeta Antipulgas, Hartz, de 8 a 13 Kg</h5>
+                                        <p style="text-align: justify;">Antiparasitario externo para perros, previene y elimina pulgas y garrapatas durante 30 días, además repele a mosquitos adultos.</br><b>Características: </b>Para uso exclusivo de perros y cachorros de 8 a 13 kg de peso y más de 12 semanas de edad. Efectivo en perros con pelo corto y largo. Práctico envase aplicador con bordes redondeados.</br><b>Recomendaciones:</b> Lea modo de empleo y precauciones antes de cada uso. Aplicación tópica (en piel). No se use en perros ni cachorros que pesen menos de 8 kg, ni en cachorros con menos de 12 semanas de edad. No se utilice en gatos.Después de 24 horas de haber aplicado el producto puede bañar o mojar al perro sin que pierda efectividad el repelente.</br><b>Beneficios:</b> Es parte del cuidado sanitario básico del perro, ya que siempre estará expuesto a las pulgas. Acaba con infestaciones y previene re-infestaciones por 30 días. Fácil de aplicar y sin bordes que lastimen la piel del perro. </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/PipetaAntipulgasHartz8a13Kg.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/PipetaAntipulgasHartz14a27Kg.html"><img src="img/Pipeta%20Antipulgas%20Hartz%2014%20a%2027%20Kg.PNG"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Pipeta Antipulgas, Hartz, de 14 a 27 Kg</div>
+                        <p>Antiparasitario externo para perros, previene y elimina pulgas y garrapatas durante 30 días, además repele a mosquitos adultos.</B></p>
+                        <div class="card-precio right-align">$139.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal28" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal28" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Pipeta Antipulgas, Hartz, de 14 a 27 Kg</h5>
+                                        <p style="text-align: justify;">Antiparasitario externo para perros, previene y elimina pulgas y garrapatas durante 30 días, además repele a mosquitos adultos.</br><b>Características: </b>Para uso exclusivo de perros y cachorros de 14 a 27 kg de peso y más de 12 semanas de edad. Efectivo en perros con pelo corto y largo. Práctico envase aplicador con bordes redondeados.</br><b>Recomendaciones:</b> Lea modo de empleo y precauciones antes de cada uso. Aplicación tópica (en piel). No se use en perros ni cachorros que pesen menos de 14 kg, ni en cachorros con menos de 12 semanas de edad. No se utilice en gatos.Después de 24 horas de haber aplicado el producto puede bañar o mojar al perro sin que pierda efectividad el repelente.</br><b>Beneficios:</b> Es parte del cuidado sanitario básico del perro, ya que siempre estará expuesto a las pulgas. Acaba con infestaciones y previene re-infestaciones por 30 días. Fácil de aplicar y sin bordes que lastimen la piel del perro. </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/PipetaAntipulgasHartz14a27Kg.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/PipetaAntipulgasHartz27Kg.html"><img src="img/Pipeta%20Antipulgas%20Hartz%2027%20Kg.PNG"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Pipeta Antipulgas, Hartz, mayor a 27 Kg</div>
+                        <p>Antiparasitario externo para perros, previene y elimina pulgas y garrapatas durante 30 días, además repele a mosquitos adultos.</B></p>
+                        <div class="card-precio right-align">$139.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal29" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal29" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Pipeta Antipulgas, Hartz, mayor a 27 Kg</h5>
+                                        <p style="text-align: justify;">Antiparasitario externo para perros, previene y elimina pulgas y garrapatas durante 30 días, además repele a mosquitos adultos.</br><b>Características: </b>Para uso exclusivo de perros y cachorros de más de 27 kg de peso y más de 12 semanas de edad. Efectivo en perros con pelo corto y largo. Práctico envase aplicador con bordes redondeados.</br><b>Recomendaciones:</b> Lea modo de empleo y precauciones antes de cada uso. Aplicación tópica (en piel). No se use en perros ni cachorros que pesen menos de 27 kg, ni en cachorros con menos de 12 semanas de edad. No se utilice en gatos.Después de 24 horas de haber aplicado el producto puede bañar o mojar al perro sin que pierda efectividad el repelente.</br><b>Beneficios:</b> Es parte del cuidado sanitario básico del perro, ya que siempre estará expuesto a las pulgas. Acaba con infestaciones y previene re-infestaciones por 30 días. Fácil de aplicar y sin bordes que lastimen la piel del perro. </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/PipetaAntipulgasHartz27Kg.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--------------------------------------------------FOOTER-->
+        <footer class="page-footer">
+              <div class="container">
+                <div class="row">
+                  <div class="col l6 s12">
+                    <h4 class="white-text">Entrega a domicilio</h4>
+                    <h5 href="#" class="white-text"><i class="fa fa-whatsapp"></i>&nbsp;55-1374-7612</h5>
+                    <span href="#" class="white-text"><i class="fa fa-envelope-o"></i>&nbsp;acuariofamilia@gmail.com</span>
+
+                  </div>
+                  <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Mandanos un Whatsapp, llámanos o escríbenos</h5>
+                        <!-- Modal Trigger -->
+                        <a href="#" class="btn-floating waves-effect waves-light transparent"><i class="fa fa-facebook white-text"></i></a>
+                        <a href="#" class="btn-floating waves-effect waves-light transparent white-text"><i class="fa fa-twitter white-text"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-copyright">
+                <div class="container">
+                    © 2016 Copyright
+                <!--<a class="grey-text text-lighten-4 right" href="#!">More Links</a>-->
+                </div>
+              </div>
+        </footer>
+        
+    </body>
+      <!------------------------------------Configuración Parallax-->
+      <style type="text/css">
+            .parallax-container {
+            height: 600px;
+        }
+      </style>
+        <!------------------------------------Import jQuery before materialize.js-->
+        <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/materialize.js"></script>
+        <script src="js/materialize.min.js"></script>
+        <script src="js/init.js"></script>
+
+    </html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+      <title>Tiendita</title>
+      <meta charset="utf-8" />
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.min.css-->
+      <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>    
+      <!--Import CodePen--> 
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>   
+      <link type="text/css" rel="stylesheet" href="../css/css.css"  media="screen,projection"/>
+ </head>
+    
+<body>
+    <!-- -------------------------------PRELOADER-->
+    <div id="page-loader"><span class="preloader-interior"></span></div>
+    
+<!--------------------------------------------------------NAV BAR-->    
+    <nav class="navbar-material">
+        <div class="nav-wrapper red">
+            <a href="../index.html" class="brand-logo">
+                <img src="../img/Acuario%20Familia%20Logo%20Blanco-01.png">
+            </a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li><a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Family Aquarium</a></li>
+            </ul>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <!------------------------------------------- MENU DESPLEGABLE Dropdown Trigger -->
+                <li><a class='dropdown-button btn-flat white-text' href='#' data-activates='dropdown1'>Tienda</a></li>
+                    <!-------------------------------------- Dropdown Structure -->
+                      <ul id='dropdown1' class='dropdown-content'>
+                        <li><a href="../Perros.html">Perros</a></li>
+                        <li><a href="../Gatos.html">Gatos</a></li>
+                        <li><a href="../Aves.html">Aves</a></li>
+                        <li><a href="../Peces.html">Peces</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#!">TODOS</a></li>
+                      </ul>
+                <li><a href="#modal0" class="modal-trigger">CONTACTO</a></li>              
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--------------------------------------------------- MODAL CONTACTO -->
+    <div id="modal0" class="modal">
+        <div class="modal-content">
+            <h3 class="caption center-align" >Estamos a tus órdenes</h3>
+            <p style="text-align: justify;">En Acuario Familia sabemos que no sólo se trata de una mascota, sino de un integrante más de la familia. Por ello te ofrecemos artículos que cumplan con sus necesidades y que esten al alcance de todos los bolsillos.</p><p style="text-align: justify;">Si tienes dudas con algun producto, forma de pago o envío, contactanos</p>
+        </div>
+        <div class="row">
+            <div class="col s12 m6">
+            <p class="fa fa-envelope-o">&nbsp;acuariofamilia@gmail.com</p> 
+            </div>  
+            <div class="col s12 m6">
+            <p class="right-align fa fa-whatsapp">&nbsp;55-1374-7612</p>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+        </div>
+    </div>
+
+    <!---------------------------------------------------BOTON PRINCIPAL-->  
+    <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+        <a class="btn-floating btn-large red">
+            <i class="material-icons">cloud</i>
+        </a>
+        <ul>
+            <li><a href="../Perros.html" class="btn-floating btn-large red"><i class="animal">d</i></a></li>
+            <li><a href="../Gatos.html" class="btn-floating btn-large yellow darken-1"><i class="animal">c</i></a></li>
+            <li><a href="../Aves.html" class="btn-floating btn-large green"><i class="animal">z</i></a></li>
+            <li><a href="../Peces.html" class="btn-floating btn-large blue"><i class="animal">s</i></a></li>
+        </ul>
+    </div>
+    <!---------------------------------------------------Fonts para el boton principal-->
+    <style type="text/css">
+        @font-face {
+            font-family: "Garanimals";
+            src= url("../font/animals/GARANIMA.eot") /* EOT file for IE */
+        }
+        @font-face {
+            font-family: "Garanimals";
+            src: url("../font/animals/GARANIMA.TTF");
+        }
+        @font-face {
+            font-family: "Garanimals";
+            src: url("../font/animals/GARANIMA.otf");
+        }
+    </style>
+
+    <!-- -------------------------------TIENDA-->
+    <div style="text-align:center;">
+        <iframe align="middle" src="https://www.kichink.com/buy/575137/family-aquarium/3-sulfa-12-capsulas#.VoF5sBXhB1s" width="100%"  height="1020">
+        <p>Your browser does not support iframes.</p>
+        </iframe>
+    </div>
+
+</body>
+    <!-- -------------------------------SCRIPTS-->
+    <script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/materialize.js"></script>
+    <script src="../js/materialize.min.js"></script>
+    <script src="../js/init.js"></script>
+</html>

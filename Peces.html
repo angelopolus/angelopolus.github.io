@@ -1,0 +1,2037 @@
+<!DOCTYPE html>
+  <html>
+      
+    <head>
+      <title>Acuario Familia-Peces</title>
+      <meta charset="utf-8" />
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.min.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>    
+      <!--Import CodePen--> 
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>    
+    </head>
+    
+    <body>
+        <!-- -------------------------------PRELOADER 
+        <div id="page-loader">
+            <div class="progress">
+                <div class="indeterminate"></div>
+            </div>
+        </div>-->
+        <!--------------------------------------------------------NAV BAR-->    
+        <nav class="navbar-material">
+            <div class="nav-wrapper red">
+                <a href="index.html" class="brand-logo">
+                    <img src="img/Acuario%20Familia%20Logo%20Blanco-01.png">
+                </a>
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li><a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Family Aquarium</a></li>
+                </ul>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <!------------------------------------------- MENU DESPLEGABLE Dropdown Trigger -->
+                    <li><a class='dropdown-button btn-flat white-text' href='#' data-activates='dropdown1'>Tienda</a></li>
+                        <!-------------------------------------- Dropdown Structure -->
+                          <ul id='dropdown1' class='dropdown-content'>
+                            <li><a href="Perros.html">Perros</a></li>
+                            <li><a href="Gatos.html">Gatos</a></li>
+                            <li><a href="Aves.html">Aves</a></li>
+                            <li><a href="Peces.html">Peces</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#!">TODOS</a></li>
+                          </ul>
+                    <li><a href="#modal0" class="modal-trigger">CONTACTO</a></li>              
+                </ul>
+                <ul class="side-nav red white-text" id="mobile-demo">
+                   <li><a href="#modal0" class="modal-trigger">Contacto</a></li>               
+                   <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Dropdown<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+                        <!-------------------------------------- Dropdown Structure -->
+                          <ul id='dropdown2' class='dropdown-content'>
+                            <li><a href="Perros.html">Perros</a></li>
+                            <li><a href="Gatos.html">Gatos</a></li>
+                            <li><a href="Aves.html">Aves</a></li>
+                            <li><a href="Peces.html">Peces</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#!">TODOS</a></li>
+                          </ul>
+                </ul>
+            </div>
+        </nav>
+        
+        <!--------------------------------------------------- MODAL CONTACTO -->
+        <div id="modal0" class="modal">
+            <div class="modal-content">
+                <h3 class="caption center-align" >Estamos a tus órdenes</h3>
+                <p style="text-align: justify;">En Acuario Familia sabemos que no sólo se trata de una mascota, sino de un integrante más de la familia. Por ello te ofrecemos artículos que cumplan con sus necesidades y que esten al alcance de todos los bolsillos.</p><p style="text-align: justify;">Si tienes dudas con algun producto, forma de pago o envío, contactanos</p>
+            </div>
+            <div class="row">
+                <div class="col s12 m6">
+                <p class="fa fa-envelope-o">&nbsp;acuariofamilia@gmail.com</p> 
+                </div>  
+                <div class="col s12 m6">
+                <p class="right-align fa fa-whatsapp">&nbsp;55-1374-7612</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+            </div>
+        </div>
+        
+        <!---------------------------------------------------BOTON PRINCIPAL-->  
+        <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+            <a class="btn-floating btn-large red">
+                <i class="material-icons">cloud</i>
+            </a>
+            <ul>
+                <li><a href="Perros.html" class="btn-floating btn-large red"><i class="animal">d</i></a></li>
+                <li><a href="Gatos.html"class="btn-floating btn-large yellow darken-1"><i class="animal">c</i></a></li>
+                <li><a href="Aves.html"class="btn-floating btn-large green"><i class="animal">z</i></a></li>
+                <li><a href="Peces.html" class="btn-floating btn-large blue"><i class="animal">s</i></a></li>
+            </ul>
+        </div>
+        <!---------------------------------------------------Fonts para el boton principal-->
+        <style type="text/css">
+            @font-face {
+                font-family: "Garanimals";
+                src: url("font/animals/GARANIMA.eot") /* EOT file for IE */
+            }
+            @font-face {
+                font-family: "Garanimals";
+                src: url("font/animals/GARANIMA.TTF");
+            }
+            @font-face {
+                font-family: "Garanimals";
+                src: url("font/animals/GARANIMA.otf");
+            }
+        </style>
+        
+        <!--------------------------------------------------PARALLAX IMAGE-->
+        <div class="parallax-container">
+            <div class="parallax white-text center-align"><img src="img/PecesParallax.jpg"><h5>texto de prueba</h5></div>
+        </div>
+        
+        <!----------------------------------------------------------------------------TARJETAS-->  
+        <h1 class="caption center-align red-text"><b>¡</b>Nuevos Productos<b>!</b></h1> 
+        <div class="row">
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/AlgaeDiscs.html"><img src="img/ALIMENTO PARA PECES DE FONDO 70 GRS 700x500.png"></a>              
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo">Algae Discs</div>
+                        <p>Alimento Para Peces De Fondo 70 Grs</p>
+                        <div class="card-precio">$25.00</div>
+                    </div>
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="#modal1" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!-- Modal Structure -->
+                                <div id="modal1" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Algae Discs</h5>
+                                        <p>Alimento Para Peces De Fondo 70 Grs, ideal para peces Plecostomus "Limpiapeceras"</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="produc/AlgaeDiscs.html" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-shopping-cart"></i></a>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/AlimentoEspirulinaBoostLomas70Gr.html"><img src="img/ALIMENTO%20LOMAS%20SPIRULINA%20BOOST%2070%20GR%20700x500.png"></a>              
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo center-align" >Alimento Lomas Spirulina Boost 70gr</div>
+                        <p>Acentúa el color, promueve el crecimiento y estimula la respuesta inmune de los peces japoneses, cíclidos africanos, y peces vivíparos.</p>
+                        <div class="card-precio right-align">$19.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal2" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal2" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Alimento Lomas Spirulina Boost 70gr</h5>
+                                        <p style="text-align: left;"><b>Beneficios:</b></br>Acentúa el color, promueve el crecimiento y estimula la respuesta inmune de los peces japoneses, cíclidos africanos, y peces vivíparos.</p><p style="text-align: left;"><b>Análisis Garantizado:</b></br>Proteína Cruda Min. 34.0%</br>Grasa Cruda Min. 8.0%</br>Fibra Cruda Min. 4.0%</br>Humedad Min. 8.0%</p><p style="text-align: left;"><b>Características:</b></br>Alimento para peces herbívoros.</br>Alto contenido de alga espirulina</br>Adicionado con Vitamina C estabilizada y suplemento multivitamínico.</p><p style="text-align: justify;"><b>Ingredientes:</b> Espirulina, gluten de maíz, maíz entero, harina de trigo, germen de trigo, gluten de trigo, cascarilla de trigo, harina de linaza, harina de canola, harina de soya, concentrado de proteína de soya, proteína de chícharo, levadura de cerveza, harina de maíz, harina de arroz, harina de alfalfa, cebada molida, carbonato de calcio, aceite de soya, harina de espinaca, lecitina, L-Ascorbil-2fosfato (fuente de vitamina C), fosfato dicálcico, cloruro de colina, acetato de vitamina A, acetato de d-alfa tocoferol (fuente de vitamina E), Colecalciferol (fuente de vitamina D3), fosfato de calcio, biotina, hidrocloruro de piridoxina, etoxiquina, mononitrato de tiamina, ácido fólico, riboflavina, cianocobalamia (fuente de vitamina B12), óxido manganoso, óxido de zinc, carbonato ferroso, sulfato de cobre, sulfato de zinc, iodato de calcio, carbonato de colbato, selanito de sodio.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+
+                                <a href="produc/AlimentoEspirulinaBoostLomas70Gr.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/AlimentoCiclidosMedianosWardley90Gr.html"><img src="img/ALIMENTO%20P-CICLIDOS%20MEDIANOS%2090%20GRS%20700x500.png"></a>              
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo center-align" >Alimento Para Ciclidos Medianos 90Gr</div>
+                        <p>Altamente digestible y palatable, cumple con los requerimientos de energía, proteínas, vitaminas y minerales de sus peces.</p>
+                        <div class="card-precio right-align">$20.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal3" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal3" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Alimento Para Ciclidos Medianos 90Gr</h5>
+                                        <p style="text-align: justify;">Alimento para ciclidos mediano 90 gramos.</br><p style="text-align: justify;"><b>Características:</b></br>Alimento formulado para cíclidos medianos. Esta fórmula altamente digestible y palatable, cumple con los requerimientos de energía, proteínas, vitaminas y minerales de sus peces. Wardley Premium Cichlid Medium,
+contiene una forma estabilizada de vitamina C que auxilia en la cicatrización de heridas, aumenta la resistencia a las enfermedades y promueve el desarrollo normal de huesos y branquias.</br></br><b>Instrucciones de alimentación:</b></br>No ofrezca a los peces más de lo que puedan consumir en 3 minutos de 2 a 3 veces por día. No enturbia el agua se utiliza de acuerdo a las instrucciones.</br></br><b>Ingredientes:</b></br>Harina de soya, maíz molido, harina de pescado, trigo molido, gluten de maíz, aceite de pescado, harina de alfalfa, calcita, fosfato dicálcico, vitamina A, vitamina D3, vitamina E, vitamina B12, riboflavina, niacina, pantotenato de calcio, complejo bisulfito sodico de menadiona, ácido fólico, hidrocloruro de piridoxina, mononitrato de tiamina, biotina, sulfato férrico, sulfato de manganeso, sulfato de zinc, sulfato de cobre, carbonato de cobalto, yodato de potasio, selenito de sodio, levadura de cerveza, sal, betaina, espirulina, Lascorbilo-2-polifosfato, cloruro de colina</br></br><b>Análisis garantizado:</b></br>Proteína cruda. min. 33.0%</br>Grasa cruda. min. 2.5%</br>Fibra cruda. máx. 4.5%</br>Humedad. máx. 8.0%</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/AlimentoCiclidosMedianosWardley90Gr.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/AlimentoPecesTropicalesWardley90Gr.html"><img src="img/MINI%20PELLETS%20P-PECES%20TROPICALES%2090%20GRS%20700x500.png"></a>              
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo center-align" >Mini Pellets Para Peces Tropicales 90 Gr</div>
+                        <p>Alimento Premium para peces tropicales en bocados pequeños en forma de Crumbles</p>
+                        <div class="card-precio right-align">$20.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal4" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal4" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Mini Pellets Para Peces Tropicales 90 Gr</h5>
+                                        <p style="text-align: justify;">Alimento Premium para peces tropicales en bocados pequeños en forma de Crumbles</br></br><b>Características:</b></br>Wardley® Premium Tropical Slow Sinking Crumbles™ es el único alimento en su tipo que incrementa el colorido, específicamente balanceado y con nutrientes específicos para todos los peces tropicales.</br></br><b>Ventajas:</b></br>Wardley® Premium Tropical Slow Sinking Crumbles™ es un alimento que se sumerge lentamente considerado las necesidades de los peces que comen en la superficie, las aguas medias y del fondo.</br></br><b>Modo de uso:</b></br>Alimento no con más de lo que puedan consumir sus peces durante cinco minutos. Para peces que están dentro de la casa en un acuario alimentar una o dos veces al día. Para peces que están en el exterior en estanques deben alimentarse dos o tres veces al día si la temperatura del agua excede los 10 °, no enturbia el agua cuando se suministra</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+
+                                <a href="produc/AlimentoPecesTropicalesWardley90Gr.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/GoldfishPelletsWardley90Gr.html"><img src="img/JAPONES%20PELLETS%20350%20GRS%20700x500.png"></a>           
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo center-align" >Pellets Para Peces Japones 90 Gr</div>
+                        <p>Ofrece una nutrición superior y brillantes coloraciones a los peces japoneses</p>
+                        <div class="card-precio right-align">$20.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal5" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal5" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Pellets Para Peces Japones 90 Gr</h5>
+                                        <p style="text-align: justify;">Ofrece una nutrición superior y brillantes coloraciones a los peces japoneses, son pellets flotantes en bocados medianos. Es de tamaño adecuado y contiene todos los nutrientes que sus peces necesitan para crecer y desarrollarse de manera correcta.</br></br><b>Instrucciones de alimentación:</b></br>Alimente con no más de lo que puedan comer durante cinco minutos. Para peces que están dentro de la casa en un acuario, alimentar una o dos veces al día. Para peces que están en el exterior en estanques deben alimentarse dos o tres veces al día si la temperatura del agua excede los 10°C (50°F). No enturbia el agua cuando se suministra adecuadamente.</br></br><b>Ingredientes:</b></br>Pasta de soya, harina de pescado, maíz amarillo, sorgo, salvado de arroz, aceite de soya, aceite de pescado, suplemento vitamina A, suplemento vitamina D3, suplemento vitamina E, tiamina, bisulfito sódico de menadiona, riboflavina, pirodoxina, acido pantotenico, niacina, acido fólico, vitamina B12, cloruro de colina, vitamina C estabilizada, magnesio, hierro, zinc, cobre, cobalto, selenio y antioxidantes BHA o ETQ.</br></br><b>Análisis garantizado:</b></br>Proteína cruda min. 35.0%</br>Grasa cruda min. 4.0%</br>Fibra cruda max. 5.0%</br>Humedad max. 12.0%</br>Cenizas max. 10.0%</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/GoldfishPelletsWardley90Gr.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/AlimentoPecesTropicalesWardley350Gr.html"><img src="img/MINI%20PELLETS%20P-PECES%20TROPICALES%20350%20GRS.png"></a>              
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo center-align" >Mini Pellets Para Peces Tropicales 350 Gr</div>
+                        <p>Alimento Premium para peces tropicales en bocados pequeños en forma de Crumbles</p>
+                        <div class="card-precio right-align">$62.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal6" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal6" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Mini Pellets Para Peces Tropicales 350 Gr</h5>
+                                        <p style="text-align: justify;">Alimento Premium para peces tropicales en bocados pequeños en forma de Crumbles</br></br><b>Características:</b></br>Wardley® Premium Tropical Slow Sinking Crumbles™ es el único alimento en su tipo que incrementa el colorido, específicamente balanceado y con nutrientes específicos para todos los peces tropicales.</br></br><b>Ventajas:</b></br>Wardley® Premium Tropical Slow Sinking Crumbles™ es un alimento que se sumerge lentamente considerado las necesidades de los peces que comen en la superficie, las aguas medias y del fondo.</br></br><b>Modo de uso:</b></br>Alimento no con más de lo que puedan consumir sus peces durante cinco minutos. Para peces que están dentro de la casa en un acuario alimentar una o dos veces al día. Para peces que están en el exterior en estanques deben alimentarse dos o tres veces al día si la temperatura del agua excede los 10 °, no enturbia el agua cuando se suministra</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+
+                                <a href="produc/AlimentoPecesTropicalesWardley350Gr.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/GoldfishPelletsWardley350Gr.html"><img src="img/JAPONES%20PELLETS%20350%20GRS.png"></a>           
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo center-align" >Pellets Para Peces Japones 350 Gr</div>
+                        <p>Ofrece una nutrición superior y brillantes coloraciones a los peces japoneses</p>
+                        <div class="card-precio right-align">$54.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal7" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal7" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Pellets Para Peces Japones 350 Gr</h5>
+                                        <p style="text-align: justify;">Ofrece una nutrición superior y brillantes coloraciones a los peces japoneses, son pellets flotantes en bocados medianos. Es de tamaño adecuado y contiene todos los nutrientes que sus peces necesitan para crecer y desarrollarse de manera correcta.</br></br><b>Instrucciones de alimentación:</b></br>Alimente con no más de lo que puedan comer durante cinco minutos. Para peces que están dentro de la casa en un acuario, alimentar una o dos veces al día. Para peces que están en el exterior en estanques deben alimentarse dos o tres veces al día si la temperatura del agua excede los 10°C (50°F). No enturbia el agua cuando se suministra adecuadamente.</br></br><b>Ingredientes:</b></br>Pasta de soya, harina de pescado, maíz amarillo, sorgo, salvado de arroz, aceite de soya, aceite de pescado, suplemento vitamina A, suplemento vitamina D3, suplemento vitamina E, tiamina, bisulfito sódico de menadiona, riboflavina, pirodoxina, acido pantotenico, niacina, acido fólico, vitamina B12, cloruro de colina, vitamina C estabilizada, magnesio, hierro, zinc, cobre, cobalto, selenio y antioxidantes BHA o ETQ.</br></br><b>Análisis garantizado:</b></br>Proteína cruda min. 35.0%</br>Grasa cruda min. 4.0%</br>Fibra cruda max. 5.0%</br>Humedad max. 12.0%</br>Cenizas max. 10.0%</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/GoldfishPelletsWardley350Gr.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/AlimentoFinDeSemana.html"><img src="img/ALIMENTO%20DE%20FIN%20DE%20SEMANA%20700x500.png"></a>           
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo center-align" >Alimento de fin de semana</div>
+                        <p>Alimenta automáticamente peces dorados y tropicales hasta por 3 días.</p>
+                        <div class="card-precio right-align">$50.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal8" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal8" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Alimento de fin de semana</h5>
+                                        <p style="text-align: justify;">Alimenta automáticamente peces dorados y tropicales hasta por 3 días</br></br><b>Instrucciones de alimentación:</b></br>Ponga la concha de Wardley® Weekend Feeder™ en su acuario antes de salir de vacaciones. Se disolverá lentamente liberando en el agua pequeñas partículas de alimento, impregnadas a través de la concha. Una concha puede alimentar hasta 3 días de 10 a 12 peces de talla mediana en un acuario de 37 a 56 litros, dependiendo del pH y de la temperatura del agua. Para mejores resultados, la temperatura del agua tendría que ser de 22°C o superior y el pH comprendido entre 6.8 y 7.2.</br>NOTA: Wardley® Weekend Feeder™ no se disolverá de modo satisfactorio si la alcalinidad del agua es muy alta. Cuando vuelva a casa, remueva del acuario toda porción no usada y deposítela en la basura. Wardley® Weekend Feeder™ debe ser usado en acuarios dotados de sistema de filtración y oxigenación, ya que el agua tiene que estar en constante movimiento para que la concha se disuelva de modo apropiado.</br></br><b>Ingredientes:</b></br>Sulfato de calcio, sal yodada, almidón de maíz, maíz molido, harina de pescado, harina de soya, harina de gluten de maíz, harina de germen de trigo, harina de alfalfa deshidratada, levadura de cerveza deshidratada, harina de camarón, trigo molido, aceite de pescado, betaina, L-ascorbilo-2-polifosfato, etoxiquina (como conservador), suplemento de vitamina A, suplemento de vitamina D3, suplemento de vitamina E, suplemento de niacina, pantotenato cálcico, mononitrato de tiamina, suplemento de riboflavina, clorhidrato de piridoxina, complejo de bisulfito sódico de menadiona, acido fólico, biotina, suplemento de vitamina B12, sulfato de hierro, sulfato de zinc, sulfato de manganeso, sulfato de cobre, yodato de potasio, selenita de sodio y carbonato de cobalto.</br>Análisis garantizado:</br></br>Proteína cruda min. 1.10%</br>Grasa cruda min. 0.20%</br>Fibra cruda max. 1%</br>Humedad max. 19%</br>Calcio min. 19%</br>Calcio max. 22%</br>Fosforo min. 0.04%</br>Fosforo max. 0.10%</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/AlimentoFinDeSemana.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/AlimentoDeVacacionesValuPack.html"><img src="img/ALIMENTO%20DE%20VACACIONES%20VALU-PACK%20700x500.png"></a>           
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo center-align" >Alimento De Vacaciones Valu-Pack</div>
+                        <p>Alimenta automáticamente peces dorados y tropicales hasta por 10 días.</p>
+                        <div class="card-precio right-align">$58.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal9" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal9" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Alimento De Vacaciones Valu-Pack</h5>
+                                        <p style="text-align: justify;"Alimenta automáticamente peces dorados y tropicales hasta por 10 días.</br></br><b>Instrucciones de alimentación: </b></br>Ponga la concha de Wardley® Vacation Food™ en su acuario antes de salir de vacaciones. Se disolverá lentamente liberando en el agua pequeñas partículas de alimento, impregnadas a través de la concha. Una concha puede alimentar hasta 10 días de 10 a 12 peces de talla mediana en un acuario de 37 a 56 litros, dependiendo del pH y de la temperatura del agua. Para mejores resultados, la temperatura del agua tendría que ser de 22°C o superior y el pH comprendido entre 6.8 y 7.2.</br>NOTA: Wardley® Vacation Food™ no se disolverá de modo satisfactorio si la alcalinidad del agua es muy alta. Cuando vuelva a casa, remueva del acuario toda porción no usada y deposítela en la basura. Wardley® Vacation Food™ debe ser usado en acuarios dotados de sistema de filtración y oxigenación, ya que el agua tiene que estar en constante movimiento para que la concha se disuelva de modo apropiado.</br></br><b>Ingredientes:</b></br>Sulfato de calcio, sal yodada, almidón de maíz, maíz molido, harina de pescado, harina de soya, harina de gluten de maíz, harina de germen de trigo, harina de alfalfa deshidratada, levadura de cerveza deshidratada, harina de camarón, trigo molido, aceite de pescado, betaina, L-ascorbilo-2-polifosfato, etoxiquina (como conservador), suplemento de vitamina A, suplemento de vitamina D3, suplemento de vitamina E, suplemento de niacina, pantotenato cálcico, mononitrato de tiamina, suplemento de riboflavina, clorhidrato de piridoxina, complejo de bisulfito sódico de menadiona, acido fólico, biotina, suplemento de vitamina B12, sulfato de hierro, sulfato de zinc, sulfato de manganeso, sulfato de cobre, yodato de potasio, selenita de sodio y carbonato de cobalto.</br>Análisis garantizado:</br></br>Proteína cruda min. 1.10%</br>Grasa cruda min. 0.20%</br>Fibra cruda max. 1%</br>Humedad max. 19%</br>Calcio min. 19%</br>Calcio max. 22%</br>Fosforo min. 0.04%</br>Fosforo max. 0.10%</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/AlimentoDeVacacionesValuPack.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/AlimentoDeVacaciones.html"><img src="img/ALIMENTO%20DE%20VACACIONES%20700X500.png"></a>           
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo center-align" >Alimento De Vacaciones</div>
+                        <p>Alimenta automáticamente peces dorados y tropicales hasta por 10 días.</p>
+                        <div class="card-precio right-align">$38.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal10" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal10" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Alimento De Vacaciones</h5>
+                                        <p style="text-align: justify;"Alimenta automáticamente peces dorados y tropicales hasta por 10 días.</br></br><b>Instrucciones de alimentación: </b></br>Ponga la concha de Wardley® Vacation Food™ en su acuario antes de salir de vacaciones. Se disolverá lentamente liberando en el agua pequeñas partículas de alimento, impregnadas a través de la concha. Una concha puede alimentar hasta 10 días de 10 a 12 peces de talla mediana en un acuario de 37 a 56 litros, dependiendo del pH y de la temperatura del agua. Para mejores resultados, la temperatura del agua tendría que ser de 22°C o superior y el pH comprendido entre 6.8 y 7.2.</br>NOTA: Wardley® Vacation Food™ no se disolverá de modo satisfactorio si la alcalinidad del agua es muy alta. Cuando vuelva a casa, remueva del acuario toda porción no usada y deposítela en la basura. Wardley® Vacation Food™ debe ser usado en acuarios dotados de sistema de filtración y oxigenación, ya que el agua tiene que estar en constante movimiento para que la concha se disuelva de modo apropiado.</br></br><b>Ingredientes:</b></br>Sulfato de calcio, sal yodada, almidón de maíz, maíz molido, harina de pescado, harina de soya, harina de gluten de maíz, harina de germen de trigo, harina de alfalfa deshidratada, levadura de cerveza deshidratada, harina de camarón, trigo molido, aceite de pescado, betaina, L-ascorbilo-2-polifosfato, etoxiquina (como conservador), suplemento de vitamina A, suplemento de vitamina D3, suplemento de vitamina E, suplemento de niacina, pantotenato cálcico, mononitrato de tiamina, suplemento de riboflavina, clorhidrato de piridoxina, complejo de bisulfito sódico de menadiona, acido fólico, biotina, suplemento de vitamina B12, sulfato de hierro, sulfato de zinc, sulfato de manganeso, sulfato de cobre, yodato de potasio, selenita de sodio y carbonato de cobalto.</br>Análisis garantizado:</br></br>Proteína cruda min. 1.10%</br>Grasa cruda min. 0.20%</br>Fibra cruda max. 1%</br>Humedad max. 19%</br>Calcio min. 19%</br>Calcio max. 22%</br>Fosforo min. 0.04%</br>Fosforo max. 0.10%</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/AlimentoDeVacaciones.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/HojuelaGoldfishWardley10Gr.html"><img src="img/WARDLEY%20GOLDFISH%20FLAKES%2010%20GRS%20700x500.png"></a>           
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo center-align" >Wardley Goldfish Flakes 10 Gr.</div>
+                        <p>Alimento en hojuelas para peces japoneses.</p>
+                        <div class="card-precio right-align">$8.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal11" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal11" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Wardley Goldfish Flakes 10 Gr.</h5>
+                                        <p style="text-align: justify;">Alimento en hojuelas para peces japoneses.</br></br><b>Características: </b></br>Ofrece una nutrición superior y brillantes coloraciones a los peces japoneses, contiene todos los nutrientes que sus peces necesitan para crecer y desarrollarse de manera correcta.</br></br><b>Instrucciones de alimentación:</b></br>Alimente dos veces al día, con no más de lo que puedan comer durante tres minutos. No enturbia el agua cuando se suministra adecuadamente.</br></br><b>Ingredientes:</b></br>Harina de pescado, harina de trigo, concentrado de proteína de soya, harina de gluten de trigo, harina de gluten de maíz, harina de arenque, levadura de cerveza, aceite de pescado, concentrado de proteína de chícharo, harina de germen de trigo, harina de camarón, harina de alfalfa deshidratada, lecitina, harina de cangrejo, sulfato de lignina, goma xantan, L-ascorbil-2-polifosfato, semilla de anísmolida, cloruro de colina, suplemento de vit. A, suplemento de vit. D3, suplemento de vit. E, etoxiquina (como conservador), suplemento de riboflavina, suplemento de niacina, pantotenato de calcio, complejo de menadiona bisulfito de sodio, acido fólico, hidrocloruro de piridoxina, mononitrato de tiamina, biotina, suplemento de vit. B12, sulfato ferroso, sulfato de zinc, sulfato de cobre, sulfato de manganeso, carbonato de cobalto, yodato de potasio, selenito de sodio, colorante (amarillo 6, rojo 40).</br>Análisis garantizado:</br>Proteína cruda. min. 35.0%</br>Grasa cruda. min. 5.0%</br>Fibra cruda. máx. 3.0%</br>Humedad. máx. 10.0%</br>Cenizas. min. 200mg/kg</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/HojuelaGoldfishWardley10Gr.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/HojuelaGoldfishWardley20Gr.html"><img src="img/WARDLEY%20GOLDFISH%20FLAKES%2020%20GRS%20700x500.png"></a>           
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo center-align" >Wardley Goldfish Flakes 20 Gr.</div>
+                        <p>Alimento en hojuelas para peces japoneses.</p>
+                        <div class="card-precio right-align">$12.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal12" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal12" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Wardley Goldfish Flakes 20 Gr.</h5>
+                                        <p style="text-align: justify;">Alimento en hojuelas para peces japoneses.</br></br><b>Características: </b></br>Ofrece una nutrición superior y brillantes coloraciones a los peces japoneses, contiene todos los nutrientes que sus peces necesitan para crecer y desarrollarse de manera correcta.</br></br><b>Instrucciones de alimentación:</b></br>Alimente dos veces al día, con no más de lo que puedan comer durante tres minutos. No enturbia el agua cuando se suministra adecuadamente.</br></br><b>Ingredientes:</b></br>Harina de pescado, harina de trigo, concentrado de proteína de soya, harina de gluten de trigo, harina de gluten de maíz, harina de arenque, levadura de cerveza, aceite de pescado, concentrado de proteína de chícharo, harina de germen de trigo, harina de camarón, harina de alfalfa deshidratada, lecitina, harina de cangrejo, sulfato de lignina, goma xantan, L-ascorbil-2-polifosfato, semilla de anísmolida, cloruro de colina, suplemento de vit. A, suplemento de vit. D3, suplemento de vit. E, etoxiquina (como conservador), suplemento de riboflavina, suplemento de niacina, pantotenato de calcio, complejo de menadiona bisulfito de sodio, acido fólico, hidrocloruro de piridoxina, mononitrato de tiamina, biotina, suplemento de vit. B12, sulfato ferroso, sulfato de zinc, sulfato de cobre, sulfato de manganeso, carbonato de cobalto, yodato de potasio, selenito de sodio, colorante (amarillo 6, rojo 40).</br>Análisis garantizado:</br>Proteína cruda. min. 35.0%</br>Grasa cruda. min. 5.0%</br>Fibra cruda. máx. 3.0%</br>Humedad. máx. 10.0%</br>Cenizas. min. 200mg/kg</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/HojuelaGoldfishWardley20Gr.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/HojuelaGoldfishWardley30Gr.html"><img src="img/WARDLEY%20GOLDFISH%20FLAKES%2030%20GRS%20700x500.png"></a>           
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo center-align" >Wardley Goldfish Flakes 30 Gr.</div>
+                        <p>Alimento en hojuelas para peces japoneses.</p>
+                        <div class="card-precio right-align">$16.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal13" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal13" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Wardley Goldfish Flakes 30 Gr.</h5>
+                                        <p style="text-align: justify;">Alimento en hojuelas para peces japoneses.</br></br><b>Características: </b></br>Ofrece una nutrición superior y brillantes coloraciones a los peces japoneses, contiene todos los nutrientes que sus peces necesitan para crecer y desarrollarse de manera correcta.</br></br><b>Instrucciones de alimentación:</b></br>Alimente dos veces al día, con no más de lo que puedan comer durante tres minutos. No enturbia el agua cuando se suministra adecuadamente.</br></br><b>Ingredientes:</b></br>Harina de pescado, harina de trigo, concentrado de proteína de soya, harina de gluten de trigo, harina de gluten de maíz, harina de arenque, levadura de cerveza, aceite de pescado, concentrado de proteína de chícharo, harina de germen de trigo, harina de camarón, harina de alfalfa deshidratada, lecitina, harina de cangrejo, sulfato de lignina, goma xantan, L-ascorbil-2-polifosfato, semilla de anísmolida, cloruro de colina, suplemento de vit. A, suplemento de vit. D3, suplemento de vit. E, etoxiquina (como conservador), suplemento de riboflavina, suplemento de niacina, pantotenato de calcio, complejo de menadiona bisulfito de sodio, acido fólico, hidrocloruro de piridoxina, mononitrato de tiamina, biotina, suplemento de vit. B12, sulfato ferroso, sulfato de zinc, sulfato de cobre, sulfato de manganeso, carbonato de cobalto, yodato de potasio, selenito de sodio, colorante (amarillo 6, rojo 40).</br>Análisis garantizado:</br>Proteína cruda. min. 35.0%</br>Grasa cruda. min. 5.0%</br>Fibra cruda. máx. 3.0%</br>Humedad. máx. 10.0%</br>Cenizas. min. 200mg/kg</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/HojuelaGoldfishWardley30Gr.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/KitReparacionBombaOptima.html"><img src="img/KIT%20REPAR.%20P-BOMBA%20OPTIMA%20700x500.png"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Kit Reparación Para Bomba Óptima</div>
+                        <p>Kit de reparación para bomba Optima, Maxima y Maxina-R.</p>
+                        <div class="card-precio right-align">$88.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal14" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal14" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Kit Reparación Para Bomba Óptima</h5>
+                                        <p style="text-align: justify;">Kit de reparación para bomba Optima, Maxima y Maxina-R.</br></br><b>Beneficios: </b></br>Alarga la vida útil de las bombas elite Optima, Maxima y Maxima-R.</br></br><b>Características: </b></br>Fabricado con materiales resistentes.</br></br><b>Mantenimiento: </b></br>Renueve el diafragma y válvulas de las bombas Optima, Maxima y Maxima-R cada que el equipo lo requiera.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/KitReparacionBombaOptima.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/KitReparacionBombaElite.html"><img src="img/KIT%20REPARACION%20P-BOMBA%20ELITE%20700x500.png"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align">Kit Reparación Para Bomba Elite</div>
+                        <p>Kit de reparación para bomba elite 800/801/802.</p>
+                        <div class="card-precio right-align">$22.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal15" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal15" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Kit Reparación Para Bomba Elite</h5>
+                                        <p style="text-align: justify;">Kit de reparación para bomba elite 800/801/802.</br></br><b>Beneficios: </b></br>Alarga la vida útil de las bombas elite 800/801/802.</br></br><b>Características: </b></br>Fabricado con materiales resistentes.</br></br><b>Mantenimiento: </b></br>Renueve el diafragma y válvulas de las bombas 800/801/802 cada que el equipo lo requiera.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/KitReparacionBombaElite.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/KitReparacionBombaElite799.html"><img src="img/KIT%20REPARACION%20P-BOMBA%20799%20700x500.png"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align">Kit Reparación Para Bomba Elite 799</div>
+                        <p>Kit de reparación para bomba elite 799.</p>
+                        <div class="card-precio right-align">$22.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal16" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal16" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Kit Reparación Para Bomba Elite 799</h5>
+                                        <p style="text-align: justify;">Kit de reparación para bomba elite 799.</br></br><b>Beneficios: </b></br>Alarga la vida útil de las bombas elite 799.</br></br><b>Características: </b></br>Fabricado con materiales resistentes.</br></br><b>Mantenimiento: </b></br>Renueve el diafragma y válvulas de las bombas 799 cada que el equipo lo requiera.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/KitReparacionBombaElite799.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/LimpiadorMagneticoHagenCh.html"><img src="img/LIMPIADOR%20MAGNETICO%20CHICO%20700x500.png"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Limpiador Magnético Hagen Chico</div>
+                        <p>Quita con facilidad las algas del cristal del acuario.</p>
+                        <div class="card-precio right-align">$119.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal17" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal17" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Limpiador Magnético Hagen Chico</h5>
+                                        <p style="text-align: justify;">Quita con facilidad las algas del cristal del acuario. Almohadilla muy resistente con adhesivo permanente. Para acuarios de vidrio únicamente. Los potentes imanes aseguran un agarre firme en el vidrio, por lo que no es necesario introducir las manos en el acuario.</br></br><b>Modo de uso: </b></br>Utilizar los extremos del hilo e insertarlos en los orificios que se encuentran en los extremos de ambos imanes. Sujetar el hilo en su parte media e introducir el imán con la superficie áspera dentro del acuario, mientras que el imán con la superficie suave se permanece en el exterior, la fuerza magnética hará que ambos imanes se unan. Posteriormente se deberá desplazar el imán que se encuentra en el exterior por todo el vidrio del acuario, de esta manera el imán que se encuentra dentro limpie el alga adherida a las paredes del mismo.</br></br><b>Beneficios: </b></br>Puede utilizarse en acuarios marinos o dulces.</br>No raya el cristal del acuario.</br>El imán no afecta la calidad del agua.</br></br><b>Medidas: </b></br>6cm x 2.5cm</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/LimpiadorMagneticoHagenCh.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/LimpiadorMagneticoHagenGr.html"><img src="img/LIMPIADOR%20MAGNETICO%20GRANDE%20700x500.png"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Limpiador Magnético Hagen Grande</div>
+                        <p>Quita con facilidad las algas del cristal del acuario.</p>
+                        <div class="card-precio right-align">$189.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal18" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal18" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Limpiador Magnético Hagen Gr</h5>
+                                        <p style="text-align: justify;">Quita con facilidad las algas del cristal del acuario. Almohadilla muy resistente con adhesivo permanente. Para acuarios de vidrio únicamente. Los potentes imanes aseguran un agarre firme en el vidrio, por lo que no es necesario introducir las manos en el acuario.</br></br><b>Modo de uso: </b></br>Utilizar los extremos del hilo e insertarlos en los orificios que se encuentran en los extremos de ambos imanes. Sujetar el hilo en su parte media e introducir el imán con la superficie áspera dentro del acuario, mientras que el imán con la superficie suave se permanece en el exterior, la fuerza magnética hará que ambos imanes se unan. Posteriormente se deberá desplazar el imán que se encuentra en el exterior por todo el vidrio del acuario, de esta manera el imán que se encuentra dentro limpie el alga adherida a las paredes del mismo.</br></br><b>Beneficios: </b></br>Puede utilizarse en acuarios marinos o dulces.</br>No raya el cristal del acuario.</br>El imán no afecta la calidad del agua.</br></br><b>Medidas: </b></br>10.5cm x 2.5cm</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/LimpiadorMagneticoHagenGr.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/LimpiadorMagneticoHagenExGr.html"><img src="img/LIMPIADOR%20MAGNETICO%20EXTRA%20GRANDE%20700x500.png"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Limpiador Magnético Hagen Extra Grande</div>
+                        <p>Quita con facilidad las algas del cristal del acuario.</p>
+                        <div class="card-precio right-align">$328.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal19" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal19" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Limpiador Magnético Hagen Extra Gr</h5>
+                                        <p style="text-align: justify;">Quita con facilidad las algas del cristal del acuario. Almohadilla muy resistente con adhesivo permanente. Para acuarios de vidrio únicamente. Los potentes imanes aseguran un agarre firme en el vidrio, por lo que no es necesario introducir las manos en el acuario.</br></br><b>Modo de uso: </b></br>Utilizar los extremos del hilo e insertarlos en los orificios que se encuentran en los extremos de ambos imanes. Sujetar el hilo en su parte media e introducir el imán con la superficie áspera dentro del acuario, mientras que el imán con la superficie suave se permanece en el exterior, la fuerza magnética hará que ambos imanes se unan. Posteriormente se deberá desplazar el imán que se encuentra en el exterior por todo el vidrio del acuario, de esta manera el imán que se encuentra dentro limpie el alga adherida a las paredes del mismo.</br></br><b>Beneficios: </b></br>Puede utilizarse en acuarios marinos o dulces.</br>No raya el cristal del acuario.</br>El imán no afecta la calidad del agua.</br></br><b>Medidas: </b></br>8.5 cm x 4 cm x 6 cm</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/LimpiadorMagneticoHagenExGr.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/RedMallaGruesaGAL5Pul.html"><img src="img/RED%20DE%20MALLA%20GRUESA%205%20700x500.png"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Red De Malla Gruesa 5”</div>
+                        <p>Red de malla resistente y elastica que facilita el manejo de peces de tamaño mediano, seca rapido, con mango plastificado que evita la oxidacion.</p>
+                        <div class="card-precio right-align">$14.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal20" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal20" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Red De Malla Gruesa 5”</h5>
+                                        <p style="text-align: justify;">Red de malla resistente y elastica que facilita el manejo de peces de tamaño mediano, seca rapido, con mango plastificado que evita la oxidacion.</br></br><b>Ventajas: </b></br>Fuerte y flexible.</br>Practica y facil de limpiar.</br>Elaborada con materiales suaves que no lastiman la mucosa de los peces</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/RedMallaGruesaGAL5Pul.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/RedMallaGruesaGAL4Pul.html"><img src="img/RED%20DE%20MALLA%20GRUESA%204%20700x500.png"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Red De Malla Gruesa 4”</div>
+                        <p>Red de malla resistente y elastica que facilita el manejo de peces de tamaño mediano, seca rapido, con mango plastificado que evita la oxidacion.</p>
+                        <div class="card-precio right-align">$12.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal21" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal21" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Red De Malla Gruesa 4”</h5>
+                                        <p style="text-align: justify;">Red de malla resistente y elastica que facilita el manejo de peces de tamaño mediano, seca rapido, con mango plastificado que evita la oxidacion.</br></br><b>Ventajas: </b></br>Fuerte y flexible.</br>Practica y facil de limpiar.</br>Elaborada con materiales suaves que no lastiman la mucosa de los peces</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/RedMallaGruesaGAL4Pul.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/RedMallaGruesaGAL3Pul.html"><img src="img/RED%20DE%20MALLA%20GRUESA%203Pulg%20700x500.png"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Red De Malla Gruesa 3”</div>
+                        <p>Red de malla resistente y elastica que facilita el manejo de peces de tamaño mediano, seca rapido, con mango plastificado que evita la oxidacion.</p>
+                        <div class="card-precio right-align">$11.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal22" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal22" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Red De Malla Gruesa 3”</h5>
+                                        <p style="text-align: justify;">Red de malla resistente y elastica que facilita el manejo de peces de tamaño mediano, seca rapido, con mango plastificado que evita la oxidacion.</br></br><b>Ventajas: </b></br>Fuerte y flexible.</br>Practica y facil de limpiar.</br>Elaborada con materiales suaves que no lastiman la mucosa de los peces</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/RedMallaGruesaGAL3Pul.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/FungusCure12CapsulasGAL.html"><img src="img/FUNGUS%20CURE%20-%2012%20CAPSULAS%20700x500.png"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Fungus Cure 12 Capsulas</div>
+                        <p>Tratamiento efectivo para enfermedades provocadas por hongos (Saprolegnia Achlya), algodoncillo, limo en la piel, nube en el ojo y cola podrida.</p>
+                        <div class="card-precio right-align">$49.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal23" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal23" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Fungus Cure 12 Capsulas</h5>
+                                        <p style="text-align: justify;">Tratamiento efectivo para enfermedades provocadas por hongos (Saprolegnia Achlya), algodoncillo, limo en la piel, nube en el ojo y cola podrida. Controla rápidamente el contagio por hongos y las enfermedades bacterianas secundarias. Ayuda a prevenir el crecimiento de hongos en los huevecillos antes de la eclosión. Para uso en acuarios de agua dulce únicamente.</br></br><b>Modo de uso:</b></br>Retire el carbón activado del filtro y continúe con la aireación. Vierta el contenido de una capsula por cada 20 lts de agua del acuario (5 gal). Espere 48 horas y repita la dosis. Espere otras 48 horas, cambie al manos un 25% del agua del acuario y reanude la filtración con carbón activado nuevo. Si usted mantiene en su acuario peces gato (familia Corydora) o peces de los llamados “sin escamas” como las lochas, los bagres y las anguilas, utilice este medicamento a la mitad de la dosis por el doble de tiempo.</br></br><b>Advertencias:</b></br>Para uso exclusivo en peces de ornato. Manténgase fuera del alcance de los niños o mascotas. En caso de ingestión, consulte a su medico. Manténgase en un lugar seco y fresco.</br></br><b>Formula:</b></br>Verde de malaquita 1.8 mg.</br>Acriflavina neutra 15 mg.</br>Excipiente c.b.p. 1 cap.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/FungusCure12CapsulasGAL.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/GeneralCure12CapsulasGAL.html"><img src="img/GENERAL%20CURE%20-%2012%20CAPSULAS%20700x500.png"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >General Cure 12 Capsulas</div>
+                        <p>Tratamiento efectivo contra una gran variedad de enfermedades parasitarias como el terciopelo, laernaea, piojos, enfermedad del hoyo en la cabeza (Hexamita y Spironucleus), lombrices de branquias y piel (trematodos).</p>
+                        <div class="card-precio right-align">$59.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal24" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal24" class="modal">
+                                    <div class="modal-content">
+                                        <h5>General Cure 12 Capsulas</h5>
+                                        <p style="text-align: justify;">Tratamiento efectivo contra una gran variedad de enfermedades parasitarias como el terciopelo, laernaea, piojos, enfermedad del hoyo en la cabeza (Hexamita y Spironucleus), lombrices de branquias y piel (trematodos). Para uso en acuarios de agua dulce o marina.</br></br><b>Modo de uso:</b></br>Retire el carbón activado del filtro y continúe con la aireación. Vierta el contenido de una capsula por cada 20 lts de agua del acuario (5 gal). Espere 48 horas y repita la dosis. Espere otras 48 horas, cambie al manos un 25% del agua del acuario y reanude la filtración con carbón activado nuevo.</br></br><b>Advertencias:</b></br>Para uso exclusivo en peces de ornato. Manténgase fuera del alcance de los niños o mascotas. En caso de ingestión, consulte a su medico. Manténgase en un lugar seco y fresco.</br></br><b>Formula:</b></br>Metronidazol 125 mg.</br>Praziquantel 37.5 mg.Excipiente c.b.p. 1 cap.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/GeneralCure12CapsulasGAL.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/SuperIchCure12CapsulasGAL.html"><img src="img/SUPER%20ICH%20CURE%20-%2012%20CAPSULAS%20700x500.png"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Super Ich Cure 12 Capsulas</div>
+                        <p>Para el tratamiento del Ich o punto blanco, una enfermedad altamente contagiosa en acuarios. Elimina rápidamente el parasito del Ich, por lo general en 24 horas. También ayuda a combatir enfermedades bacterianas secundarias.</p>
+                        <div class="card-precio right-align">$49.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal25" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal25" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Super Ich Cure 12 Capsulas</h5>
+                                        <p style="text-align: justify;">Para el tratamiento del Ich o punto blanco, una enfermedad altamente contagiosa en acuarios. Elimina rápidamente el parasito del Ich, por lo general en 24 horas. También ayuda a combatir enfermedades bacterianas secundarias.</br></br><b>Modo de uso:</b></br>Retire el carbón activado del filtro y continúe con la aireación. Vierta el contenido de una capsula por cada 20 lts de agua del acuario (5 gal). Espere 48 horas y repita la dosis. Espere otras 48 horas, cambie al manos un 25% del agua del acuario y reanude la filtración con carbón activado nuevo. Si usted mantiene en su acuario peces gato (familia Corydora) o peces de los llamados “sin escamas” como las lochas, los bagres y las anguilas, utilice este medicamento a la mitad de la dosis por el doble de tiempo.</br></br><b>Advertencias:</b></br>Para uso exclusivo en peces de ornato. Manténgase fuera del alcance de los niños o mascotas. En caso de ingestión, consulte a su medico. Manténgase en un lugar seco y fresco.</br></br><b>Formula:</b></br>Verde de malaquita 1.8 mg.</br>Nitrofurazona 30 mg.</br>Excipiente c.b.p. 1 cap.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/SuperIchCure12CapsulasGAL.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/TC12CapsulasGAL.html"><img src="img/T.C.%20-%2012%20CAPSULAS%20700x500.png"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >T.C. - 12 Capsulas</div>
+                        <p>Para el tratamiento de enfermedades comunes de los peces tropicales como la cola podrida, algodoncillo, hongos en la boca y enfermedad bacteriana de las branquias. Para uso en acuarios de agua dulce únicamente.</B></p>
+                        <div class="card-precio right-align">$59.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal26" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal26" class="modal">
+                                    <div class="modal-content">
+                                        <h5>T.C. - 12 Capsulas</h5>
+                                        <p style="text-align: justify;">Para el tratamiento de enfermedades comunes de los peces tropicales como la cola podrida, algodoncillo, hongos en la boca y enfermedad bacteriana de las branquias. Para uso en acuarios de agua dulce únicamente.</br></br><b>Modo de uso: </b></br>Retire el carbón activado del filtro y continúe con la aireación. Vierta el contenido de una capsula por cada 20 lts de agua del acuario (5 gal). Espere 48 horas y repita la dosis. Espere otras 48 horas, cambie al manos un 25% del agua del acuario y reanude la filtración con carbón activado nuevo.</br></br><b>Advertencias: </b></br>Para uso exclusivo en peces de ornato. Manténgase fuera del alcance de los niños o mascotas. En caso de ingestión, consulte a su medico. Manténgase en un lugar seco y fresco.</br></br><b>Formula: </b></br>Tetraciclina 250 mg.</br>Excipiente c.b.p. 1 cap</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/TC12CapsulasGAL.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/Furan2_12CapsulasGAL.html"><img src="img/FURAN%202%20-%2012%20CAPSULAS%20700x500.png"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Furan 2 - 12 Capsulas</div>
+                        <p>Controla y trata un amplio rango de enfermedades causadas por bacterias gram-negativas y gram-positivas incluyendo la enfermedad bacteriana de las branquias, llagas abiertas (Aeromonas), limo en la piel, nube en el ojo, enfermedad del Molly (Flavobacterium columnaris) y cola podrida.</p>
+                        <div class="card-precio right-align">$49.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal27" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal27" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Furan 2 - 12 Capsulas</h5>
+                                        <p style="text-align: justify;">Controla y trata un amplio rango de enfermedades causadas por bacterias gram-negativas y gram-positivas incluyendo la enfermedad bacteriana de las branquias, llagas abiertas (Aeromonas), limo en la piel, nube en el ojo, enfermedad del Molly (Flavobacterium columnaris) y cola podrida. Para uso en acuarios de agua dulce o marina.</br></br><b>Modo de uso: </b></br>Retire el carbón activado del filtro y continúe con la aireación. Vierta el contenido de una capsula por cada 20 lts de agua del acuario (5 gal). Espere 48 horas y repita la dosis. Espere otras 48 horas, cambie al manos un 25% del agua del acuario y reanude la filtración con carbón activado nuevo.</br></br><b>Advertencias: </b></br>Para uso exclusivo en peces de ornato. Manténgase fuera del alcance de los niños o mascotas. En caso de ingestión, consulte a su medico. Manténgase en un lugar seco y fresco.</br></br><b>Formula: </b></br>Nitrofurazona 30 mg.</br>Furaltadona 13 mg.</br>Azul de metileno 1 mg.</br>Excipiente c.b.p. 1 cap.</br>Este medicamento no daña significativamente el filtro biológico si se utiliza según las instrucciones. No decolora el agua del acuario. </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/Furan2_12CapsulasGAL.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/EM12CapsulasGAL.html"><img src="img/E.M.%20-%2012%20CAPSULAS%20700x500.png"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >E.M. 12 Capsulas</div>
+                        <p>Controla y trata un amplio rango de enfermedades bacterianas como el limo en la piel, hongos en la boca, furunculosis (lesiones abiertas e inflamación de la piel), enfermedad bacteriana de las branquias, septicemia hemorrágica (manchas de sangre e inflamación en aletas o piel).</p>
+                        <div class="card-precio right-align">$68.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal28" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal28" class="modal">
+                                    <div class="modal-content">
+                                        <h5>E.M. 12 Capsulas</h5>
+                                        <p style="text-align: justify;">Controla y trata un amplio rango de enfermedades bacterianas como el limo en la piel, hongos en la boca, furunculosis (lesiones abiertas e inflamación de la piel), enfermedad bacteriana de las branquias, septicemia hemorrágica (manchas de sangre e inflamación en aletas o piel).</br></br><b>Modo de uso: </b></br>Retire el carbón activado del filtro y continúe con la aireación. Vierta el contenido de una capsula por cada 20 lts de agua del acuario (5 gal). Espere 48 horas y repita la dosis. Espere otras 48 horas, cambie al manos un 25% del agua del acuario y reanude la filtración con carbón activado nuevo.</br></br><b>Advertencias: </b></br>Para uso exclusivo en peces de ornato. Manténgase fuera del alcance de los niños o mascotas. En caso de ingestión, consulte a su medico. Manténgase en un lugar seco y fresco.</br></br><b>Formula: </b></br>Eritromicina 100 mg.</br>Excipiente c.b.p. 1 cap.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/EM12CapsulasGAL.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/3Sulfa12CapsulasGAL.html"><img src="img/3-SULFA%20-%2012%20CAPSULAS%20700x500.png"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >3-Sulfa - 12 Capsulas</div>
+                        <p>Tratamiento efectivo contra enfermedades bacterianas como la septicemia hemorrágica (manchas de sangre e inflamación en aletas o piel), enfermedad bacteriana de las branquias, cola podrida, algodoncillo, nube en el ojo. Para uso en acuario de agua dulce únicamente.</p>
+                        <div class="card-precio right-align">$59.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal29" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!---------------------------- Modal Structure -->
+                                <div id="modal29" class="modal">
+                                    <div class="modal-content">
+                                        <h5>3-Sulfa - 12 Capsulas</h5>
+                                        <p style="text-align: justify;">Tratamiento efectivo contra enfermedades bacterianas como la septicemia hemorrágica (manchas de sangre e inflamación en aletas o piel), enfermedad bacteriana de las branquias, cola podrida, algodoncillo, nube en el ojo. Para uso en acuario de agua dulce únicamente.</br></br><b>Modo de uso:</b></br>Retire el carbón activado del filtro y continúe con la aireación. Vierta el contenido de una capsula por cada 20 lts de agua del acuario (5 gal). Espere 48 horas y repita la dosis. Espere otras 48 horas, cambie al manos un 25% del agua del acuario y reanude la filtración con carbón activado nuevo.</br></br><b>Advertencias:</b></br>Para uso exclusivo en peces de ornato. Manténgase fuera del alcance de los niños o mascotas. En caso de ingestión, consulte a su medico. Manténgase en un lugar seco y fresco.</br></br><b>Formula:</b></br>Sulfatiazol sódico 332 mg.</br>Sulfacetamida sódica 84 mg.</br>Sulfametazina sódica 84 mg</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/3Sulfa12CapsulasGAL.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/AcondStressCoatYStressZyme5Ml.html"><img src="img/ACOND.%20STRESS%20COAT%20Y%20STRESS%20ZYME%20EN%20SOBRE%20700x500.png"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Acond. Stress Coat Y Stress Zyme En Sobre 5Ml.</div>
+                        <p>Paquete de sobres que incluye acondicionador para acuario Stress Coat que ayuda a eliminar El cloro y la cloramina y el Amoniaco del Agua de forma segura con Aloe Vera que ayuda a proteger a los peces de enfermedes, ademas incluye Stress Zyme que acelera el desarrollo del filtro Biológico insentivando el Desarrollo de Bacterias Nitrificantes.</p>
+                        <div class="card-precio right-align">$16.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal30" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal30" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Acond. Stress Coat Y Stress Zyme En Sobre 5Ml.</h5>
+                                        <p style="text-align: justify;">Paquete de sobres que incluye acondicionador para acuario Stress Coat que ayuda a eliminar El cloro y la cloramina y el Amoniaco del Agua de forma segura con Aloe Vera que ayuda a proteger a los peces de enfermedes, ademas incluye Stress Zyme que acelera el desarrollo del filtro Biológico insentivando el Desarrollo de Bacterias Nitrificantes.</br></br><b>Características: </b></br>Presentacion de 5 m</br>Para tratar 38 Litros de Agua C/u</br>Ayuda a insentivar el crecimiento del filtro biológico en el acuario. </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/AcondStressCoatYStressZyme5Ml.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/MangueraXMetro.html"><img src="img/MANGUERA%20ROLLO%202%20KG%20700x500.png"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Manguera por metro</div>
+                        <p>Para usar en conjunto con piedras difusoras, accionar diversos accesorios dentro del acuario, así como algunos sistemas de filtración.</p>
+                        <div class="card-precio right-align">$3.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal31" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal31" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Manguera por metro</h5>
+                                        <p style="text-align: justify;">Para usar en conjunto con piedras difusoras, accionar diversos accesorios dentro del acuario, así como algunos sistemas de filtración. Plástica, traslucida, excelente calidad y durabilidad. No se cristaliza ni endurece con el tiempo.</br></br><b>Beneficios: </b></br>Permite la conexión con una gran variedad de accesorios dentro del acuario, los cuales favorecerán la oxigenación, ambientación o filtración del acuario</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/MangueraXMetro.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/BombaElite79919lts.html"><img src="img/Bomba%20Elite%20799%2019%20Lts.png"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Bomba De Aire, Elite 799, 19lts</div>
+                        <p>Utilizada para acuarios de hasta 19 litros, además de contener un brazo oscilante de alta precisión con iman permanente. Diafragma “Tensile Flex” durable, de goma altamente flexible. Las salidas del aire estan empotradas para proteger el respiradero y proporcionar un movimiento uniforme del brazo oscilante.</p>
+                        <div class="card-precio right-align">$78.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal32" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal32" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Bomba De Aire, Elite 799, 19lts</h5>
+                                        <p style="text-align: justify;">Utilizada para acuarios de hasta 19 litros, además de contener un brazo oscilante de alta precisión con iman permanente. Diafragma “Tensile Flex” durable, de goma altamente flexible. Las salidas del aire estan empotradas para proteger el respiradero y proporcionar un movimiento uniforme del brazo oscilante.</br></br><b>Características: </b></br>1 Salidas, para acuarios de hasta 19 litros, 1500 cc/minutos, 2.5 PSI, 2 Watts/hora.</br></br><b>Ventajas :</b></br>Combina la producción de aire con alto rendimiento y un funcionamiento silencioso. </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/BombaElite79919lts.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/BombaElite80037lts.html"><img src="img/BOMBA%20ELITE%20800%20PARA%2010%20GALONES.jpg"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Bomba de Aire, Elite 800, Para 37.8L</div>
+                        <p>La Bomba Elite 800 es una fuente confiable de aire para los accesorios como piedras, cortinas, adornos accionados por aire o por la adicción de oxígeno al movimiento, por lo tanto es adecuada para cualquier acuario.</p>
+                        <div class="card-precio right-align">$102.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal33" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!---------------------------- Modal Structure -->
+                                <div id="modal33" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Bomba de Aire, Elite 800, Para 37.8L</h5>
+                                        <p style="text-align: justify;">La Bomba Elite 800 es una fuente confiable de aire para los accesorios como piedras, cortinas, adornos accionados por aire o por la adicción de oxígeno al movimiento, por lo tanto es adecuada para cualquier acuario. La ELITE 800 combina la produccion de alto rendimiento con un funcionamiento silencioso. Su salida es ideal para acuarios de hasta 37.8 litros. Utilizada para acuarios de hasta 37.8 litros, además de contener un brazo oscilante de alta precisión con iman permanente. Diafragma “Tensile Flex” durable, de goma altamente flexible. La salida del aire esta empotrada para proteger el respiradero y proporcionar un movimiento uniforme del brazo oscilante.</br></br><b>Características:</b></br>1 Salida, para acuarios de hasta 37.8 litros, 1500 cc/minutos, 2.5 PSI, 2 Watts/hora</br></br><b>Ventajas :</b></br>Combina la producción de aire con alto rendimiento y un funcionamiento silencioso</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/BombaElite80037lts.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/BombaElite80157lts.html"><img src="img/BOMBA%20ELITE%20801%20PARA%2057%20L.png"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Bomba de Aire, Elite 801, Para 57L</div>
+                        <p>La Bomba Elite 801 es una fuente confiable de aire para los accesorios como piedras, cortinas, adornos accionados por aire o por la adicción de oxígeno al movimiento, por lo tanto es adecuada para cualquier acuario.</p>
+                        <div class="card-precio right-align">$116.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal34" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal34" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Bomba de Aire, Elite 801, Para 57L</h5>
+                                        <p style="text-align: justify;">La Bomba Elite 801 es una fuente confiable de aire para los accesorios como piedras, cortinas, adornos accionados por aire o por la adicción de oxígeno al movimiento, por lo tanto es adecuada para cualquier acuario. La ELITE 801 combina la produccion de alto rendimiento con un funcionamiento silencioso. Su salida es ideal para acuarios de hasta 57 litros. Utilizada para acuarios de hasta 57 litros, además de contener un brazo oscilante de alta precisión con iman permanente. Diafragma “Tensile Flex” durable, de goma altamente flexible. La salida del aire esta empotrada para proteger el respiradero y proporcionar un movimiento uniforme del brazo oscilante.</br></br><b>Características:</b></br>1 Salida, para acuarios de hasta 57 litros, 1500 cc/minutos, 2.5 PSI, 2 Watts/hora</br></br><b>Ventajas :</b></br>Combina la producción de aire con alto rendimiento y un funcionamiento silencioso</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/BombaElite80157lts.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/BombaElite802_75lts.html"><img src="img/BOMBA%20ELITE%20802%20PARA%2075%20L%20GAL.png"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align">Bomba de Aire, Elite 802, Para 75L, Doble Salida</div>
+                        <p>Utilizada para acuarios de hasta 75.7 litros, además de contener dos brazos oscilantes de alta precisión con imán permanente. Diafragma “Tensile Flex” durable, de goma
+altamente flexible. La bisagra empotrada proporciona un movimiento uniforme del brazo oscilante. Las salidas del aire estan empotradas para proteger el respiradero.</p>
+                        <div class="card-precio right-align">$184.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal35" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal35" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Bomba de Aire, Elite 802, Para 75L, Doble Salida</h5>
+                                        <p style="text-align: justify;">Utilizada para acuarios de hasta 75.7 litros, además de contener dos brazos oscilantes de alta precisión con imán permanente. Diafragma “Tensile Flex” durable, de goma altamente flexible. La bisagra empotrada proporciona un movimiento uniforme del brazo oscilante. Las salidas del aire estan empotradas para proteger el respiradero.</br></br><b>Características: </b></br>2 Salidas, para acuarios de 20 galones (75.7litros)</br>1500 cc/minutos, 3.5 PSI, 3.5 Watts/hora</br></br><b>Ventajas: </b></br>Combina la producción de aire con alto rendimiento y un funcionamiento silencioso. Utilizada para acuarios de hasta 75.7 litros, además de contener un brazo oscilante de alta precisión con imán permanente. Diafragma “Tensile Flex” durable, de goma altamente flexible. La bisagra empotrada proporciona un movimiento uniforme del brazo oscilante. Las salidas del aire estan empotradas para proteger el respiradero.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/BombaElite802_75lts.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/CalentadorFijoGAL40Wtts.html"><img src="img/CALENTADOR%20FIJO%20THERMO-MINI%2040W.png"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Calentador Fijo Thermo-Mini, GAL, 40 Watts</div>
+                        <p>Calentador fijo para acuarios, con cuerpo y elementos transparentes, tiene mayor superficie de calentamiento que otros.</p>
+                        <div class="card-precio right-align">$44    .00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal36" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal36" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Calentador Fijo Thermo-Mini, GAL, 40 Watts</h5>
+                                        <p style="text-align: justify;">Calentador fijo para acuarios, con cuerpo y elementos transparentes, tiene mayor superficie de calentamiento que otros.</br></br><b>Ventajas: </b></br>Práctico y económico. Incluye soporte con ventosa para fijarlo dentro del acuario. </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/CalentadorFijoGAL40Wtts.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/CalentadorSumergibleConTermostatoGAL100Wtts.html"><img src="img/Calentador%20Sumergible%20CTermostato%20GAL%20100Watts.jpg"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Calentador Sumergible C/Termostato GAL, 100 Watts</div>
+                        <p>Calentador sumergible con termostato que se enciende o apaga según la temperatura del agua. Fabricado con resistencias que envuelven a la placa de cerámica, cuenta con
+un termostato magnético y luz piloto que encenderá cuando el termostato esté prendido.</p>
+                        <div class="card-precio right-align">$180.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal37" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!---------------------------- Modal Structure -->
+                                <div id="modal37" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Calentador Sumergible C/Termostato GAL, 100 Watts</h5>
+                                        <p style="text-align: justify;">Calentador sumergible con termostato que se enciende o apaga según la temperatura del agua. Fabricado con resistencias que envuelven a la placa de cerámica, cuenta con un termostato magnético y luz piloto que encenderá cuando el termostato esté prendido.</br></br><b>Ventajas:</b></br>Incluye soporte doble con ventosas para fijarlo en el interior del acuario.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/CalentadorSumergibleConTermostatoGAL100Wtts.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/PiedraAereadora2PzGAL2Cm.html"><img src="img/Piedra%20Aereadora%202%20Pz%20GAL%20%202Cm.jpg"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Piedra Aereadora 2 Pz, GAL, De 2 Cm.</div>
+                        <p>Crea una columna de burbujas que ayuda a la circulación y oxigenación del agua. Ideal para filtros de plataforma.</p>
+                        <div class="card-precio right-align">$8.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal38" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal38" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Piedra Aereadora 2 Pz, GAL, De 2 Cm.</h5>
+                                        <p style="text-align: justify;">Difusor de aire 2 cm. Crea una columna de burbujas que ayuda a la circulación y oxigenación del agua. Ideal para filtros de plataforma.</br></br><b>Modo de uso:</b></br>Conecte el difusor a la línea de aire, coloque el difusor dentro del tanque o dentro del tubo del filtro de plataforma, cambie el difusor cada dos meses o cuando note una disminución en el flujo de aire.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/PiedraAereadora2PzGAL2Cm.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/PiedraAereadora12cmGALBlister.html"><img src="img/Piedra%20Aereadora%2012%20cm%20GAL%20Blister.jpg"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Piedra Aereadora De 12 Cm, GAL, En Blister</div>
+                        <p>Crea una columna de burbujas que ayuda a la circulación y oxigenación del agua. Ideal para filtros de plataforma.</p>
+                        <div class="card-precio right-align">$20.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal39" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal39" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Piedra Aereadora De 12 Cm, GAL, En Blister</h5>
+                                        <p style="text-align: justify;">Difusor de aire 12 cm. Crea una columna de burbujas que ayuda a la circulación y oxigenación del agua. Ideal para filtros de plataforma.</br></br><b>Modo de uso: </b></br>Conecte el difusor a la línea de aire, coloque el difusor dentro del tanque o dentro del tubo del filtro de plataforma, cambie el difusor cada dos meses o cuando note una disminución en el flujo de aire.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/PiedraAereadora12cmGALBlister.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/PiedraAereadora30cmGALBlister.html"><img src="img/Piedra%20Aereadora%2030%20cmGAL%20Blister.jpg"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Piedra Aereadora De 30 Cm, GAL, En Blister</div>
+                        <p>Crea una columna de burbujas que ayuda a la circulación y oxigenación del agua. Ideal para filtros de plataforma.</p>
+                        <div class="card-precio right-align">$30.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal40" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal40" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Piedra Aereadora De 30 Cm, GAL, En Blister</h5>
+                                        <p style="text-align: justify;">Difusor de aire 30 cm. Crea una columna de burbujas que ayuda a la circulación y oxigenación del agua. Ideal para filtros de plataforma.</br></br><b>Modo de uso: </b></br>Conecte el difusor a la línea de aire, coloque el difusor dentro del tanque o dentro del tubo del filtro de plataforma, cambie el difusor cada dos meses o cuando note una disminución en el flujo de aire.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/PiedraAereadora30cmGALBlister.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/PlantasParaAcuario10cmGAL6Pz.html"><img src="img/Plantas%20Para%20Acuario%2010%20Cm%20GAL%206Pz.jpg"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Plantas Para Acuario 4” (10 Cm), GAL, 6 Pz.</div>
+                        <p>Plantas de plástico surtidas de 10cm, que crean un efecto natural en el acua­rio gracias a su diseño y color, haciéndolo lucir más hermoso.</p>
+                        <div class="card-precio right-align">$50.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal41" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!---------------------------- Modal Structure -->
+                                <div id="modal41" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Plantas Para Acuario 4” (10 Cm), GAL, 6 Pz.</h5>
+                                        <p style="text-align: justify;">Plantas de plástico surtidas de 10cm, que crean un efecto natural en el acua­rio gracias a su diseño y color, haciéndolo lucir más hermoso.</br></br><b>Características:</b></br>Útiles para decorar acuarios de agua dulce o salada imitando el hábi­tat natural de los peces, sirviéndoles de escondite a peces tímidos.</br></br><b>Ventajas:</b></br>Fáciles de limpiar, no se decoloran. Los peces no pueden romperlas.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/PlantasParaAcuario10cmGAL6Pz.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/PlantasParaAcuario20cmGAL6Pz.html"><img src="img/Plantas%20Para%20Acuario%2020%20Cm%20GAL6Pz.jpg"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Plantas Para Acuario 8” (20 Cm), GAL, 6 Pz.</div>
+                        <p>Plantas de plástico surtidas de 20cm, que crean un efecto natural en el acua­rio gracias a su diseño y color, haciéndolo lucir más hermoso.</p>
+                        <div class="card-precio right-align">$106.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal42" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal42" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Plantas Para Acuario 8” (20 Cm), GAL, 6 Pz.</h5>
+                                        <p style="text-align: justify;">Plantas de plástico surtidas de 20cm, que crean un efecto natural en el acua­rio gracias a su diseño y color, haciéndolo lucir más hermoso.</br></br><b>Características:</b></br>Útiles para decorar acuarios de agua dulce o salada imitando el hábi­tat natural de los peces, sirviéndoles de escondite a peces tímidos.</br></br><b>Ventajas:</b></br>Fáciles de limpiar, no se decoloran. Los peces no pueden romperlas.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/PlantasParaAcuario20cmGAL6Pz.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/PlantasParaAcuario30cmGAL6Pz.html"><img src="img/Plantas%20Para%20Acuario%2030Cm%20GAL6Pz.jpg"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Plantas Para Acuario 12” (30 Cm), GAL, 6 Pz.</div>
+                        <p>Plantas de plástico surtidas de 30cm, que crean un efecto natural en el acua­rio gracias a su diseño y color, haciéndolo lucir más hermoso.</p>
+                        <div class="card-precio right-align">$158.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal43" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal43" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Plantas Para Acuario 12” (30 Cm), GAL, 6 Pz.</h5>
+                                        <p style="text-align: justify;">Plantas de plástico surtidas de 30cm, que crean un efecto natural en el acua­rio gracias a su diseño y color, haciéndolo lucir más hermoso.</br></br><b>Características:</b></br>Útiles para decorar acuarios de agua dulce o salada imitando el hábi­tat natural de los peces, sirviéndoles de escondite a peces tímidos.</br></br><b>Ventajas:</b></br>Fáciles de limpiar, no se decoloran. Los peces no pueden romperlas.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/PlantasParaAcuario30cmGAL6Pz.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/SalMarinaOceanic10Gal.html"><img src="img/Sal%20Marina%20Oceanic%20P10%20Gal.jpg"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Sal Marina Oceanic P/10 Gal.</div>
+                        <p>Sal marina profesional, alto contenido de calcio y magnesio, libre de fosfatos y nitratos, alto grado de pureza, pH normalizado.</p>
+                        <div class="card-precio right-align">$118.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal44" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal44" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Sal Marina Oceanic P/10 Gal.</h5>
+                                        <p style="text-align: justify;">Sal marina profesional, alto contenido de calcio y magnesio, libre de fosfatos y nitratos, alto grado de pureza, pH normalizado.</br></br><b>Características: </b></br>La sal marina Oceanic provee todos los elementos esenciales para la vida que se pueden encontrar en el agua marina natural, además de un nivel optimo de elementos traza necesarios para el desarrollo de las bacterias nitrificantes y los corales. De este modo, al usar la sal marina Oceanic se obtiene un medio ambiente adecuado para la vida marina dentro del acuario y un filtro biológico mas saludable.</br></br><b>Modo de empleo: </b></br>Mezcle la sal en un contenedor separado antes de adicionarla al acuario, utilice agua de la llave declorinada, o agua destilada, deionizada o desalinizada para hacer la mezcla. Las aguas suaves evitan que ciertos elementos como el calcio y el magnesio se precipiten, aunque esto no produce ninguna alteración a la química final del agua. Agregue aproximadamente 34 grs. de sal por cada litro de agua y revuelva vigorosamente hasta que la sal se haya disuelto por completo. Ajuste la salinidad (gravedad especifica) el nivel deseado con un hidrómetro confiable. Los valores adecuados se encuentran entre 1.021 y 1.023 a 25°C. agregue sal para incrementar la salinidad o agua, para reducirla. Vuelva a sellar la bolsa y almacénela en un lugar fresco y seco.</br></br><b>Ventajas: </b></br>Alto contenido de Calcio y magnesio.</br>Libre de Fosfatos y Nitratos.</br>Alto grado de pureza.</br>pH normalizado.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/SalMarinaOceanic10Gal.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/PiedraAeradoraPlasticoLees6pz.html"><img src="img/Piedra%20Aeradora%20PlasticoLees%206pz.jpg"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Piedra Aeradora Plástico, Lees, 6pz</div>
+                        <p>Son un dispositivo de aireación excelente para su uso en filtros de grava, filtros de esquina o simplemente como decoración.</p>
+                        <div class="card-precio right-align">$58.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal45" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!---------------------------- Modal Structure -->
+                                <div id="modal45" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Piedra Aeradora Plástico, Lees, 6pz.</h5>
+                                        <p style="text-align: justify;">Son difusores de aire desechables con insertos reutilizables para fijar la línea aérea. Son un dispositivo de aireación excelente para su uso en filtros de grava, filtros de esquina o simplemente como decoración.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/PiedraAeradoraPlasticoLees6pz.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/HojuelaBasicaWardley10g.html"><img src="img/Hojuela%20Basica%20Wardley%2010g.jpg"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Hojuela Básica, Wardley, 10g</div>
+                        <p>Alimento seco para todo tipo de pez, son hojuelas altamente nutritivas enriquecidas con vitaminas y muy digeribles.</p>
+                        <div class="card-precio right-align">$13.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal46" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal46" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Hojuela Básica, Wardley, 10g</h5>
+                                        <p style="text-align: justify;">Alimento seco para todo tipo de pez, son hojuelas altamente nutritivas enriquecidas con vitaminas y muy digeribles.</br></br><b>Características:</b></br>Presentación de 10 grs. con sello de garantía.</br></br><b>Ventajas:</b></br>Adicionadas con vitamina C para promover la óptima salud, energía y larga vida de sus peces.</br></br><b>Modo de uso:</b></br>Se debe dar de comer a los peces varias veces al día. No les dé más de lo que puedan consumir en 5 minutos. Las hojuelas básicas Wardley* no enturbian el agua si se les dispensan</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/HojuelaBasicaWardley10g.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/HojuelaBasicaWardley20g.html"><img src="img/Hojuela%20Basica%20Wardley%2020g.jpg"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Hojuela Básica, Wardley, 20g</div>
+                        <p>Alimento seco para todo tipo de pez, son hojuelas altamente nutritivas enriquecidas con vitaminas y muy digeribles.</p>
+                        <div class="card-precio right-align">$20.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal47" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal47" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Hojuela Básica, Wardley, 20g</h5>
+                                        <p style="text-align: justify;">Alimento seco para todo tipo de pez, son hojuelas altamente nutritivas enriquecidas con vitaminas y muy digeribles.</br></br><b>Características:</b></br>Presentación de 20 grs. con sello de garantía.</br></br><b>Ventajas:</b></br>Adicionadas con vitamina C para promover la óptima salud, energía y larga vida de sus peces.</br></br><b>Modo de uso:</b></br>Se debe dar de comer a los peces varias veces al día. No les dé más de lo que puedan consumir en 5 minutos. Las hojuelas básicas Wardley* no enturbian el agua si se les dispensan</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/HojuelaBasicaWardley20g.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/HojuelaBasicaWardley30g.html"><img src="img/Hojuela%20Basica%20Wardley%2030g.jpg"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Hojuela Básica, Wardley, 30g</div>
+                        <p>Alimento seco para todo tipo de pez, son hojuelas altamente nutritivas enriquecidas con vitaminas y muy digeribles.</p>
+                        <div class="card-precio right-align">$26.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal48" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal48" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Hojuela Básica, Wardley, 30g</h5>
+                                        <p style="text-align: justify;">Alimento seco para todo tipo de pez, son hojuelas altamente nutritivas enriquecidas con vitaminas y muy digeribles.</br></br><b>Características:</b></br>Presentación de 30 grs. con sello de garantía.</br></br><b>Ventajas:</b></br>Adicionadas con vitamina C para promover la óptima salud, energía y larga vida de sus peces.</br></br><b>Modo de uso:</b></br>Se debe dar de comer a los peces varias veces al día. No les dé más de lo que puedan consumir en 5 minutos. Las hojuelas básicas Wardley* no enturbian el agua si se les dispensan</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/HojuelaBasicaWardley30g.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/HojuelaBasicaWardley120g.html"><img src="img/Hojuela%20Basica%20Wardley%20120g.jpg"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Hojuela Básica, Wardley, 120g</div>
+                        <p>Alimento seco para todo tipo de pez, son hojuelas altamente nutritivas enriquecidas con vitaminas y muy digeribles.</p>
+                        <div class="card-precio right-align">$92.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal49" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal49" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Hojuela Básica, Wardley, 120g</h5>
+                                        <p style="text-align: justify;">Alimento seco para todo tipo de pez, son hojuelas altamente nutritivas enriquecidas con vitaminas y muy digeribles.</br></br><b>Características:</b></br>Presentación de 120 grs. con sello de garantía.</br></br><b>Ventajas:</b></br>Adicionadas con vitamina C para promover la óptima salud, energía y larga vida de sus peces.</br></br><b>Modo de uso:</b></br>Se debe dar de comer a los peces varias veces al día. No les dé más de lo que puedan consumir en 5 minutos. Las hojuelas básicas Wardley* no enturbian el agua si se les dispensan</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/HojuelaBasicaWardley120g.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/AlimentadorAutomaticoPecesPilasPennplax.html"><img src="img/Alimentador%20Automatico%20de%20Pilas%20para%20Peces,%20Pennplax.jpg"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Alimentador Automático de Pilas para Peces, Pennplax</div>
+                        <p>Almacena hasta 4 semanas de alimento. Alimentación segura y exacta dos veces al día. Requiere una bateria "AA" no incluida.</p>
+                        <div class="card-precio right-align">$299.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal50" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal50" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Alimentador Automático de Pilas para Peces, Pennplax</h5>
+                                        <p style="text-align: justify;">Almacena hasta 4 semanas de alimento. Alimentación segura y exacta dos veces al día. Requiere una bateria "AA" no incluida.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/AlimentadorAutomaticoPecesPilasPennplax.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--------------------------------------------------FOOTER-->
+        <footer class="page-footer">
+              <div class="container">
+                <div class="row">
+                  <div class="col l6 s12">
+                    <h4 class="white-text">Entrega a domicilio</h4>
+                    <h5 href="#" class="white-text"><i class="fa fa-whatsapp"></i>&nbsp;55-1374-7612</h5>
+                    <span href="#" class="white-text"><i class="fa fa-envelope-o"></i>&nbsp;acuariofamilia@gmail.com</span>
+
+                  </div>
+                  <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Mandanos un Whatsapp, llámanos o escríbenos</h5>
+                        <!-- Modal Trigger -->
+                        <a href="#" class="btn-floating waves-effect waves-light transparent"><i class="fa fa-facebook white-text"></i></a>
+                        <a href="#" class="btn-floating waves-effect waves-light transparent white-text"><i class="fa fa-twitter white-text"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-copyright">
+                <div class="container">
+                    © 2016 Copyright
+                <!--<a class="grey-text text-lighten-4 right" href="#!">More Links</a>-->
+                </div>
+              </div>
+        </footer>
+        
+    </body>
+      <!------------------------------------Configuración Parallax-->
+      <style type="text/css">
+            .parallax-container {
+            height: 500px;
+        }
+      </style>
+        <!------------------------------------Import jQuery before materialize.js-->
+        <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/materialize.js"></script>
+        <script src="js/materialize.min.js"></script>
+        <script src="js/init.js"></script>
+
+    </html>
