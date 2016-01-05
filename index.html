@@ -18,7 +18,7 @@
     <body>
 
     
-        <!--Nav Bar-->    
+        <!--------------------------------------------------------NAV BAR-->    
         <nav class="navbar-material">
             <div class="nav-wrapper red">
                 <a href="index.html" class="brand-logo">
@@ -29,9 +29,9 @@
                 </ul>
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
-                    <!-- MENU DESPLEGABLE Dropdown Trigger -->
-                    <li><a class='dropdown-button btn-flat white-text' href='#' data-activates='dropdown1'>Tienda</a></li>
-                        <!-- Dropdown Structure -->
+                    <!------------------------------------------- MENU DESPLEGABLE Dropdown Trigger -->
+                    <li><a class='dropdown-button btn-flat white-text' href='#' data-activates='dropdown1'>Tienda<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+                        <!-------------------------------------- Dropdown Structure -->
                           <ul id='dropdown1' class='dropdown-content'>
                             <li><a href="Perros.html">Perros</a></li>
                             <li><a href="Gatos.html">Gatos</a></li>
@@ -44,7 +44,7 @@
                 </ul>
                 <ul class="side-nav red white-text" id="mobile-demo">
                    <li><a href="#modal0" class="modal-trigger">Contacto</a></li>               
-                   <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Dropdown<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+                   <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Tienda<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
                         <!-------------------------------------- Dropdown Structure -->
                           <ul id='dropdown2' class='dropdown-content'>
                             <li><a href="Perros.html">Perros</a></li>
@@ -76,18 +76,18 @@
                           <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
                         </div>
                      </div>
-        <!--Botón Principal-->  
-                <div class="fixed-action-btn click-to-toggle" style="bottom: 45px; right: 24px;">
-                    <a class="btn-floating btn-large yellow">
-                      <i class="material-icons red-text">cloud</i>
-                    </a>
-                    <ul>
-                      <li><a href="Perros.html" class="btn-floating btn-large red"><i class="animal">d</i></a></li>
-                      <li><a href="Gatos.html" class="btn-floating btn-large yellow darken-1"><i class="animal">c</i></a></li>
-                      <li><a href="Aves.html" class="btn-floating btn-large green"><i class="animal">z</i></a></li>
-                      <li><a href="Peces.html" class="btn-floating btn-large blue"><i class="animal">s</i></a></li>
-                    </ul>
-                 </div>
+        <!---------------------------------------------------BOTON PRINCIPAL-->  
+        <div class="fixed-action-btn click-to-toggle" style="bottom: 45px; right: 24px;">
+            <a class="btn-floating btn-large red">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul>
+                <li><a href="Perros.html" class="btn-floating btn-large red"><i class="animal">d</i></a></li>
+                <li><a href="Gatos.html"class="btn-floating btn-large yellow darken-1"><i class="animal">c</i></a></li>
+                <li><a href="Aves.html"class="btn-floating btn-large green"><i class="animal">z</i></a></li>
+                <li><a href="Peces.html" class="btn-floating btn-large blue"><i class="animal">s</i></a></li>
+            </ul>
+        </div>
         <!--Fonts para el boton principal-->
           <style type="text/css">
             @font-face {
@@ -144,7 +144,7 @@
         <div class="col s12 m3">
           <div class="card">
             <div class="card-image">
-              <img src="img/ALIMENTO PARA PECES DE FONDO 70 GRS 700x500.png">              
+                <a href="produc/AlgaeDiscs.html"><img src="img/ALIMENTO PARA PECES DE FONDO 70 GRS 700x500.png"></a>              
             </div>
             <div class="card-content">
               <div class="card-titulo">Algae Discs</div>
@@ -176,51 +176,48 @@
             </div>
           </div>
         </div>
-        <div class="col s12 m3">
-          <div class="card">
-            <div class="card-image">
-              <img src="img/ALIMENTO LOMAS SPIRULINA BOOST 70 GR 700x500.png">
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/AlimentoEspirulinaBoostLomas70Gr.html"><img src="img/ALIMENTO%20LOMAS%20SPIRULINA%20BOOST%2070%20GR%20700x500.png"></a>              
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo center-align" >Alimento Lomas Spirulina Boost 70gr</div>
+                        <p>Acentúa el color, promueve el crecimiento y estimula la respuesta inmune de los peces japoneses, cíclidos africanos, y peces vivíparos.</p>
+                        <div class="card-precio right-align">$19.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal2" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal2" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Alimento Lomas Spirulina Boost 70gr</h5>
+                                        <p style="text-align: left;"><b>Beneficios:</b></br>Acentúa el color, promueve el crecimiento y estimula la respuesta inmune de los peces japoneses, cíclidos africanos, y peces vivíparos.</p><p style="text-align: left;"><b>Análisis Garantizado:</b></br>Proteína Cruda Min. 34.0%</br>Grasa Cruda Min. 8.0%</br>Fibra Cruda Min. 4.0%</br>Humedad Min. 8.0%</p><p style="text-align: left;"><b>Características:</b></br>Alimento para peces herbívoros.</br>Alto contenido de alga espirulina</br>Adicionado con Vitamina C estabilizada y suplemento multivitamínico.</p><p style="text-align: justify;"><b>Ingredientes:</b> Espirulina, gluten de maíz, maíz entero, harina de trigo, germen de trigo, gluten de trigo, cascarilla de trigo, harina de linaza, harina de canola, harina de soya, concentrado de proteína de soya, proteína de chícharo, levadura de cerveza, harina de maíz, harina de arroz, harina de alfalfa, cebada molida, carbonato de calcio, aceite de soya, harina de espinaca, lecitina, L-Ascorbil-2fosfato (fuente de vitamina C), fosfato dicálcico, cloruro de colina, acetato de vitamina A, acetato de d-alfa tocoferol (fuente de vitamina E), Colecalciferol (fuente de vitamina D3), fosfato de calcio, biotina, hidrocloruro de piridoxina, etoxiquina, mononitrato de tiamina, ácido fólico, riboflavina, cianocobalamia (fuente de vitamina B12), óxido manganoso, óxido de zinc, carbonato ferroso, sulfato de cobre, sulfato de zinc, iodato de calcio, carbonato de colbato, selanito de sodio.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+
+                                <a href="produc/AlimentoEspirulinaBoostLomas70Gr.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="card-content">
-              <div class="card-titulo">Alimento Lomas Spirulina Boost 70gr</div>
-              <p>Acentúa el color, promueve el crecimiento y estimula la respuesta inmune de los peces japoneses, cíclidos africanos, y peces vivíparos.</p>
-              <div class="card-precio">$19.00</div>
-            </div>
-            <div class="card-footer">
-                <ul>
-                  <li>
-                    <!-- Modal Trigger -->
-                    <a href="#modal2" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
-                    <!-- Modal Structure -->
-                    <div id="modal2" class="modal">
-                       <div class="modal-content">
-                          <h5>Alimento Lomas Spirulina Boost 70gr</h5>
-                           <p style="text-align: left;"><b>Beneficios:</b></br>Acentúa el color, promueve el crecimiento y estimula la respuesta inmune de los peces japoneses, cíclidos africanos, y peces vivíparos.
-                           </p>
-                          <p style="text-align: left;"><b>Análisis Garantizado:</b></br>Proteína Cruda Min. 34.0%</br>Grasa Cruda Min. 8.0%</br>Fibra Cruda Min. 4.0%</br>Humedad Min. 8.0%
-                           </p>
-                           <p style="text-align: left;"><b>Características:</b></br>Alimento para peces herbívoros.</br>Alto contenido de alga espirulina</br>Adicionado con Vitamina C estabilizada y suplemento multivitamínico.
-</p>
-                           <p style="text-align: justify;"><b>Ingredientes:</b> Espirulina, gluten de maíz, maíz entero, harina de trigo, germen de trigo, gluten de trigo, cascarilla de trigo, harina de linaza, harina de canola, harina de soya, concentrado de proteína de soya, proteína de chícharo, levadura de cerveza, harina de maíz, harina de arroz, harina de alfalfa, cebada molida, carbonato de calcio, aceite de soya, harina de espinaca, lecitina, L-Ascorbil-2fosfato (fuente de vitamina C), fosfato dicálcico, cloruro de colina, acetato de vitamina A, acetato de d-alfa tocoferol (fuente de vitamina E), Colecalciferol (fuente de vitamina D3), fosfato de calcio, biotina, hidrocloruro de piridoxina, etoxiquina, mononitrato de tiamina, ácido fólico, riboflavina, cianocobalamia (fuente de vitamina B12), óxido manganoso, óxido de zinc, carbonato ferroso, sulfato de cobre, sulfato de zinc, iodato de calcio, carbonato de colbato, selanito de sodio.</p>
-                        </div>
-                        <div class="modal-footer">
-                          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
-                        </div>
-                     </div>
-                  </li>
-                  <li>
-                    <!-- Modal Trigger -->
-                    <a href="https://www.kichink.com/buy/575393/family-aquarium/alimento-lomas-spirulina-boost-70gr#.Vm4CY_l951s" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-shopping-cart"></i></a>
-                  </li>
-                  </li>
-                </ul>
-            </div>
-          </div>
-        </div>
         <div class="col s12 m3">
             <div class="card">
             <div class="card-image">
-              <img src="img/Arena Especial para gatos 3 Kg.jpg">              
+              <a href="produc/ArenaGatoBiomaa.html"><img src="img/Arena%20Especial%20para%20gatos%203%20Kg.jpg"></a>              
             </div>
             <div class="card-content">
               <div class="card-titulo">Arena Para Gatos</div>
@@ -248,48 +245,50 @@
                   </li>
                   <li>
                     <!-- Modal Trigger -->
-                    <a href="https://www.kichink.com/buy/366027/family-aquarium/arena-para-gatos-biomaa-3kg#.Vm4KwPl951s" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-shopping-cart"></i></a>
+                    <a href="produc/ArenaGatoBiomaa.html" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-shopping-cart"></i></a>
                   </li>
                   </li>
                 </ul>
             </div>
           </div>
         </div>
-        <div class="col s12 m3">
-            <div class="card">
-            <div class="card-image">
-              <img src="img/WARDLEY GOLDFISH FLAKES 10 GRS 700x500.png">              
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/HojuelaGoldfishWardley20Gr.html"><img src="img/WARDLEY%20GOLDFISH%20FLAKES%2020%20GRS%20700x500.png"></a>           
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo center-align" >Wardley Goldfish Flakes 20 Gr.</div>
+                        <p>Alimento en hojuelas para peces japoneses.</p>
+                        <div class="card-precio right-align">$12.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal12" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal12" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Wardley Goldfish Flakes 20 Gr.</h5>
+                                        <p style="text-align: justify;">Alimento en hojuelas para peces japoneses.</br></br><b>Características: </b></br>Ofrece una nutrición superior y brillantes coloraciones a los peces japoneses, contiene todos los nutrientes que sus peces necesitan para crecer y desarrollarse de manera correcta.</br></br><b>Instrucciones de alimentación:</b></br>Alimente dos veces al día, con no más de lo que puedan comer durante tres minutos. No enturbia el agua cuando se suministra adecuadamente.</br></br><b>Ingredientes:</b></br>Harina de pescado, harina de trigo, concentrado de proteína de soya, harina de gluten de trigo, harina de gluten de maíz, harina de arenque, levadura de cerveza, aceite de pescado, concentrado de proteína de chícharo, harina de germen de trigo, harina de camarón, harina de alfalfa deshidratada, lecitina, harina de cangrejo, sulfato de lignina, goma xantan, L-ascorbil-2-polifosfato, semilla de anísmolida, cloruro de colina, suplemento de vit. A, suplemento de vit. D3, suplemento de vit. E, etoxiquina (como conservador), suplemento de riboflavina, suplemento de niacina, pantotenato de calcio, complejo de menadiona bisulfito de sodio, acido fólico, hidrocloruro de piridoxina, mononitrato de tiamina, biotina, suplemento de vit. B12, sulfato ferroso, sulfato de zinc, sulfato de cobre, sulfato de manganeso, carbonato de cobalto, yodato de potasio, selenito de sodio, colorante (amarillo 6, rojo 40).</br>Análisis garantizado:</br>Proteína cruda. min. 35.0%</br>Grasa cruda. min. 5.0%</br>Fibra cruda. máx. 3.0%</br>Humedad. máx. 10.0%</br>Cenizas. min. 200mg/kg</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/HojuelaGoldfishWardley20Gr.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="card-content">
-              <div class="card-titulo">Wardley Goldfish Flakes 10 Grs</div>
-              <p>Está específicamente formulado para peces dorados</p>
-              <div class="card-precio">$8.00</div>
-            </div>
-            <div class="card-footer">
-                <ul>
-                  <li>
-                    <!-- Modal Trigger -->
-                    <a href="#modal4" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
-                    <!-- Modal Structure -->
-                    <div id="modal4" class="modal">
-                       <div class="modal-content">
-                          <h5>Wardley Goldfish Flakes 10 Grs</h5>
-                           <p><b>Descripción:</b></br>Hojuelas Goldfish es una avanzada fórmula elaborada con componentes naturales de plantas y animales, está específicamente formulado para peces dorados con un óptimo equilibrio entre proteína, carbohidratos, lípidos, vitaminas y minerales.</p>
-                        </div>
-                        <div class="modal-footer">
-                          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
-                        </div>
-                     </div>
-                  </li>
-                  <li>
-                    <!-- Modal Trigger -->
-                    <a href="https://www.kichink.com/buy/583210/family-aquarium/wardley-goldfish-flakes-10-grs#.Vm4U6fl951s" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-shopping-cart"></i></a>
-                  </li>
-                  </li>
-                </ul>
-            </div>
-          </div>
-        </div>
       </div>
         
               
@@ -334,6 +333,11 @@
   <script src="js/materialize.js"></script>
   <script src="js/materialize.min.js"></script>
   <script src="js/init.js"></script>
-
-      
+  <script>
+     $(document).ready(function(){
+       //Botón principal abierto
+        $('.fixed-action-btn').openFAB();     
+      });
+  </script>
+  
   </html>

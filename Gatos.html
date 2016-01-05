@@ -12,6 +12,7 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>    
+
     </head>
     
     <body>
@@ -33,7 +34,7 @@
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
                     <!------------------------------------------- MENU DESPLEGABLE Dropdown Trigger -->
-                    <li><a class='dropdown-button btn-flat white-text' href='#' data-activates='dropdown1'>Tienda</a></li>
+                    <li><a class='dropdown-button btn-flat white-text' href='#' data-activates='dropdown1'>Tienda<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
                         <!-------------------------------------- Dropdown Structure -->
                           <ul id='dropdown1' class='dropdown-content'>
                             <li><a href="Perros.html">Perros</a></li>
@@ -47,7 +48,7 @@
                 </ul>
                 <ul class="side-nav red white-text" id="mobile-demo">
                    <li><a href="#modal0" class="modal-trigger">Contacto</a></li>               
-                   <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Dropdown<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+                   <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Tienda<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
                         <!-------------------------------------- Dropdown Structure -->
                           <ul id='dropdown2' class='dropdown-content'>
                             <li><a href="Perros.html">Perros</a></li>
@@ -81,14 +82,14 @@
         </div>
         
         <!---------------------------------------------------BOTON PRINCIPAL-->  
-        <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+        <div class="fixed-action-btn click-to-toggle" style="bottom: 45px; right: 24px;">
             <a class="btn-floating btn-large red">
-                <i class="material-icons">cloud</i>
+                <i class="material-icons">menu</i>
             </a>
             <ul>
                 <li><a href="Perros.html" class="btn-floating btn-large red"><i class="animal">d</i></a></li>
-                <li><a class="btn-floating btn-large yellow darken-1"><i class="animal">c</i></a></li>
-                <li><a class="btn-floating btn-large green"><i class="animal">z</i></a></li>
+                <li><a href="Gatos.html"class="btn-floating btn-large yellow darken-1"><i class="animal">c</i></a></li>
+                <li><a href="Aves.html"class="btn-floating btn-large green"><i class="animal">z</i></a></li>
                 <li><a href="Peces.html" class="btn-floating btn-large blue"><i class="animal">s</i></a></li>
             </ul>
         </div>
@@ -108,10 +109,164 @@
             }
         </style>
         
-        <!--------------------------------------------------EN CONSTRUCCIÓN-->
+                <!--------------------------------------------------PARALLAX IMAGE-->
+        <div class="parallax-container">
+            <div class="parallax white-text center-align"><img src="img/GatosPArallax.jpg"></div>
+        </div>
+        
+        <!----------------------------------------------------------------------------TARJETAS-->  
+        <h1 class="caption center-align red-text"><b>¡</b>Nuevos Productos<b>!</b></h1>
+        <div class="row">
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/CroquetaGatina.html"><img src="img/Croqueta%20Gatina.jpg"></a>              
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo">Gatina</div>
+                        <p>Un alimento balanceado y delicioso con lo mejor de los vegetales. Los vegetales y cereales le aportan los nutrientes necesarios que tu gato necesita.</p>
+                        <div class="card-precio right-align">$28.00 Kg</div>
+                    </div>
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="#modal1" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!-- Modal Structure -->
+                                <div id="modal1" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Gatina</h5>
+                                        <p style="text-align: justify;">Un alimento balanceado y delicioso con lo mejor de los vegetales. Los vegetales y cereales le aportan los nutrientes necesarios que tu gato necesita.</br></br><b>Beneficios:</b></br>Carne, pollo, soya y glutén fuentes de proteína y energía. Espinaca, aporta vitaminas A y C, además de ácido fólico vitales para la formación de la sangre y funciones metabólicas. Zanahoria, rica en carotenos que ayudan a tener una piel saludable. Metionina, Lisina: Necesarios para tener una condición corpórea ideal. Taurina: Ayuda a la vista y a tener un corazón sano./br></br><b>Ingredientes:</b></br>Maíz amarillo molido, pasta de soya, harina de carne y hueso de res, salvado de trigo, grasa animal (res y/o pollo y/o cerdo) estabilizada con antioxidantes, harina de pollo, harina de gluten de maíz, arroz molido, sabor natural de pollo y/o cerdo, zanahoria en polvo, espinaca en polvo, carbonato de calcio, ortofosfato de calcio, sal, ácido fosfórico, cloruro de colina, DL-metionina, L-lisina, taurina, cloruro de potasio, colorantes (rojo 40, amarillo #5, amarillo #6 y azul #2), premezcla vitamínica y premezcla mineral.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="produc/CroquetaGatina.html" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-shopping-cart"></i></a>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/ArenaGatoBiomaa.html"><img src="img/Arena%20Especial%20para%20gatos%203%20Kg.jpg"></a>              
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo">Arena Para Gatos</div>
+                        <p>Arena Para Gatos, Biomaa, 3kg</p>
+                        <div class="card-precio right-align">$35.00 Kg</div>
+                    </div>
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="#modal2" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!-- Modal Structure -->
+                                <div id="modal2" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Arena Para Gatos</h5>
+                                        <p style="text-align: justify;"><b>Descripción:</b></br>3 Kg de arena higiénica y absorbente</p>
+                           <p style="text-align: justify;"><b>Características:</b></br>Sus excelentes propiedades de absorción disminuyen sensiblemente los malos olores de la orina y las heces.</p>
+                           <p style="text-align: justify;"><b>Ventajas:</b>Por su acción aglutinante forma terrones fácilmente removibles</p>
+                           <p style="text-align: justify;"><b>Modo de uso:</b>No es necesario cambiar toda la arena, únicamente se retiran los terrones sucios y se reemplaza la porción utilizada, mientras que el resto de la arena se conserva limpia y fresca.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="produc/ArenaGatoBiomaa.html" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-shopping-cart"></i></a>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/CroquetaNupecAdulto.html"><img src="img/croqueta%20nupec%20adulto.jpg"></a>              
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo">Croqueta Nupec Adulto</div>
+                        <p>A partir de un año de edad. Esta adicionado con las cantidades justas de vitaminas, minerales y proteínas que tu perro necesita para su óptimo desarrollo.
+Los perros de esta edad necesitan un balance nutricional diferente a los más jovenes por ello esta adicionado con Omega 6 y Omega 3 para el mejor aprovechamiento de los nutrientes.</p>
+                        <div class="card-precio right-align">$49.00 Kg</div>
+                    </div>
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="#modal32" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!-- Modal Structure -->
+                                <div id="modal32" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Croqueta Nupec Adulto</h5>
+                                        <p style="text-align: justify;">A partir de un año de edad. La nutrición óptima promueve la salud y la calidad de vida longeva, dale la oportunidad a tu entrañable amigo de disfrutar de tu cariño durante muchos años, NUPEC ADULTO esta adicionado con las cantidades justas de vitaminas, minerales y proteínas que tu perro necesita para su óptimo desarrollo. Los perros de esta edad necesitan un balance nutricional diferente a los más jovenes por ello esta adicionado con Omega 6 y Omega 3 para el mejor aprovechamiento de los nutrientes.      Además cuenta con un delicioso sabor y es muy fácil de digerir. Esta hecho para cuidar a tu perro y mantenerlo en forma.</br></br><b>Recomendaciones:</b></br></br>Todo cambio de alimentación debe ser gradual. Mezcle el alimento en una relación de 3 porciones del alimento anterior y 1 del nuevo alimento y aumente la cantidad paulatinamente. Tenga siempre disponible agua fresca. No le sirva si se enlama o cambia de apariencia. Mantenga el envase cerrado y conserve en un lugar seco y fresco. Considere que las necesidades de cada perro varían dependiendo de la talla, sexo, raza, nivel de actividad, etapa fisiológica y temperatura ambiente.</br></br><b>Ingredientes:</b></br></br>Harina de carne. Harina de pescado. Subproductos de leche. Harina de subproductos de ave. Grasas de origen animal. Grano de cereales: trigo, maíz, arroz. Pastas de oleaginosas. Concentrado de proteína vegetal. Pulpa de remolacha. Aminoácidos. Minerales (calcio, fósforo, sodio, zinc, hierro, manganeso, cobre, yodo, selenio, cobalto). Vitaminas (A, D, E, K y complejo B: Tiamina, Riboflavina, ácido pantoténico, piridoxina, ácido fólico, cianocobalamina, niacina, biotina). Antioxidantes (BHA y BHT, para proteger el alimento). </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="produc/CroquetaNupecAdulto.html" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-shopping-cart"></i></a>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/CroquetaDogChowCachorroRazasPequenas.html"><img src="img/Croqueta%20Dog%20chow%20Cachorro%20RP.png"></a>              
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo">Croqueta Dog Chow Cachorro Razas Pequeñas</div>
+                        <p>Desde el destete hasta 12 meses de edad. Contiene DHA, que ayuda al desarrollo del cerebro y la visión y 23 Vitaminas y Minerales: una nutrición 100% completa y balanceada. Así, le ayudarán a que disfruten de todos los momentos en familia.</p>
+                        <div class="card-precio right-align">$34.50 Kg</div>
+                    </div>
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="#modal33" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!-- Modal Structure -->
+                                <div id="modal33" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Croqueta Dog Chow Cachorro Razas Pequeñas</h5>
+                                        <p style="text-align: justify;">Desde el destete hasta 12 meses de edad. Tu cachorro de raza pequeña tiene necesidades únicas para su edad y tamaño. Por eso, PURINA® DOG CHOW® Cachorros Razas Pequeñas está específicamente formulado con los nutrientes e ingredientes de calidad que su cuerpo necesita para crecer sano y fuerte. Asegúrate que tu cachorro crezca sano con la alimentación que ofrece PURINA® DOG CHOW® Cachorros, con DHA, que ayuda al desarrollo del cerebro y la visión y 23 Vitaminas y Minerales: una nutrición 100% completa y balanceada. Así, le ayudarán a que disfruten de todos los momentos en familia.</br></br><b>Recomendaciones:</b></br></br>Todo cambio de alimentación debe ser gradual. Mezcle el alimento en una relación de 3 porciones del alimento anterior y 1 del nuevo alimento y aumente la cantidad paulatinamente. Tenga siempre disponible agua fresca. No le sirva si se enlama o cambia de apariencia. Mantenga el envase cerrado y conserve en un lugar seco y fresco. Considere que las necesidades de cada perro varían dependiendo de la talla, sexo, raza, nivel de actividad, etapa fisiológica y temperatura ambiente.</br></br><b>Ingredientes:</b></br></br>Proteína Cruda (Min.)27,0%. Grasa Cruda (Mín.)11,0%. Fibra Cruda (Máx.)3,0%. Humedad (Máx.)12,0%. Ceniza (Máx.)8,0%. Calcio (Mín.)1,1%. Fósforo (Mín.)0,9%</br></br><b>Beneficios:</b></br></br>DHA ayuda al desarrollo del cerebro y la visión. Calcio para un óptimo crecimiento huesos y dientes fuertes. Proteínas a base de pollo para músculos fuertes. Vitaminas y antioxidantes ayudan a fortalecer las defensas naturales. Inulina para una sana digestión. Con croquetas pequeñas especiales para su tamaño.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="produc/CroquetaDogChowCachorroRazasPequenas.html" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-shopping-cart"></i></a>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        
+        <!--------------------------------------------------EN CONSTRUCCIÓN
         <div style="text-align: center;">    
             <img  class="responsive-img" src="img/404.jpg">
-        </div>    
+        </div>    -->
         <!--------------------------------------------------FOOTER-->
         <footer class="page-footer">
               <div class="container">
@@ -146,7 +301,7 @@
         }
       </style>
         <!------------------------------------Import jQuery before materialize.js-->
-        <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+         <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
         <script src="js/materialize.js"></script>
         <script src="js/materialize.min.js"></script>
         <script src="js/init.js"></script>
