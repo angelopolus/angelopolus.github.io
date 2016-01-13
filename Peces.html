@@ -33,13 +33,16 @@
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
                     <!------------------------------------------- MENU DESPLEGABLE Dropdown Trigger -->
-                    <li><a class='dropdown-button btn-flat white-text' href='#' data-activates='dropdown1'>Tienda<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a class='dropdown-button btn-flat white-text' href='#' data-activates='dropdown1'>Tienda<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
                         <!-------------------------------------- Dropdown Structure -->
                           <ul id='dropdown1' class='dropdown-content'>
                             <li><a href="Perros.html">Perros</a></li>
                             <li><a href="Gatos.html">Gatos</a></li>
                             <li><a href="Aves.html">Aves</a></li>
                             <li><a href="Peces.html">Peces</a></li>
+                            <li><a href="Roedores.html">Roedores</a></li>
+                            <li><a href="Reptiles.html">Reptiles</a></li>
+                            <li><a href="Plantas.html">Plantas</a></li>  
                             <li class="divider"></li>
                             <li><a href="#!">TODOS</a></li>
                           </ul>
@@ -54,6 +57,9 @@
                             <li><a href="Gatos.html">Gatos</a></li>
                             <li><a href="Aves.html">Aves</a></li>
                             <li><a href="Peces.html">Peces</a></li>
+                            <li><a href="Roedores.html">Roedores</a></li>
+                            <li><a href="Reptiles.html">Reptiles</a></li>
+                            <li><a href="Plantas.html">Plantas</a></li>
                             <li class="divider"></li>
                             <li><a href="#!">TODOS</a></li>
                           </ul>
@@ -61,52 +67,54 @@
             </div>
         </nav>
         
-        <!--------------------------------------------------- MODAL CONTACTO -->
-        <div id="modal0" class="modal">
-            <div class="modal-content">
-                <h3 class="caption center-align" >Estamos a tus órdenes</h3>
-                <p style="text-align: justify;">En Acuario Familia sabemos que no sólo se trata de una mascota, sino de un integrante más de la familia. Por ello te ofrecemos artículos que cumplan con sus necesidades y que esten al alcance de todos los bolsillos.</p><p style="text-align: justify;">Si tienes dudas con algun producto, forma de pago o envío, contactanos</p>
-            </div>
-            <div class="row">
-                <div class="col s12 m6">
-                <p class="fa fa-envelope-o">&nbsp;acuariofamilia@gmail.com</p> 
-                </div>  
-                <div class="col s12 m6">
-                <p class="right-align fa fa-whatsapp">&nbsp;55-1374-7612</p>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
-            </div>
-        </div>
-        
+        <!-- Modal Contacto -->
+                    <div id="modal0" class="modal">
+                       <div class="modal-content">
+                         <h3 class="caption center-align" >Estamos a tus órdenes</h3>
+                           <p style="text-align: justify;">En Acuario Familia sabemos que no sólo se trata de una mascota, sino de un integrante más de la familia. Por ello te ofrecemos artículos que cumplan con sus necesidades y que esten al alcance de todos los bolsillos.</p><p style="text-align: justify;">Si tienes dudas con algun producto, forma de pago o envío, contactanos</p>
+                        </div>
+                        <div class="row">
+                               <div class="col s12 m6">
+                                  <p class="fa fa-envelope-o">&nbsp;acuariofamilia@gmail.com</p> 
+                               </div>  
+                               <div class="col s12 m6">
+                                   <p class="right-align fa fa-whatsapp">&nbsp;55-1374-7612</p>
+                               </div>
+                        </div>
+                        <div class="modal-footer">
+                          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                        </div>
+                     </div>
         <!---------------------------------------------------BOTON PRINCIPAL-->  
         <div class="fixed-action-btn click-to-toggle" style="bottom: 45px; right: 24px;">
             <a class="btn-floating btn-large red">
                 <i class="material-icons">menu</i>
             </a>
             <ul>
-                <li><a href="Perros.html" class="btn-floating btn-large red"><i class="animal">d</i></a></li>
-                <li><a href="Gatos.html"class="btn-floating btn-large yellow darken-1"><i class="animal">c</i></a></li>
-                <li><a href="Aves.html"class="btn-floating btn-large green"><i class="animal">z</i></a></li>
-                <li><a href="Peces.html" class="btn-floating btn-large blue"><i class="animal">s</i></a></li>
+                <li><a href="Perros.html" class="btn-floating red"><i class="animal caption center-align">d</i></a></li>
+                <li><a href="Gatos.html"class="btn-floating yellow darken-1"><i class="animal caption center-align">c</i></a></li>
+                <li><a href="Aves.html"class="btn-floating  green"><i class="animal">z</i></a></li>
+                <li><a href="Peces.html" class="btn-floating  blue"><i class="animal">s</i></a></li>
+                <li><a href="Roedores.html"class="btn-floating  pink accent-1"><i class="animal">b</i></a></li>
+                <li><a href="Reptiles.html"class="btn-floating  yellow darken-4"><i class="animal">f</i></a></li>
+                <li><a href="Plantas.html" class="btn-floating  green accent-3 "><i class="fa fa-pagelines black-text"></i></a></li>
             </ul>
         </div>
-        <!---------------------------------------------------Fonts para el boton principal-->
-        <style type="text/css">
+        <!--Fonts para el boton principal-->
+          <style type="text/css">
             @font-face {
-                font-family: "Garanimals";
-                src: url("font/animals/GARANIMA.eot") /* EOT file for IE */
+             font-family: "Garanimals";
+             src: url("font/animals/GARANIMA.eot") /* EOT file for IE */
             }
             @font-face {
-                font-family: "Garanimals";
-                src: url("font/animals/GARANIMA.TTF");
+              font-family: "Garanimals";
+              src: url("font/animals/GARANIMA.TTF");
             }
             @font-face {
-                font-family: "Garanimals";
-                src: url("font/animals/GARANIMA.otf");
+              font-family: "Garanimals";
+              src: url("font/animals/GARANIMA.otf");
             }
-        </style>
+          </style>
         
         <!--------------------------------------------------PARALLAX IMAGE-->
         <div class="parallax-container">
@@ -1990,6 +1998,313 @@ un termostato magnético y luz piloto que encenderá cuando el termostato esté 
                                 <i class="fa fa-shopping-cart"></i></a>
                             </li>
                             </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/FiltroInternoSunnySPF600_.html"><img src="img/CabezaPoderSunny600.jpg"></a>              
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo">Filtro Interno Sunny SPF600 </div>
+                        <p>Filtro interno para mantener limpia el agua del acuario.Totalmente sumergible.</p>
+                        <div class="card-precio right-align">$243.00</div>
+                    </div>
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="#modal52" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!-- Modal Structure -->
+                                <div id="modal52" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Filtro Interno Sunny SPF600 </h5>
+                                        <p style="text-align: justify;">Filtro interno para mantener limpia el agua del acuario.Totalmente sumergible.</br></br><b>Características:</b></br></br>Para acuarios de hasta 50 litros</br>Motor completamente sumergible</br>Funcionamiento seguro y silencioso</br>Chupones de succión para facil instalación.</br>Ideal para acuarios de agua dulce y agua salada</br>Filtración química y biológica</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="produc/FiltroInternoSunnySPF600_.html" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-shopping-cart"></i></a>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/AnticloroBiomaa45Ml.html"><img src="img/AnticloroBiomaa.jpg"></a>              
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo">Anticloro Biomaa Clorkill 45Ml</div>
+                        <p>Elimina el cloro y otros halógenos. Cada gotero con 28 ml (1 floz) es suficiente para más de 1200 litros de agua.</p>
+                        <div class="card-precio right-align">$10.00</div>
+                    </div>
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="#modal53" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!-- Modal Structure -->
+                                <div id="modal53" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Anticloro Biomaa Clorkill 45Ml</h5>
+                                        <p style="text-align: justify;">Como una de las medidas que los gobiernos implementan para evitar la propagación de enfermedades gastrointestinales a través de las autoridades de salud pública, es la cloración del agua, con la finalidad de destruir a los gérmenes patógenos del agua destinada para consumo humano. Los compuestos de cloro son los más utilizados para la potabilización del agua y esto se debe principalmente a su bajo costo, además de que se requieren pequeñas cantidades de estos desinfectantes para grandes volúmenes de agua.</br></br>
+Si bien el agua de la red municipal deberá contener pequeñas cantidades de cloro (entre 0.5 y 3.0 miligramos por litro según la norma oficial mexicana NOM), este es muy tóxico para los peces y otros organismos acuáticos, ya que puede causarles severas quemaduras químicas en la piel y las branquias causándoles la muerte. Por tanto, es necesario eliminar el cloro, así como otros elementos halógenos activos, como el flúor y el yodo.</br></br>
+Clorkill es un acondicionador especialmente diseñado para eliminar estas sustancias. Tiene una concentración tal, que cada gotero con 28 ml (1 floz) es suficiente para más de 1200 litros de agua, ya que su utiliza en dosis de una gota por cada dos litros de agua, lo que redunda en una excelente relación de costo beneficio para el consumidor.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="produc/AnticloroBiomaa45Ml.html" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-shopping-cart"></i></a>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="row">
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/AnticloroBiomaa125Ml.html"><img src="img/AnticloroBiomaaClorkill125Ml.jpg"></a>              
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo">Anticloro Biomaa Clorkill 125Ml</div>
+                        <p>Elimina el cloro y otros halógenos. Cada 28 ml (1 floz) es suficiente para más de 1200 litros de agua.</p>
+                        <div class="card-precio right-align">$20.00</div>
+                    </div>
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="#modal54" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!-- Modal Structure -->
+                                <div id="modal54" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Anticloro Biomaa Clorkill 125Ml</h5>
+                                        <p style="text-align: justify;">Como una de las medidas que los gobiernos implementan para evitar la propagación de enfermedades gastrointestinales a través de las autoridades de salud pública, es la cloración del agua, con la finalidad de destruir a los gérmenes patógenos del agua destinada para consumo humano. Los compuestos de cloro son los más utilizados para la potabilización del agua y esto se debe principalmente a su bajo costo, además de que se requieren pequeñas cantidades de estos desinfectantes para grandes volúmenes de agua.</br></br>
+Si bien el agua de la red municipal deberá contener pequeñas cantidades de cloro (entre 0.5 y 3.0 miligramos por litro según la norma oficial mexicana NOM), este es muy tóxico para los peces y otros organismos acuáticos, ya que puede causarles severas quemaduras químicas en la piel y las branquias causándoles la muerte. Por tanto, es necesario eliminar el cloro, así como otros elementos halógenos activos, como el flúor y el yodo.</br></br>
+Clorkill es un acondicionador especialmente diseñado para eliminar estas sustancias. Tiene una concentración tal, que cada gotero con 28 ml (1 floz) es suficiente para más de 1200 litros de agua, ya que su utiliza en dosis de una gota por cada dos litros de agua, lo que redunda en una excelente relación de costo beneficio para el consumidor.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="produc/AnticloroBiomaa125Ml.html" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-shopping-cart"></i></a>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/AcondicionadorPentabiocareBiomaa45Ml.html"><img src="img/AcondicionadorPentabiocare45Ml.jpg"></a>              
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo">Acondicionador Pentabiocare Biomaa 45Ml</div>
+                        <p>Es un Acondicionador coloidal de uso general, de elevado desempeño el cual está formulado especialmente para la acuariofilia y la acuacultura de ornato, tanto para peces marinos como dulceacuícolas.</p>
+                        <div class="card-precio right-align">$12.00</div>
+                    </div>
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="#modal55" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!-- Modal Structure -->
+                                <div id="modal55" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Acondicionador Pentabiocare Biomaa 45Ml</h5>
+                                        <p style="text-align: justify;">Es un Acondicionador coloidal de uso general, de elevado desempeño el cual está formulado especialmente para la acuariofilia y la acuacultura de ornato, tanto para peces marinos como dulceacuícolas.</br></br>Brinda protección a los peces en diferentes aspectos:</br></br>Neutraliza los metales pesados, como el cobre, zinc, plomo cadmio, mercurio, etc.</br>
+Forma inmediatamente una cubierta coloidal que protege la piel de los peces temporalmente, evitando la invasión de agentes infecciosos.</br>
+Contiene elevada concentración de Tiamina (Vitamina B1, conocida también como vitamina antineurítica), la cual tiene la propiedad de ayudar a que los peces soporten mejor las condiciones de estrés en las diferentes etapas de la comercialización de estos, como el trasporte, captura y durante el periodo de adaptación de los peces a las condiciones de un acuario nuevo.</br>
+Elimina el cloro, las cloraminas y otros halógenos activos presentes en el agua de la red doméstica, evitando así las quemaduras químicas sobre la piel y las branquias de los peces y otros organismos acuáticos.</br>
+Disminuye la concentración de amonio/amoniaco que se forma en el agua por efecto del metabolismo de los peces. Esta característica es todavía más importante durante el transporte de estos organismos, que suelen encontrarse confinados en un volumen de agua reducido durante muchas horas antes de llegar a su destino.Es por estas razones que Pentabiocare es el acondicionador más utilizado en el país por los acuaristas profesionales y por los grandes mayoristas de peces.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="produc/AcondicionadorPentabiocareBiomaa45Ml.html" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-shopping-cart"></i></a>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/AcondicionadorPentabiocareBiomaa125Ml.html"><img src="img/AcondicionadorPentabiocare125Ml.jpg"></a>              
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo">Acondicionador Pentabiocare Biomaa 125Ml</div>
+                        <p>Es un Acondicionador coloidal de uso general, de elevado desempeño el cual está formulado especialmente para la acuariofilia y la acuacultura de ornato, tanto para peces marinos como dulceacuícolas.</p>
+                        <div class="card-precio right-align">$30.00</div>
+                    </div>
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="#modal56" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!-- Modal Structure -->
+                                <div id="modal56" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Acondicionador Pentabiocare Biomaa 125Ml</h5>
+                                        <p style="text-align: justify;">Es un Acondicionador coloidal de uso general, de elevado desempeño el cual está formulado especialmente para la acuariofilia y la acuacultura de ornato, tanto para peces marinos como dulceacuícolas.</br></br>Brinda protección a los peces en diferentes aspectos:</br></br>Neutraliza los metales pesados, como el cobre, zinc, plomo cadmio, mercurio, etc.</br>
+Forma inmediatamente una cubierta coloidal que protege la piel de los peces temporalmente, evitando la invasión de agentes infecciosos.</br>
+Contiene elevada concentración de Tiamina (Vitamina B1, conocida también como vitamina antineurítica), la cual tiene la propiedad de ayudar a que los peces soporten mejor las condiciones de estrés en las diferentes etapas de la comercialización de estos, como el trasporte, captura y durante el periodo de adaptación de los peces a las condiciones de un acuario nuevo.</br>
+Elimina el cloro, las cloraminas y otros halógenos activos presentes en el agua de la red doméstica, evitando así las quemaduras químicas sobre la piel y las branquias de los peces y otros organismos acuáticos.</br>
+Disminuye la concentración de amonio/amoniaco que se forma en el agua por efecto del metabolismo de los peces. Esta característica es todavía más importante durante el transporte de estos organismos, que suelen encontrarse confinados en un volumen de agua reducido durante muchas horas antes de llegar a su destino.Es por estas razones que Pentabiocare es el acondicionador más utilizado en el país por los acuaristas profesionales y por los grandes mayoristas de peces.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="produc/AcondicionadorPentabiocareBiomaa125Ml.html" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-shopping-cart"></i></a>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/AcondicionadorBiomaaBettaSafe35Ml.html"><img src="img/AcondicionadorBiomaaBettaSafe35Ml.jpg"></a>              
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo">Acondicionador Biomaa Betta Safe 35Ml</div>
+                        <p>Betta-Safe es un acondicionador especialmente formulado para que el agua donde habitarán sus peces Betta sea segura desde el punto de vista químico.</p>
+                        <div class="card-precio right-align">$12.00</div>
+                    </div>
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="#modal57" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!-- Modal Structure -->
+                                <div id="modal57" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Acondicionador Biomaa Betta Safe 35Ml</h5>
+                                        <p style="text-align: justify;">Acondicionar el agua de los acuarios para peces Betta nunca ha sido más fácil y seguro.</br></br>
+Betta-Safe es un acondicionador especialmente formulado para que el agua donde habitarán sus peces Betta sea segura desde el punto de vista químico.</br></br>
+Betta-Safe elimina el nocivo cloro del agua, neutralizando también a los otros elementos halógenos que suelen utilizarse para potabilizar el agua, como flúor y yodo. Aunque agregar cloro al agua potable es indispensable para evitar la transmisión de enfermedades en el hombre, este es sumamente irritante para la piel y las branquias de los peces, causándoles quemaduras químicas que frecuentemente son letales.</br></br>
+Betta-Safe también neutraliza los iones de los metales pesados peligrosos, como el plomo, cadmio, zinc, entre otros. Además previene muchas de las enfermedades más comunes y por su contenido de alta concentración de vitamina B1, le ayudará a su pez Betta a resistir mejor los estragos del estrés.</br></br>
+Aplique una gota de Betta-Safe por cada litro de agua de la llave antes de que esta entre en contacto con su pez Betta.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="produc/AcondicionadorBiomaaBettaSafe35Ml.html" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-shopping-cart"></i></a>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/SalParaAcuarioBiomaaSan-Halita350gr.html"><img src="img/SalSan-HalitaEcon%C3%B3mica350gr.jpg"></a>              
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo">Sal Para Acuario Biomaa San-Halita 350 gr</div>
+                        <p>San-Halita se recomienda como terapéutico contra algunas enfermedades parasitarias benignas causadas por protozoarios oportunistas, como la trichodiniasis, epistiliassi, entre otras.</p>
+                        <div class="card-precio right-align">$5.00</div>
+                    </div>
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="#modal58" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!-- Modal Structure -->
+                                <div id="modal58" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Sal Para Acuario Biomaa San-Halita 350 gr</h5>
+                                        <p style="text-align: justify;">Una de las primeras consideraciones que tenemos en cuenta al iniciarnos en la acuariofilia, es que al menos existen dos tipos básicos de acuarios, los marinos y los acuarios de "Agua Dulce".</br></br>
+Muchas especies de peces de acuarios provienen de cuerpos de agua cuya cercanía con el mar facilita que el agua de mar se mezcle en cierta medida con el agua continental dando como resultado un agua con salinidad intermedia comúnmente conocida como agua salobre, a la que varias especies de peces se encuentran adaptadas, como es el caso de los peces arquero, guppies, pangasios, entre otros.</br></br>
+San-Halita es un sal de elevada pureza que se contiene por la evaporación del agua de mar y cuyo contenido en cloruro de sodio es del 99.96% en promedio, lo cual significa que es la sal más pura de que se pueda disponer de manera económica para incrementar la salinidad del agua en los acuarios, por lo tanto no enturbia el agua.</br></br>
+San-Halita se recomienda como terapéutico contra algunas enfermedades parasitarias benignas causadas por protozoarios oportunistas, como la trichodiniasis, epistiliassi, entre otras. El tratamiento se fundamenta en que muchos de estos microorganismos tienen poca tolerancia a concentraciones bajas o moderadas de sal. Se recomienda utilizar de 1 a 5 gramos de San-Halita por cada litro de agua para combatir este tipo de enfermedades.</br></br>
+También puede utilizarse como tratamiento tonificante para algunas especies de peces, como los japoneses en sus diferentes variedades después de traslados largos en que los peces suelen llegar agotados o deprimidos por el estrés.</br></br>
+San-Halita deberá ser utilizada con precaución ya que no todas las especies de peces toleran la sal disuelta en el agua, como es el caso de los géneros Corydoras y Brochis, por mencionar algunos de los más comunes.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="produc/SalParaAcuarioBiomaaSan-Halita350gr.html" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-shopping-cart"></i></a>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/AlimentoBettabit25Gr.html"><img src="img/AlimentoBettabit25Gr.jpg"></a>              
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo">Alimento Para Pez Betta 25Gr</div>
+                        <p>Alimento en pellet flotante para bettas. Proporcione de 2 a 4 bolitas por cada sesión de alimentación.</p>
+                        <div class="card-precio right-align">$10.00</div>
+                    </div>
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="#modal59" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!-- Modal Structure -->
+                                <div id="modal59" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Alimento Para Pez Betta 25Gr</h5>
+                                        <p style="text-align: justify;">No resulta difícil comprender porqué los peces Betta son tan populares, aunque la verdad existen muchas razones que explican su popularidad. Una de ellas es que los machos de la especie son peces espléndidos en su colorido y desarrollo de sus aletas, pero quizá la razón más poderosa es que no son peces caros y son bastante tolerantes en cuanto a las condiciones de calidad del agua y tamaño del acuario en donde habiten; sin embargo, muchas veces es un verdadero dolor de cabeza hacerlos comer, ya que debido a sus hábitos de depredador, pocas veces aceptan alimentos en hojuelas, prefiriendo alimentarse de presas vivas.</br></br>
+El problema de conseguir alimento que estos peces deseen comer se resuelve con Bettabit, éste es un alimento balanceado en formas de pequeñas bolitas (1.5 mm de diámetro) de color obscuro que los peces suelen confundir con insectos, apresurándose a devorarlo.</br></br>
+Proporcione de 2 a 4 bolitas por cada sesión de alimentación, si observa que no terminó de comerlas todas, retire las sobrantes y tenga paciencia, en poco tiempo comerá sus raciones</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="produc/AlimentoBettabit25Gr.html" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-shopping-cart"></i></a>
+                            </li>                            
                         </ul>
                     </div>
                 </div>

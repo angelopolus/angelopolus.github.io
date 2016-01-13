@@ -71,10 +71,13 @@
 
 i.animal{
 font-family: "Garanimals";
-   font-size: 350%;
+   font-size: 240%;
    color: black;
    font-style: normal;
    text-align: center;
+   margin-top: 3px;
+   margin-left: 1px;
+   
 }
 
 /*** Inicio de Navbar Agregada ***/

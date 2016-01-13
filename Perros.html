@@ -33,13 +33,16 @@
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
                     <!------------------------------------------- MENU DESPLEGABLE Dropdown Trigger -->
-                    <li><a class='dropdown-button btn-flat white-text' href='#' data-activates='dropdown1'>Tienda<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a class='dropdown-button btn-flat white-text' href='#' data-activates='dropdown1'>Tienda<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
                         <!-------------------------------------- Dropdown Structure -->
                           <ul id='dropdown1' class='dropdown-content'>
                             <li><a href="Perros.html">Perros</a></li>
                             <li><a href="Gatos.html">Gatos</a></li>
                             <li><a href="Aves.html">Aves</a></li>
                             <li><a href="Peces.html">Peces</a></li>
+                            <li><a href="Roedores.html">Roedores</a></li>
+                            <li><a href="Reptiles.html">Reptiles</a></li>
+                            <li><a href="Plantas.html">Plantas</a></li>  
                             <li class="divider"></li>
                             <li><a href="#!">TODOS</a></li>
                           </ul>
@@ -54,6 +57,9 @@
                             <li><a href="Gatos.html">Gatos</a></li>
                             <li><a href="Aves.html">Aves</a></li>
                             <li><a href="Peces.html">Peces</a></li>
+                            <li><a href="Roedores.html">Roedores</a></li>
+                            <li><a href="Reptiles.html">Reptiles</a></li>
+                            <li><a href="Plantas.html">Plantas</a></li>
                             <li class="divider"></li>
                             <li><a href="#!">TODOS</a></li>
                           </ul>
@@ -61,52 +67,54 @@
             </div>
         </nav>
         
-        <!--------------------------------------------------- MODAL CONTACTO -->
-        <div id="modal0" class="modal">
-            <div class="modal-content">
-                <h3 class="caption center-align" >Estamos a tus órdenes</h3>
-                <p style="text-align: justify;">En Acuario Familia sabemos que no sólo se trata de una mascota, sino de un integrante más de la familia. Por ello te ofrecemos artículos que cumplan con sus necesidades y que esten al alcance de todos los bolsillos.</p><p style="text-align: justify;">Si tienes dudas con algun producto, forma de pago o envío, contactanos</p>
-            </div>
-            <div class="row">
-                <div class="col s12 m6">
-                <p class="fa fa-envelope-o">&nbsp;acuariofamilia@gmail.com</p> 
-                </div>  
-                <div class="col s12 m6">
-                <p class="right-align fa fa-whatsapp">&nbsp;55-1374-7612</p>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
-            </div>
-        </div>
-        
+        <!-- Modal Contacto -->
+                    <div id="modal0" class="modal">
+                       <div class="modal-content">
+                         <h3 class="caption center-align" >Estamos a tus órdenes</h3>
+                           <p style="text-align: justify;">En Acuario Familia sabemos que no sólo se trata de una mascota, sino de un integrante más de la familia. Por ello te ofrecemos artículos que cumplan con sus necesidades y que esten al alcance de todos los bolsillos.</p><p style="text-align: justify;">Si tienes dudas con algun producto, forma de pago o envío, contactanos</p>
+                        </div>
+                        <div class="row">
+                               <div class="col s12 m6">
+                                  <p class="fa fa-envelope-o">&nbsp;acuariofamilia@gmail.com</p> 
+                               </div>  
+                               <div class="col s12 m6">
+                                   <p class="right-align fa fa-whatsapp">&nbsp;55-1374-7612</p>
+                               </div>
+                        </div>
+                        <div class="modal-footer">
+                          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                        </div>
+                     </div>
         <!---------------------------------------------------BOTON PRINCIPAL-->  
         <div class="fixed-action-btn click-to-toggle" style="bottom: 45px; right: 24px;">
-            <a class="btn-floating btn-large red ">
+            <a class="btn-floating btn-large red">
                 <i class="material-icons">menu</i>
             </a>
             <ul>
-                <li><a href="Perros.html" class="btn-floating btn-large red"><i class="animal">d</i></a></li>
-                <li><a href="Gatos.html"class="btn-floating btn-large yellow darken-1"><i class="animal">c</i></a></li>
-                <li><a href="Aves.html"class="btn-floating btn-large green"><i class="animal">z</i></a></li>
-                <li><a href="Peces.html" class="btn-floating btn-large blue"><i class="animal">s</i></a></li>
+                <li><a href="Perros.html" class="btn-floating red"><i class="animal caption center-align">d</i></a></li>
+                <li><a href="Gatos.html"class="btn-floating yellow darken-1"><i class="animal caption center-align">c</i></a></li>
+                <li><a href="Aves.html"class="btn-floating  green"><i class="animal">z</i></a></li>
+                <li><a href="Peces.html" class="btn-floating  blue"><i class="animal">s</i></a></li>
+                <li><a href="Roedores.html"class="btn-floating  pink accent-1"><i class="animal">b</i></a></li>
+                <li><a href="Reptiles.html"class="btn-floating  yellow darken-4"><i class="animal">f</i></a></li>
+                <li><a href="Plantas.html" class="btn-floating  green accent-3 "><i class="fa fa-pagelines black-text"></i></a></li>
             </ul>
         </div>
-        <!---------------------------------------------------Fonts para el boton principal-->
-        <style type="text/css">
+        <!--Fonts para el boton principal-->
+          <style type="text/css">
             @font-face {
-                font-family: "Garanimals";
-                src: url("font/animals/GARANIMA.eot") /* EOT file for IE */
+             font-family: "Garanimals";
+             src: url("font/animals/GARANIMA.eot") /* EOT file for IE */
             }
             @font-face {
-                font-family: "Garanimals";
-                src: url("font/animals/GARANIMA.TTF");
+              font-family: "Garanimals";
+              src: url("font/animals/GARANIMA.TTF");
             }
             @font-face {
-                font-family: "Garanimals";
-                src: url("font/animals/GARANIMA.otf");
+              font-family: "Garanimals";
+              src: url("font/animals/GARANIMA.otf");
             }
-        </style>
+          </style>
         
         <!--------------------------------------------------PARALLAX IMAGE-->
         <div class="parallax-container">
@@ -125,7 +133,7 @@
                     <div class="card-content">
                         <div class="card-titulo">X-Dog Adulto</div>
                         <p>Alimento extruido en forma de crujiente Croqueta  que cubre  al 100 % las necesidades energéticas y proteicas de perros  adultos con actividad media o en fase de mantenimiento.</p>
-                        <div class="card-precio right-align">$15.00 Kg</div>
+                        <div class="card-precio right-align">$20.00 Kg</div>
                     </div>
                     <div class="card-footer">
                         <ul>
@@ -257,13 +265,866 @@ Los perros de esta edad necesitan un balance nutricional diferente a los más jo
                     </div>
                 </div>
             </div>
-        </div>            
+        </div>
         <div class="row">
             <!---------------------------------------------------TARJETA PRODUCTO--> 
             <div class="col s12 m3">
                 <div class="card">
                     <div class="card-image">
-                        <img src="img/SHAMPOO%20FANCY%20PETS%20CITRICOS%20250%20Ml%208.5%20Oz.jpg">              
+                        <a href="produc/CroquetaBenefulCachorro.html"><img src="img/CroquetaBenefultCachorro.png"></a>              
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo">Croqueta Beneful Cachorro</div>
+                        <p>Son ideales para un inicio feliz y saludable para tu cachorro, ya que contienen todos los beneficios propios de la leche. Asegúrale una vida llena de salud y juegos con croquetas BENEFUL®</p>
+                        <div class="card-precio right-align">$50.00 Kg</div>
+                    </div>
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="#modal34" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!-- Modal Structure -->
+                                <div id="modal34" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Croqueta Beneful Cachorro</h5>
+                                        <p style="text-align: justify;">Son ideales para un inicio feliz y saludable para tu cachorro, ya que contienen todos los beneficios propios de la leche. Asegúrale una vida llena de salud y juegos con croquetas BENEFUL®</br></br><b>Recomendaciones:</b></br></br>Todo cambio de alimentación debe ser gradual. Mezcle el alimento en una relación de 3 porciones del alimento anterior y 1 del nuevo alimento y aumente la cantidad paulatinamente. Tenga siempre disponible agua fresca. No le sirva si se enlama o cambia de apariencia. Mantenga el envase cerrado y conserve en un lugar seco y fresco. Considere que las necesidades de cada perro varían dependiendo de la talla, sexo, raza, nivel de actividad, etapa fisiológica y temperatura ambiente.</br></br><b>Proteina:</b></br></br>Trozos suaves a base de carne, ricos en proteína para la formación de músculos fuertes y resistentes.</br></br><b>Calcio:</b></br></br>Para que tu perro tenga dientes y huesos más sanos y fuertes.</br></br><b>Carbohidratos:</b></br></br>Como maíz y otros carbohidratos esenciales que brindan energía día a día.</br></br><b>Acidos Grasos Omega:</b></br></br>Para un pelaje sano y más brillante. Contiene antioxidantes (selenio y vitamina E), que ayudan a que tu perro mantenga un saludable sistema inmunológico.</br></br><b>Vitamina A:</b></br></br>Incluye vegetales y otros nutrientes esenciales, además de zinc, para una piel saludable.</br></br><b>Hierro:</b></br></br>Para una mejor oxigenación de la sangre.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="produc/CroquetaBenefulCachorro.html" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-shopping-cart"></i></a>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/CroquetaGanadorPremiumAdulto.html"><img src="img/CroquetaGanadorPremiumAdulto.jpg"></a>              
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo">Ganador Premium Adulto</div>
+                        <p>Ayuda a aumentar la producción de globulos blancos, y lo protegen de enfermedades cardiovasculares y del envejecimiento.</p>
+                        <div class="card-precio right-align">$34.00 Kg</div>
+                    </div>
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="#modal35" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!-- Modal Structure -->
+                                <div id="modal35" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Croqueta Ganador Premium Adulto</h5>
+                                        <p style="text-align: justify;">Ayuda a aumentar la producción de globulos blancos, y lo protegen de enfermedades cardiovasculares y del envejecimiento.</br></br><b>Recomendaciones:</b></br></br>Todo cambio de alimentación debe ser gradual. Mezcle el alimento en una relación de 3 porciones del alimento anterior y 1 del nuevo alimento y aumente la cantidad paulatinamente. Tenga siempre disponible agua fresca. No le sirva si se enlama o cambia de apariencia. Mantenga el envase cerrado y conserve en un lugar seco y fresco. Considere que las necesidades de cada perro varían dependiendo de la talla, sexo, raza, nivel de actividad, etapa fisiológica y temperatura ambiente.</br></br><b>Ingredientes Seleccionados:</b></br></br>Harinas de cereales precocidos (maíz, trigo, arroz), harina de carne de pollo, harina de carne de res, harinas de subproductos de cereales, grasa natural de pollo y res estabilizadas, subproducto de linaza, suero de leche, harina de huevo, levadura de cerveza y melaza, harina de soya, lactobacilus acidophilus, harina de huevo deshidratado, oligosacárido mananos, colorantes, concentrados de carne (pollo), ácidos grasos Omega 3 y 6, vitaminas A, B2, B12, C, D3, E, K, biotina, niacina cloruro de colina, piridoxina, tiamina, ácido fólico, cloruro de sodio, pantotenato de calcio, fosfato de calcio, cloruro de potasio, yodo (EDDI), proteinatos minerales (zinc, cobre, selenio, manganeso y cromo), sulfato ferreso, lisina y metionina sintética, extracto de yuca, inulina y acacia.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="produc/CroquetaGanadorPremiumAdulto.html" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-shopping-cart"></i></a>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/CroquetaGanadorPremiumCachorro.html"><img src="img/CroquetaGanadorPremiumCachorro.jpg"></a>              
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo">Ganador Premium Cachorro</div>
+                        <p>Óptimo para el desarrollo de huesos y músculos. Ayuda a aumentar la producción de globulos blancos, y lo protegen de enfermedades cardiovasculares y del envejecimiento.</p>
+                        <div class="card-precio right-align">$36.00 Kg</div>
+                    </div>
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="#modal36" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!-- Modal Structure -->
+                                <div id="modal36" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Croqueta Ganador Premium Cachorro</h5>
+                                        <p style="text-align: justify;">Óptimo para el desarrollo de huesos y músculos. Ayuda a aumentar la producción de globulos blancos, y lo protegen de enfermedades cardiovasculares y del envejecimiento.</br></br><b>Recomendaciones:</b></br></br>Todo cambio de alimentación debe ser gradual. Mezcle el alimento en una relación de 3 porciones del alimento anterior y 1 del nuevo alimento y aumente la cantidad paulatinamente. Tenga siempre disponible agua fresca. No le sirva si se enlama o cambia de apariencia. Mantenga el envase cerrado y conserve en un lugar seco y fresco. Considere que las necesidades de cada perro varían dependiendo de la talla, sexo, raza, nivel de actividad, etapa fisiológica y temperatura ambiente.</br></br><b>Ingredientes Seleccionados:</b></br></br>Harinas de cereales precocidos (maíz, trigo, arroz y avena), harina de carne de pollo, harina de carne de res, harinas de subproductos de cereales, subproductos de linaza, grasa natural de pollo y res estabilizadas, levadura de cerveza, leche deshidratada, suero de leche, harina de huevo, lactobacilus acidophilus, oligosacárido mananos, concentrados de carne de ave, harina de soya, ácidos grasos Omega 3 y 6, vitaminas A, B2, B12, C, D3, E, K, biotina, niacina cloruro de colina, piridoxina, tiamina, pantotenato de calcio, minerales: fosfato de calcio, carbonato de calcio, cloruro de potasio, cloruro de sodio, yodo (EDDI), sulfato ferroso, proteinatos minerales (zinc, cobre, selenio, manganeso y cromo), lisina y metionina sintética, extracto de yuca, antioxidantes (BHT y BHA).</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="produc/CroquetaGanadorPremiumCachorro.html" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-shopping-cart"></i></a>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/CroquetaGanadorPremiumAdultoRazasPequenas.html"><img src="img/CroquetaGanadorPremiumAdultoRP.jpg"></a>              
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo">Ganador Premium Adulto Razas Pequeñas</div>
+                        <p>Contiene agentes especiales que disminuyen la formación de sarro en los dientes. Tamaño de croqueta de acuerdo a su tamaño para que las pueda comer fácilmente. Omega 3 y 6 pata obetener piel y pelo saludables con el balance ideal de estos ácidos grasos esenciales</p>
+                        <div class="card-precio right-align">$36.00 Kg</div>
+                    </div>
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="#modal37" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!-- Modal Structure -->
+                                <div id="modal37" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Ganador Premium Adulto Razas Pequeñas</h5>
+                                        <p style="text-align: justify;">Contiene agentes especiales que disminuyen la formación de sarro en los dientes. Tamaño de croqueta de acuerdo a su tamaño para que las pueda comer fácilmente. Omega 3 y 6 pata obetener piel y pelo saludables con el balance ideal de estos ácidos grasos esenciales.Ayuda a aumentar la producción de globulos blancos, y lo protegen de enfermedades cardiovasculares y del envejecimiento.</br></br><b>Recomendaciones:</b></br></br>Todo cambio de alimentación debe ser gradual. Mezcle el alimento en una relación de 3 porciones del alimento anterior y 1 del nuevo alimento y aumente la cantidad paulatinamente. Tenga siempre disponible agua fresca. No le sirva si se enlama o cambia de apariencia. Mantenga el envase cerrado y conserve en un lugar seco y fresco. Considere que las necesidades de cada perro varían dependiendo de la talla, sexo, raza, nivel de actividad, etapa fisiológica y temperatura ambiente.</br></br><b>Ingredientes Seleccionados:</b></br></br>Harinas de cereales, (arroz, trigo, maíz) harinas seleccionadas de carne de pollo o res o cerdo, gluten de maíz, derivados lácteos (bovino), subproductos de cereales (arroz, trigo, maíz), semilla de linaza, harina de algas, harina de atún y aceite de pescado como fuente de ácidos grasos omega 3 y 6, grasa animal estabilizada (pollo o bovino), palatantes naturales (concentrados de proteína de pollo, cerdo), sabor vainilla, extracto seco de levadura de cerveza, cultivos de levaduras de Saccharomyces cervisiae, insulina, vitaminas: A, D, E, K, tiamina (B1), riboflavina (B2), niacina (B3), piridoxina (B6), biotina (B7), ácido fólico (B9), cianocobalamina (B12), cloruro de colina, premezcla mineral: pantotenato de calcio, cloruro de sodio, fosfato dicálcico, carbonato de calcio, cloruro de potasio, yodo, sulfato ferroso, carbonato de cobalto, óxido manganoso, óxido de zinc, sulfato cobre, bióxido de titanio, proteinatos minerales de zinc, selenio orgánico de levadura, colorantes: café caramelo, amarillo 5 y azul 2, extracto de Yucca schidigera, aminoácidos: L-lisina, DL-metionina y taurina, probióticos: Bacillus subtilis (1.4x108 UFC/g) y Bacillus amyloliquefaciens (1x106 UFC/g), prebióticos: Fructooligosacáridos FOS y mananooligosacáridos MOS, hexametafosfato de sodio como agente antisarro.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="produc/CroquetaGanadorPremiumAdultoRazasPequenas.html" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-shopping-cart"></i></a>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/CroquetaProPlanPuppy.html"><img src="img/CroquetaProPlanPuppy.jpg"></a>              
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo">Purina Pro Plan Puppy Complete Con Optistart Plus</div>
+                        <p>Formulado por veterinarios y nutricionistas para atender las necesidades específicas de aquellos cachorros que pesen más de 10kg y menos de 25 kg cuando sean adultos. </p>
+                        <div class="card-precio right-align">$86.00 Kg</div>
+                    </div>
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="#modal38" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!-- Modal Structure -->
+                                <div id="modal38" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Purina Pro Plan Puppy Complete Con Optistart Plus</h5>
+                                        <p style="text-align: justify;">Formulado por veterinarios y nutricionistas para atender las necesidades específicas de aquellos cachorros que pesen más de 10kg y menos de 25 kg cuando sean adultos. Elimina la “brecha inmunológica” y provee nutrición completa que ayuda a los cachorros a crecer fuertes y sanos.</br></br><b>Recomendaciones:</b></br></br>Todo cambio de alimentación debe ser gradual. Mezcle el alimento en una relación de 3 porciones del alimento anterior y 1 del nuevo alimento y aumente la cantidad paulatinamente. Tenga siempre disponible agua fresca. No le sirva si se enlama o cambia de apariencia. Mantenga el envase cerrado y conserve en un lugar seco y fresco. Considere que las necesidades de cada perro varían dependiendo de la talla, sexo, raza, nivel de actividad, etapa fisiológica y temperatura ambiente.</br></br><b>Protege el sistema digestivo inmaduro:</b></br></br>Provee proteínas de calidad altamente digeribles y otros bioactivos provenientes del calostro que promueven la estabilidad de la microflora intestinal de los cachorros, protegiéndolos de problemas digestivos como la diarrea, y permitiendo una mejor absorción de nutrientes para un desarrollo óptimo.</br></br><b>Promueve una piel saludable y un pelaje lustroso:</b></br></br>Con proteínas de alta calidad, ácidos grasos Omega 3 y 6, vitaminas y minerales clave como cobre y selenio, que ayudan a desarrollar una piel sana y un pelaje brillante, primera barrera de protección contra amenazas externas.</br></br><b>Ingredientes de calidad:</b></br></br>Altamente digeribles como el pollo fresco y el arroz, aseguran una absorción óptima de nutrientes y heces pequeñas y firmes.</br></br><b>Desarrollo del cerebro y de la visión:</b></br></br>El DHA (ácido docosahexaenoico) y EPA (ácido eicasapentaenoico) del aceite de pescado estimulan el desarrollo del cerebro y la maduración de la visión.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="produc/CroquetaProPlanPuppy.html" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-shopping-cart"></i></a>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/CroquetaProPlanAdulto.html"><img src="img/CroquetaProPlanAdulto.jpg"></a>              
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo">Purina Pro Plan Adult Complete Con Optilife Triple Action</div>
+                        <p>Ofrece, a través de sus sabrosas croquetas, un contenido rico en proteínas (26%) y grasas (15%), utilizando como ingrediente principal carne fresca de pollo, que ayuda a los perros a mantener la masa corporal magra y músculos fuertes.</p>
+                        <div class="card-precio right-align">$75.00 Kg</div>
+                    </div>
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="#modal39" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!-- Modal Structure -->
+                                <div id="modal39" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Purina Pro Plan Adult Complete Con Optilife Triple Action</h5>
+                                        <p style="text-align: justify;">Formulado por veterinarios y nutricionistas para atender las necesidades nutricionales de los perros adultos. PURINA® PRO PLAN® Adult Complete con OptiLife® Triple Action provee nutrición de avanzada que ayuda a los perros de razas medianas a mantenerse fuertes y llenos de vitalidad.</br>Para cumplir con las exigencias metabólicas de la mayoría de los perros adultos, PURINA® PRO PLAN® ha desarrollado OptiLife® Complete. Esta fórmula ofrece, a través de sus sabrosas croquetas, un contenido rico en proteínas (26%) y grasas (15%), utilizando como ingrediente principal carne fresca de pollo, que ayuda a los perros a mantener la masa corporal magra y músculos fuertes.</br>Al igual que todos los cachorros, tras el destete experimentarán una "brecha inmunológica” que los dejará en condiciones vulnerables.</br></br><b>Recomendaciones:</b></br></br>Todo cambio de alimentación debe ser gradual. Mezcle el alimento en una relación de 3 porciones del alimento anterior y 1 del nuevo alimento y aumente la cantidad paulatinamente. Tenga siempre disponible agua fresca. No le sirva si se enlama o cambia de apariencia. Mantenga el envase cerrado y conserve en un lugar seco y fresco. Considere que las necesidades de cada perro varían dependiendo de la talla, sexo, raza, nivel de actividad, etapa fisiológica y temperatura ambiente.</br></br><b>Promueve un sistema digestivo saludable:</b></br></br>Prebióticos bioactivos promueven la estabilidad de la microflora intestinal de los perros, protegiéndolos de problemas digestivos como la diarrea, y promoviendo una mejor absorción de nutrientes para una salud óptima.</br></br><b>Favorece una piel saludable y un pelaje lustroso:</b></br></br>Con proteínas de alta calidad, ácidos grasos omega 3 y 6, vitaminas y minerales clave como cobre y selenio, que ayudan a mantener una piel sana y un pelaje brillante.</br></br><b>Huesos y dientes fuertes:</b></br></br>Una relación balanceada de calcio y fósforo, que ayuda a mantener huesos y dientes fuertes.</br></br><b>Sabor superior:</b></br></br>Ingredientes de alta calidad, comenzando por la carne fresca de pollo como ingrediente principal.</br></br><b>Refuerza el sistema inmunológico:</b></br></br>Formulado con β-glucanos provenientes de la levadura natural, y proteínas de la carne fresca de pollo altamente digeribles para mantener un sistema inmunológico fuerte.</br></br><b>Ingredientes de calidad:</b></br></br>Altamente digeribles como el pollo fresco y el arroz, aseguran una absorción óptima de nutrientes y heces pequeñas y firmes.</br></br><b>Mantiene músculos fuertes y un peso saludable:</b></br></br>Proteínas de alta calidad y un balance óptimo de nutrientes para una masa muscular magra.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="produc/CroquetaProPlanAdulto.html" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-shopping-cart"></i></a>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/CroquetaPedigreeCachorro.html"><img src="img/CroquetaPedigreeCachorro.jpg"></a>              
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo">Pedigree Vital Protection Etapa 1 Cachorro</div>
+                        <p>Es la etapa en la que necesita desarrollar su flora intestinal y su sistema inmunológico, ya que explora y muerde todo lo que encuentra, exponiéndose así a varias enfermedades. Dale PEDIGREE® Cachorro Sano Crecimiento® que con sus prebióticos y vitaminas le ayuda a tener un sistema digestivo bien protegido y defensas fuertes.</p>
+                        <div class="card-precio right-align">$35.00 Kg</div>
+                    </div>
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="#modal40" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!-- Modal Structure -->
+                                <div id="modal40" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Pedigree Vital Protection Etapa 1 Cachorro</h5>
+                                        <p style="text-align: justify;">Es la etapa en la que necesita desarrollar su flora intestinal y su sistema inmunológico, ya que explora y muerde todo lo que encuentra, exponiéndose así a varias enfermedades. Dale PEDIGREE® Cachorro Sano Crecimiento® que con sus prebióticos y vitaminas le ayuda a tener un sistema digestivo bien protegido y defensas fuertes.</br></br><b>Recomendaciones:</b></br></br>Todo cambio de alimentación debe ser gradual. Mezcle el alimento en una relación de 3 porciones del alimento anterior y 1 del nuevo alimento y aumente la cantidad paulatinamente. Tenga siempre disponible agua fresca. No le sirva si se enlama o cambia de apariencia. Mantenga el envase cerrado y conserve en un lugar seco y fresco. Considere que las necesidades de cada perro varían dependiendo de la talla, sexo, raza, nivel de actividad, etapa fisiológica y temperatura ambiente.</br></br><b>Ingredientes:</b></br></br>Cereales y sus Derivados, Harina y/o Subproductos (Menudencias) de Pollo y/o Res y/o Puerco y/o Pescado y/o Pastas de Oleaginosas, Sabor Natural de Pollo y/o Puerco y/o Res y/o Artificial, Grasa de Res y/o Puerco y/o Pollo (Conservada con BHA/BHT) y/o Aceite Vegetal (Fuente Natural de Ácido Linoleico), Colorantes de Origen Natural y/o Artificiales, Aluminosilicatos, Sal Yodatada, Prebióticos (Derivados de Levadura), Vegetales deshidratados, Leche de Vaca en Polvo, Antioxidante (BHA/BHT). Vitaminas: Suplementos de Colina, Vitamina E, Ácido Pantoténico (B5), Riboflavina (B2), A, Biotina, Tiamina (B1), D, Cobalamina (B12). Minerales: Óxidos y/o Sales y/o Proteinatos de Fósforo, Calcio, Potasio, Zinc, Yodo, Cobre, y Selenio.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="produc/CroquetaPedigreeCachorro.html" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-shopping-cart"></i></a>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/CroquetaPedigreeAdulto.html"><img src="img/CroquetaPedigreeAdulto.jpg"></a>              
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo">Pedigree Vital Protection Etapa 3 Adulto Nutrición Completa</div>
+                        <p>Tiene todo lo que necesita para vivir pleno, gracias a su fórmula con una mezcla óptima de fibras y proteínas de alta calidad.</p>
+                        <div class="card-precio right-align">$30.00 Kg</div>
+                    </div>
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="#modal41" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!-- Modal Structure -->
+                                <div id="modal41" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Pedigree Vital Protection Etapa 3 Adulto Nutrición Completa</h5>
+                                        <p style="text-align: justify;">Está en la etapa más larga de su vida, necesita mayor vitalidad y músculos fuertes, su sistema digestivo ya ha madurado y se le debe dar la proporción adecuada de fibras para lograr una buena digestión y heces firmes. PEDIGREE® Adulto Nutrición Completa, tiene todo lo que necesita para vivir pleno, gracias a su fórmula con una mezcla óptima de fibras y proteínas de alta calidad.</br></br><b>Recomendaciones:</b></br></br>Todo cambio de alimentación debe ser gradual. Mezcle el alimento en una relación de 3 porciones del alimento anterior y 1 del nuevo alimento y aumente la cantidad paulatinamente. Tenga siempre disponible agua fresca. No le sirva si se enlama o cambia de apariencia. Mantenga el envase cerrado y conserve en un lugar seco y fresco. Considere que las necesidades de cada perro varían dependiendo de la talla, sexo, raza, nivel de actividad, etapa fisiológica y temperatura ambiente.</br></br><b>Ingredientes:</b></br></br>Cereales y sus Derivados, Harina y/o subproductos (Menudencias) de Pollo y/o Res y/o Puerco y/o Pescado y/o Levadura de Cervecería Deshidratada y/o Pastas de Oleaginosas, Grasa de Res y/o Puerco y/o Pollo (Conservada con BHA/BHT) y/o Aceite Vegetal (Fuente Natural de Ácido Linoleico), Sabor Natural de Pollo y/o Puerco y/o Res y/o Artificial, Sal Yodatada, Colorantes de Origen Natural y/o Artificiales, Metionina, Antioxidantes (BHA/BHT), Vegetales deshidratados. VITAMINAS: Suplementos de Colina, Vitaminas E, Ácido Pantoténico (B5), Riboflavina (B2), Tiamina (B1), Biotina, Cobalamina (B12), D, A,. MINERALES: Óxidos o Sales de Potasio, Zinc, Iodo, Cobre, Selenio.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="produc/CroquetaPedigreeAdulto.html" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-shopping-cart"></i></a>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="row">
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/CroquetaDogChowAdultoRazasPequenas.html"><img src="img/CroquetaDogChowAdultoRP.jpg"></a>              
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo">Dog Chow Adultos Razas Pequeñas</div>
+                        <p>Está específicamente formulado con los nutrientes e ingredientes de calidad que lo ayudarán a tener salud y vitalidad por muchos más años.</p>
+                        <div class="card-precio right-align">$32.00 Kg</div>
+                    </div>
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="#modal42" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!-- Modal Structure -->
+                                <div id="modal42" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Dog Chow Adultos Razas Pequeñas</h5>
+                                        <p style="text-align: justify;">Tu perro es único. Su pequeño cuerpo ya creció y le fascina estar activo con tu familia. Es por eso que merece un alimento que nutra todo lo que lo hace tan especial. PURINA® DOG CHOW® Adultos Razas Pequeñas está específicamente formulado con los nutrientes e ingredientes de calidad que lo ayudarán a tener salud y vitalidad por muchos más años.</br></br><b>Recomendaciones:</b></br></br>Todo cambio de alimentación debe ser gradual. Mezcle el alimento en una relación de 3 porciones del alimento anterior y 1 del nuevo alimento y aumente la cantidad paulatinamente. Tenga siempre disponible agua fresca. No le sirva si se enlama o cambia de apariencia. Mantenga el envase cerrado y conserve en un lugar seco y fresco. Considere que las necesidades de cada perro varían dependiendo de la talla, sexo, raza, nivel de actividad, etapa fisiológica y temperatura ambiente.</br></br><b>Ingredientes:</b></br></br>Maíz integral y/o trigo integral, harina de subproductos de pollo, harina de carne y hueso vacuna, arroz cervecero, harina de soya, grasa vacuna y/o de cerdo y/o aceite de pollo preservada con tocoferoles, harina de gluten de maíz y/o gluten de trigo, digesto animal, inulina y/o raíz de achicoria, fibra de avena y/o fibra de soya, carbonato de calcio, fosfato de calcio, sal, zeolita, arveja deshidratada, zanahoria deshidratada, taurina, L-lisina, cloruro de colina, cloruro de potasio, colorantes permitidos, DL metionina, sulfato de zinc, proteinato de zinc, sulfato ferroso, suplementos vitamínicos, sulfato de manganeso, proteinato de manganeso, niancina, pantotenato de calcio, suplemento de riboflavina, clorhidrato de piridoxina, sulfato de cobre, proteinato de cobre, mononitrato de tiamina, ácido fólico, iodato de calcio, selenito de sodio..</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="produc/CroquetaDogChowAdultoRazasPequenas.html" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-shopping-cart"></i></a>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/CarnazaHuesoCh.html"><img src="img/CarnazaHuesoCh.jpg"></a>              
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo">Carnaza Natural de Res Hueso Chico</div>
+                        <p>Carnaza natural de res en forma de hueso, 100 % satisfacción, entretiene a tu mascota, ejercita la mandíbula, ayuda a remover el sarro y ayuda a evitar el mal aliento, 100 % digerible.</p>
+                        <div class="card-precio right-align">$5.00 pz</div>
+                    </div>
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="#modal43" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!-- Modal Structure -->
+                                <div id="modal43" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Carnaza Natural de Res Hueso Chico</h5>
+                                        <p style="text-align: justify;">Carnaza natural de res en forma de hueso, 100 % satisfacción, entretiene a tu mascota, ejercita la mandíbula, ayuda a remover el sarro y ayuda a evitar el mal aliento, 100 % digerible.</br></br><b>Características:</b></br></br>Mantienen limpios los dientes previniendo la formación de sarro, evitando al mismo tiempo el mal aliento, además entretienen a su perro.</br></br><b>Ventajas:</b></br></br>Permiten que interactúe con su perro, y pueden proporcionarse como premio en los entrenamientos o como juguete.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="produc/CarnazaHuesoCh.html" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-shopping-cart"></i></a>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/CarnazaHuesoMd.html"><img src="img/CarnazaHuesoMd.jpg"></a>              
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo">Carnaza Natural de Res Hueso Mediano</div>
+                        <p>Carnaza natural de res en forma de hueso, 100 % satisfacción, entretiene a tu mascota, ejercita la mandíbula, ayuda a remover el sarro y ayuda a evitar el mal aliento, 100 % digerible.</p>
+                        <div class="card-precio right-align">$10.00 pz</div>
+                    </div>
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="#modal44" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!-- Modal Structure -->
+                                <div id="modal44" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Carnaza Natural de Res Hueso Mediano</h5>
+                                        <p style="text-align: justify;">Carnaza natural de res en forma de hueso, 100 % satisfacción, entretiene a tu mascota, ejercita la mandíbula, ayuda a remover el sarro y ayuda a evitar el mal aliento, 100 % digerible.</br></br><b>Características:</b></br></br>Mantienen limpios los dientes previniendo la formación de sarro, evitando al mismo tiempo el mal aliento, además entretienen a su perro.</br></br><b>Ventajas:</b></br></br>Permiten que interactúe con su perro, y pueden proporcionarse como premio en los entrenamientos o como juguete.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="produc/CarnazaHuesoMd.html" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-shopping-cart"></i></a>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/CarnazaHuesoGr.html"><img src="img/CarnazaHuesoGr.jpg"></a>              
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo">Carnaza Natural de Res Hueso Grande</div>
+                        <p>Carnaza natural de res en forma de hueso, 100 % satisfacción, entretiene a tu mascota, ejercita la mandíbula, ayuda a remover el sarro y ayuda a evitar el mal aliento, 100 % digerible.</p>
+                        <div class="card-precio right-align">$60.00 pz</div>
+                    </div>
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="#modal45" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!-- Modal Structure -->
+                                <div id="modal45" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Carnaza Natural de Res Hueso Grande</h5>
+                                        <p style="text-align: justify;">Carnaza natural de res en forma de hueso, 100 % satisfacción, entretiene a tu mascota, ejercita la mandíbula, ayuda a remover el sarro y ayuda a evitar el mal aliento, 100 % digerible.</br></br><b>Características:</b></br></br>Mantienen limpios los dientes previniendo la formación de sarro, evitando al mismo tiempo el mal aliento, además entretienen a su perro.</br></br><b>Ventajas:</b></br></br>Permiten que interactúe con su perro, y pueden proporcionarse como premio en los entrenamientos o como juguete.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="produc/CarnazaHuesoGr.html" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-shopping-cart"></i></a>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/PremioGalletaRedondaRellena.html"><img src="img/Galleta%20Rellena.png"></a>              
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo">Premio Galleta Redonda Rellena</div>
+                        <p>Excelente premio para perro, galleta 100% natural, 100% vegetal, ayuda a evitar el mal aliento, 100 % digerible, sabor caramelo y menta</p>
+                        <div class="card-precio right-align">$2.00 Pz</div>
+                    </div>
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="#modal46" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!-- Modal Structure -->
+                                <div id="modal46" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Premio Galleta Redonda Rellena</h5>
+                                        <p style="text-align: justify;">Galleta 100% natural, 100% vegetal, ayuda a evitar el mal aliento, 100 % digerible, sabor caramelo y menta.</br></br><b>Características:</b></br></br>Uno los métodos para educar a un perro es premiando su buen comportamiento y su obediencia ante las órdenes que le damos. Los premios son fundamentales para ir educando de forma positiva a nuestro animal y para que nuestra mascota se sienta motivada a la hora de cumplir tus órdenes.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="produc/PremioGalletaRedondaRellena.html" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-shopping-cart"></i></a>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/PremioGalletaHuesoRellena.html"><img src="img/PremioGalletaHuesoRellena.png"></a>              
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo">Premio Galleta Hueso Rellena</div>
+                        <p>Excelente premio para perro en forma de hueso, galleta 100% natural, 100% vegetal, ayuda a evitar el mal aliento, 100 % digerible, sabor caramelo y menta</p>
+                        <div class="card-precio right-align">$5.00 Pz.</div>
+                    </div>
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="#modal47" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!-- Modal Structure -->
+                                <div id="modal47" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Premio Galleta Hueso Rellena</h5>
+                                        <p style="text-align: justify;">Galleta 100% natural, 100% vegetal, ayuda a evitar el mal aliento, 100 % digerible, sabor caramelo y menta.</br></br><b>Características:</b></br></br>Uno los métodos para educar a un perro es premiando su buen comportamiento y su obediencia ante las órdenes que le damos. Los premios son fundamentales para ir educando de forma positiva a nuestro animal y para que nuestra mascota se sienta motivada a la hora de cumplir tus órdenes.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="produc/PremioGalletaHuesoRellena.html" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-shopping-cart"></i></a>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/CarnazaDonaNatural.html"><img src="img/CarnazaDonaNatural.jpg"></a>              
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo">Carnaza Dona Natural</div>
+                        <p>Carnaza natural de res en forma de dona, 100 % satisfacción, entretiene a tu mascota, ejercita la mandíbula, ayuda a remover el sarro y ayuda a evitar el mal aliento, 100 % digerible.</p>
+                        <div class="card-precio right-align">$15.00 Pz.</div>
+                    </div>
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="#modal48" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!-- Modal Structure -->
+                                <div id="modal48" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Carnaza Dona Natural</h5>
+                                        <p style="text-align: justify;">Carnaza natural de res en forma de dona, 100 % satisfacción, entretiene a tu mascota, ejercita la mandíbula, ayuda a remover el sarro y ayuda a evitar el mal aliento, 100 % digerible.</br></br><b>Características:</b></br></br>Mantienen limpios los dientes previniendo la formación de sarro, evitando al mismo tiempo el mal aliento, además entretienen a su perro.</br></br><b>Ventajas:</b></br></br>Permiten que interactúe con su perro, y pueden proporcionarse como premio en los entrenamientos o como juguete.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="produc/CarnazaDonaNatural.html" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-shopping-cart"></i></a>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/PremioGalletaHuesoChico.html"><img src="img/PremioHuesoChico.jpg"></a>              
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo">Premio Galleta Huesito</div>
+                        <p>Excelente premio para perro, galleta 100% natural, 100% vegetal, ayuda a evitar el mal aliento, 100 % digerible, sabor caramelo y menta</p>
+                        <div class="card-precio right-align">2 X $1.00</div>
+                    </div>
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="#modal49" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!-- Modal Structure -->
+                                <div id="modal49" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Premio Galleta Huesito</h5>
+                                        <p style="text-align: justify;">Galleta 100% natural, 100% vegetal, ayuda a evitar el mal aliento, 100 % digerible, sabor caramelo y menta.</br></br><b>Características:</b></br></br>Uno los métodos para educar a un perro es premiando su buen comportamiento y su obediencia ante las órdenes que le damos. Los premios son fundamentales para ir educando de forma positiva a nuestro animal y para que nuestra mascota se sienta motivada a la hora de cumplir tus órdenes.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="produc/PremioGalletaHuesoChico.html" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-shopping-cart"></i></a>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/JugueteAroConDosNudos42Cm_.html"><img src="img/JugueteHiloAroCon2Nudos42Cm.jpg"></a>              
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo">Juguete de Hilo, Aro con 2 nudos 42Cm</div>
+                        <p>Aro de hilo de algodón multicolor, con cruz de plástico duro y extremos anudados. Fabricado de algodón que ejercita la mandíbula, fortalece las encías, limpia los dientes y entretiene a la mascota. Le permite interactuar con el perro, previniendo el estrés y el problema de mordisquear.</p>
+                        <div class="card-precio right-align">$86.00</div>
+                    </div>
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="#modal50" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!-- Modal Structure -->
+                                <div id="modal50" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Juguete de Hilo, Aro con 2 nudos 42Cm</h5>
+                                        <p style="text-align: justify;">Aro de hilo de algodón multicolor, con cruz de plástico duro y extremos anudados. Fabricado de algodón que ejercita la mandíbula, fortalece las encías, limpia los dientes y entretiene a la mascota. Le permite interactuar con el perro, previniendo el estrés y el problema de mordisquear.</br></br><b>Ventajas:</b></br></br>Resistente.</br>No tóxico.</br>Duradero.</br>Lavable.</br>Ayuda a la mascota a tener mayor actividad física y a eliminar la ansiedad de la detención de los cachorros.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="produc/JugueteAroConDosNudos42Cm_.html" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-shopping-cart"></i></a>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/JugueteAroConPelotaYNudo48Cm_.html"><img src="img/JugueteHiloAroConPelotaYNudo48Cm.jpg"></a>              
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo">Juguete de Hilo, Aro con Pelota y Nudo 48Cm</div>
+                        <p>Aro de hilo de algodón multicolor, con pelota tipo tenis y extremo anudado.Fabricado de algodón que ejercita la mandíbula, fortalece las encías, limpia los dientes y entretiene a la mascota. Le permite interactuar con el perro, previniendo el estrés y el problema de mordisquear</p>
+                        <div class="card-precio right-align">$86.00</div>
+                    </div>
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="#modal51" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!-- Modal Structure -->
+                                <div id="modal51" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Juguete de Hilo, Aro con Pelota y Nudo 48Cm</h5>
+                                        <p style="text-align: justify;">Aro de hilo de algodón multicolor, con pelota tipo tenis y extremo anudado.Fabricado de algodón que ejercita la mandíbula, fortalece las encías, limpia los dientes y entretiene a la mascota. Le permite interactuar con el perro, previniendo el estrés y el problema de mordisquear.</br></br><b>Ventajas:</b></br></br>Resistente.</br>No tóxico.</br>Duradero.</br>Lavable.</br>Ayuda a la mascota a tener mayor actividad física y a eliminar la ansiedad de la detención de los cachorros.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="produc/JugueteAroConPelotaYNudo48Cm_.html" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-shopping-cart"></i></a>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/JugueteHiloAgarraderaAroConPelota50Cm_.html"><img src="img/JugueteHiloAgarraderaAroConPelota50Cm.jpg"></a>              
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo">Juguete de Hilo, Agarradera Aro Con Pelota 50Cm</div>
+                        <p>Aro de hilo de algodón multicolor, con pelota tipo tenis, trenzado en la parte media y con agarradera de plástico. Fabricado de algodón que ejercita la mandíbula, fortalece las encías, limpia los dientes y entretiene a la mascota. Tiene agarradera de plástico que le permite interactuar con el perro, previniendo el estrés y el problema de mordisquear</p>
+                        <div class="card-precio right-align">$86.00</div>
+                    </div>
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="#modal56" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!-- Modal Structure -->
+                                <div id="modal56" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Juguete de Hilo, Agarradera Aro Con Pelota 50Cm</h5>
+                                        <p style="text-align: justify;">Aro de hilo de algodón multicolor, con pelota tipo tenis, trenzado en la parte media y con agarradera de plástico. Fabricado de algodón que ejercita la mandíbula, fortalece las encías, limpia los dientes y entretiene a la mascota. Tiene agarradera de plástico que le permite interactuar con el perro, previniendo el estrés y el problema de mordisquear.</br></br><b>Ventajas:</b></br></br>Resistente.</br>No tóxico.</br>Duradero.</br>Lavable.</br>Ayuda a la mascota a tener mayor actividad física y a eliminar la ansiedad de la detención de los cachorros.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="produc/JugueteHiloAgarraderaAroConPelota50Cm_.html" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-shopping-cart"></i></a>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/JugueteHiloAroConAgarradera27Cm.html"><img src="img/JugueteHiloAroConAgarradera27Cm.jpg"></a>              
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo">Juguete de Hilo, Aro Con Agarradera 27 Cm</div>
+                        <p>Fabricado de algodón que ejercita la mandíbula, fortalece las encías, limpia los dientes y entretiene a la mascota.</p>
+                        <div class="card-precio right-align">$69.00</div>
+                    </div>
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="#modal57" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!-- Modal Structure -->
+                                <div id="modal57" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Juguete de Hilo, Aro Con Agarradera 27 Cm</h5>
+                                        <p style="text-align: justify;">Aro de hilo de algodón, con agarradera de plástico.</br></br>Fabricado de algodón que ejercita la mandíbula, fortalece las encías, limpia los dientes y entretiene a la mascota.</br></br>Cuenta con agarradera de plástico que le permite interactuar con el perro, previniendo el estrés y el problema de mordisquear.</br><b>Ventajas</b></br>Resistente.
+No tóxico.</br>Duradero.</br>Lavable</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="produc/JugueteHiloAroConAgarradera27Cm.html" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-shopping-cart"></i></a>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/SobrePedigreeAdultoPollo.html"><img src="img/SobrePedigreeAdultoPollo.jpg"></a>              
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo">Sobre Pedigree Adulto Sabor Pollo</div>
+                        <p>Ahora con deliciosos y nutritivos flietitos bañados en una nueva salsa que no alteran la calidad de las heces y que proporcionan una alimentación tan completa y balanceada como nuestro alimento seco que ya conoces.</p>
+                        <div class="card-precio right-align">$10.00</div>
+                    </div>
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="#modal52" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!-- Modal Structure -->
+                                <div id="modal52" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Sobre Pedigree Adulto Sabor Pollo</h5>
+                                        <p style="text-align: justify;">Ahora con deliciosos y nutritivos flietitos bañados en una nueva salsa que no alteran la calidad de las heces y que proporcionan una alimentación tan completa y balanceada como nuestro alimento seco que ya conoces. Puedes servirlos solos o combinados con alimento seco. Los SOBRES® PEDIGREE® lo volverán loco.</br></br><b>Ingredientes:</b></br></br>Agua Suficiente para el Proceso, Carne y/o Subproductos (Menudencias) de Ave y/o Res y/o Cerdo y/o Pescado, Derivados de Cereales, Carne y/o Subproductos (Menudencias) de Pollo, Concentrados Proteicos Vegetales, Espesantes y/o Gelificantes y/o Estabilizantes, Fibras Naturales, Aceite Vegetal (Fuente Natural de Ácido Linoleico), Sal Yodatada, Colorantes Naturales y/o Artificiales,Antioxidantes. MINERALES: Sales u Óxidos de Calcio, Potasio, Fósforo, Zinc, Cobre, Yodo. VITAMINAS: Suplementos de Vitaminas E, Colina, Menadiona (K), D.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="produc/SobrePedigreeAdultoPollo.html" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-shopping-cart"></i></a>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/LataPedigreeAdultoPollo375Gr.html"><img src="img/LataPedigreeAdultoPollo.jpg"></a>              
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo">Lata Pedigree Adulto Sabor Pollo 375Gr</div>
+                        <p>Ahora con deliciosos y nutritivos flietitos bañados en una nueva salsa que no alteran la calidad de las heces y que proporcionan una alimentación tan completa y balanceada como nuestro alimento seco que ya conoces.</p>
+                        <div class="card-precio right-align">$32.00</div>
+                    </div>
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="#modal53" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!-- Modal Structure -->
+                                <div id="modal53" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Lata Pedigree Adulto Sabor Pollo</h5>
+                                        <p style="text-align: justify;">Ahora con deliciosos y nutritivos flietitos bañados en una nueva salsa que no alteran la calidad de las heces y que proporcionan una alimentación tan completa y balanceada como nuestro alimento seco que ya conoces. Puedes servirlos solos o combinados con alimento seco.</br></br><b>Ingredientes:</b></br></br>Agua Suficiente para el Proceso, Carne y/o Subproductos (Menudencias) de Ave y/o Res y/o Cerdo y/o Pescado, Derivados de Cereales, Carne y/o Subproductos (Menudencias) de Pollo, Concentrados Proteicos Vegetales, Espesantes y/o Gelificantes y/o Estabilizantes, Fibras Naturales, Aceite Vegetal (Fuente Natural de Ácido Linoleico), Sal Yodatada, Colorantes Naturales y/o Artificiales,Antioxidantes. MINERALES: Sales u Óxidos de Calcio, Potasio, Fósforo, Zinc, Cobre, Yodo. VITAMINAS: Suplementos de Vitaminas E, Colina, Menadiona (K), D.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="produc/LataPedigreeAdultoPollo375Gr.html" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-shopping-cart"></i></a>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/SobrePedigreeAdultoRes.html"><img src="img/SobrePedigreeAdultoRes.jpg"></a>              
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo">Sobre Pedigree Adulto Sabor Res</div>
+                        <p>Ahora con deliciosos y nutritivos flietitos bañados en una nueva salsa que no alteran la calidad de las heces y que proporcionan una alimentación tan completa y balanceada como nuestro alimento seco que ya conoces.</p>
+                        <div class="card-precio right-align">$10.00</div>
+                    </div>
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="#modal54" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!-- Modal Structure -->
+                                <div id="modal54" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Sobre Pedigree Adulto Sabor Res</h5>
+                                        <p style="text-align: justify;">Ahora con deliciosos y nutritivos flietitos bañados en una nueva salsa que no alteran la calidad de las heces y que proporcionan una alimentación tan completa y balanceada como nuestro alimento seco que ya conoces. Puedes servirlos solos o combinados con alimento seco. Los SOBRES® PEDIGREE® lo volverán loco.</br></br><b>Ingredientes:</b></br></br>Agua Suficiente para el Proceso, Carne y/o Subproductos (Menudencias) de Ave y/o Res y/o Cerdo y/o Pescado, Derivados de Cereales, Carne y/o Subproductos (Menudencias) de Pollo, Concentrados Proteicos Vegetales, Espesantes y/o Gelificantes y/o Estabilizantes, Fibras Naturales, Aceite Vegetal (Fuente Natural de Ácido Linoleico), Sal Yodatada, Colorantes Naturales y/o Artificiales,Antioxidantes. MINERALES: Sales u Óxidos de Calcio, Potasio, Fósforo, Zinc, Cobre, Yodo. VITAMINAS: Suplementos de Vitaminas E, Colina, Menadiona (K), D.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="produc/SobrePedigreeAdultoRes.html" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-shopping-cart"></i></a>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/LataPedigreeAdultoRes375Gr.html"><img src="img/LataPedigreeAdultoRes.jpg"></a>              
+                    </div>
+                    <div class="card-content">
+                        <div class="card-titulo">Lata Pedigree Adulto Sabor Res 375Gr</div>
+                        <p>Ahora con deliciosos y nutritivos flietitos bañados en una nueva salsa que no alteran la calidad de las heces y que proporcionan una alimentación tan completa y balanceada como nuestro alimento seco que ya conoces.</p>
+                        <div class="card-precio right-align">$32.00</div>
+                    </div>
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="#modal55" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!-- Modal Structure -->
+                                <div id="modal55" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Lata Pedigree Adulto Sabor Res</h5>
+                                        <p style="text-align: justify;">Ahora con deliciosos y nutritivos flietitos bañados en una nueva salsa que no alteran la calidad de las heces y que proporcionan una alimentación tan completa y balanceada como nuestro alimento seco que ya conoces. Puedes servirlos solos o combinados con alimento seco.</br></br><b>Ingredientes:</b></br></br>Agua Suficiente para el Proceso, Carne y/o Subproductos (Menudencias) de Ave y/o Res y/o Cerdo y/o Pescado, Derivados de Cereales, Carne y/o Subproductos (Menudencias) de Pollo, Concentrados Proteicos Vegetales, Espesantes y/o Gelificantes y/o Estabilizantes, Fibras Naturales, Aceite Vegetal (Fuente Natural de Ácido Linoleico), Sal Yodatada, Colorantes Naturales y/o Artificiales,Antioxidantes. MINERALES: Sales u Óxidos de Calcio, Potasio, Fósforo, Zinc, Cobre, Yodo. VITAMINAS: Suplementos de Vitaminas E, Colina, Menadiona (K), D.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- Modal Trigger -->
+                                <a href="produc/LataPedigreeAdultoRes375Gr.html" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-shopping-cart"></i></a>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="row">
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/ShampooFancyPetsCitiricos250Ml.html"><img src="img/SHAMPOO%20FANCY%20PETS%20CITRICOS%20250%20Ml%208.5%20Oz.jpg"></a>              
                     </div>
                     <div class="card-content">
                         <div class="card-titulo center-align" >Shampoo Aroma Cítrico, Fancy, 250 Ml</div>
@@ -301,7 +1162,7 @@ Los perros de esta edad necesitan un balance nutricional diferente a los más jo
             <div class="col s12 m3">
                 <div class="card">
                     <div class="card-image">
-                        <img src="img/SHAMPOO%20PELO%20BLANCO%20250%20ML.jpg">              
+                        <a href="produc/ShampooPeloBlanco250Ml.html"><img src="img/SHAMPOO%20PELO%20BLANCO%20250%20ML.jpg"></a>              
                     </div>
                     <div class="card-content">
                         <div class="card-titulo center-align" >Shampoo Para Pelo Blanco, Fancy, 250 Ml</div>
@@ -339,7 +1200,7 @@ Los perros de esta edad necesitan un balance nutricional diferente a los más jo
             <div class="col s12 m3">
                 <div class="card">
                     <div class="card-image">
-                        <img src="img/SHAMPOO%20FANCY%20PETS%20CACHORRO%20250%20Ml%208.5%20Oz.jpg">              
+                        <a href="produc/ShampooFancyPetsPeloBlancoCachorro250Ml.html"><img src="img/SHAMPOO%20FANCY%20PETS%20CACHORRO%20250%20Ml%208.5%20Oz.jpg"></a>              
                     </div>
                     <div class="card-content">
                         <div class="card-titulo center-align" >Shampoo Aroma Manzana, Fancy, 250 Ml</div>
@@ -1379,6 +2240,230 @@ Los perros de esta edad necesitan un balance nutricional diferente a los más jo
                             <li>
                             <!-- -------------------------------Modal Trigger -->
                                 <a href="produc/PipetaAntipulgasHartz27Kg.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/ShampooBiomaaPuppy250Ml.html"><img src="img/ShampooPuppy250Ml.jpg"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Shampoo Biomaa Puppy 250 Ml</div>
+                        <p>Tratan con suavidad la piel y el pelo de su cachorro, a la vez de efectuar una limpieza profunda sin causarle irritación en la piel ni en los ojos..</B></p>
+                        <div class="card-precio right-align">$44.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal58" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal58" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Shampoo Biomaa Puppy 250 Ml</h5>
+                                        <p style="text-align: justify;">Los finos ingredientes del Shampoo Puppy Biomaa, tratan con suavidad la piel y el pelo de su cachorro, a la vez de efectuar una limpieza profunda sin causarle irritación en la piel ni en los ojos. Gracias a sus agentes acondicionadores, el shampoo Puppy de Biomaa facilita el cepillado y proporciona brillo al pelo. </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/ShampooBiomaaPuppy250Ml.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/ShampooBiomaaPeloBlanco250Ml.html"><img src="img/ShampooBiomaaPeloBlanco250%20mL.jpg"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Shampoo Biomaa Pelo Blanco 250 Ml</div>
+                        <p>Contiene extractos herbales aclaradores del pelo que ayudan a mantener y realzar la belleza del pelaje blanco de su mascota.</B></p>
+                        <div class="card-precio right-align">$44.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal59" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal59" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Shampoo Biomaa Pelo Blanco 250 Ml</h5>
+                                        <p style="text-align: justify;">Este shampoo perfumado con suave aroma a fresco, contiene extractos herbales aclaradores del pelo que ayudan a mantener y realzar la belleza del pelaje blanco de su mascota. Sus ingredientes acondicionadores facilitan el desenredado del pelo y le proporciona.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/ShampooBiomaaPeloBlanco250Ml.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/ShampooBiomaaPeloNegro250Ml.html"><img src="img/ShampooBiomaaPeloNegro250ml.jpg"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Shampoo Biomaa Pelo Negro 250 Ml</div>
+                        <p>Formulado con extractos naturales de hojas y cáscaras de nogal para mantener y realzar la belleza del pelo negro.</B></p>
+                        <div class="card-precio right-align">$44.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal60" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal60" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Shampoo Biomaa Pelo Negro 250 Ml</h5>
+                                        <p style="text-align: justify;">Éste es un shampoo formulado con extractos naturales de hojas y cáscaras de nogal para mantener y realzar la belleza del pelo negro. Sus ingredientes acondicionadores facilitan el desenredado del pelo y le proporcionan brillo y sedosidad.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/ShampooBiomaaPeloNegro250Ml.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/ShampooBiomaaPeloDorado250Ml.html"><img src="img/ShampooBiomaaPeloDorado250Ml.jpg"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Shampoo Biomaa Pelo Dorado 250 Ml</div>
+                        <p>La delicadeza de los tonos dorados sólo se logra después de utilizar los extractos herbales contenidos en el shampoo para perros de pelo dorado de Biomaa.</B></p>
+                        <div class="card-precio right-align">$44.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal61" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal61" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Shampoo Biomaa Pelo Dorado 250 Ml</h5>
+                                        <p style="text-align: justify;">La delicadeza de los tonos dorados sólo se logra después de utilizar los extractos herbales contenidos en el shampoo para perros de pelo dorado de Biomaa. Además de intensificar los tonos dorados y dejar manejable el pelo, puede ser utilizado como un auxiliar en los padecimientos inflamatorios de la piel, ya que su extracto de manzanilla es un poderoso analgésico y desinflamatorio natural.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/ShampooBiomaaPeloDorado250Ml.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/ShampooBiomaaPeloBronce250Ml.html"><img src="img/ShampooBiomaaPeloBronce250Ml.jpg"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Shampoo Biomaa Pelo Bronce 250 Ml</div>
+                        <p>Es el único en el mercado con éstas características, ya que con su selecta mezcla de extractos herbales, logramos un pelo bronce brillante, intenso y manejable.</p>
+                        <div class="card-precio right-align">$44.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal62" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal62" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Shampoo Biomaa Pelo Bronce 250 Ml</h5>
+                                        <p style="text-align: justify;">Los perros color bronce o rojizos son hermosos por naturaleza y en el mercado hasta hace poco no existía ningún shampoo preparado para intensificar dichos tonos. El shampoo para perros color bronce de Biomaa es el único en el mercado con éstas características, ya que con su selecta mezcla de extractos herbales, logramos un pelo bronce brillante, intenso y manejable.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/ShampooBiomaaPeloBronce250Ml.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
+                                <i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------TARJETA PRODUCTO--> 
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="produc/ShampooBiomaaAcondicionador250Ml.html"><img src="img/ShampooBiomaaAcondicionador250Ml.jpg"></a>           
+                    </div>
+                    <div class="card-conten">
+                        <div class="card-titulo center-align" >Shampoo Biomaa Acondicionador 250 Ml</div>
+                        <p>Este es un producto diseñado para aplicarse en perros de pelo largo o lanudo ya que sus ingredientes acondicionadores facilitan el cepillado evitando que el pelo se enrede.</p>
+                        <div class="card-precio right-align">$44.00</div>
+                    </div> 
+                    <div class="card-footer">
+                        <ul>
+                            <li>
+                                <!----------------------------- Modal Trigger -->
+                                <a href="#modal63" class="btn-floating waves-effect waves-light modal-trigger transparent"><i class="fa fa-info-circle"></i></a>
+                                <!----------------------------- Modal Structure -->
+                                <div id="modal63" class="modal">
+                                    <div class="modal-content">
+                                        <h5>Shampoo Biomaa Acondicionador 250 Ml</h5>
+                                        <p style="text-align: justify;">Este es un producto diseñado para aplicarse en perros de pelo largo o lanudo ya que sus ingredientes acondicionadores facilitan el cepillado evitando que el pelo se enrede. Efectúa una limpieza profunda sin dañar o irritar la piel del perro.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                                    </div>
+                                </div>
+                            </li>                         
+                            <li>
+                            <!-- -------------------------------Modal Trigger -->
+                                <a href="produc/ShampooBiomaaAcondicionador250Ml.html" class="btn-floating waves-effect waves-light modal-trigger transparent">
                                 <i class="fa fa-shopping-cart"></i></a>
                             </li>
                             </li>
